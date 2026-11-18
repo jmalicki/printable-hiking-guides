@@ -33,13 +33,20 @@ ACCESS=dict(**{'from':(37.8078,-122.4750),'to':(37.9107739,-122.6126301)},z=14,b
   places=[dict(at=(37.9060,-122.5475),label='Mill Valley',dx=26,dy=13),
           dict(at=(37.91004,-122.57675),label='Mountain Home Inn',dx=20,dy=-22,size=32),
           dict(at=(37.8030,-122.4790),label='San Francisco',anchor='end',size=40,weight=700,dot=False)])
+# Photos: Wikimedia Commons (file='File:...') or a direct URL with explicit credit. crop=(l,t,r,b) fractions.
 PHOTOS=dict(
- view=dict(short='View',cls='hero',file='File:Mt. Tamalpais, view south to San Francisco and the bay. West Point Inn is below on the right. The valley between the Inn and the Panoramic Highway holds Muir Woods. - panoramio.jpg',crop=(0,0.16,1,0.93),
-   caption='The south face of Mount Tam: Richardson Bay, the Marin Headlands and San Francisco beyond. The West Point Inn is the roof in the trees, lower right; the wooded valley beyond it hides Muir Woods.'),
+ view=dict(short='Skyline',cls='hero',file='File:San Francisco and Sausalito from Mount Tam, February 2026.JPG',crop=(0,0.10,1,0.80),
+   caption='San Francisco from the south face of Mount Tam on a clear winter day (telephoto): Sausalito in the foreground, the bay, and the downtown towers 20 km away.'),
  theater=dict(short='Theater',cls='strip',file='File:Cushing Memorial Amphitheater pano.jpg',caption='The Mountain Theater: 1930s stone seating for nearly 4,000, with the bay as backdrop.'),
- inn=dict(short='Inn',cls='mid',file='File:West Point Inn, Mt. Tamalpais State Park, Mill Valley, CA 5-11-2013 4-58-49 PM.JPG',crop=(0,0.08,1,0.92),caption='West Point Inn, 1904. No road for the public, no mains electricity; a porch, picnic tables and the view.'),
- chaparral=dict(short='Chaparral',cls='bio',file="File:View of Mt. Tamalpais' East Peak. The Old Railroad Grade fire road is visible below Ridgecrest Blvd - Bolinas Ridge Road. - panoramio.jpg",caption='Chaparral: grey-green scrub on the sun-facing slopes below East Peak.'),
- woodland=dict(short='Woodland',cls='bio',file='File:Matt Davis trail. Scrub forest provides a low canopy above the upper reaches of the trail near the Pantoll Ranger Station. - panoramio.jpg',caption='Oak and bay woodland arching over the Matt Davis Trail.'),
- cypress=dict(short='Cypress',cls='bio',file='File:Cupressus sargentii Mount Tamalpais.jpg',caption='Sargent cypress on Mount Tam: a tree that thrives on toxic serpentine soil.'),
- fog=dict(short='Fog',cls='bio',file='File:Fog over Mill Valley near Mt. Tamalpais.jpg',crop=(0,0.18,1,0.68),caption='The summer fog bank below the mountain: the redwoods&#8217; water supply.'),
+ inn=dict(short='Inn',cls='inn',url='https://live.staticflickr.com/65535/53212106778_122b21c7d6_b.jpg',artist='lamblukas (Flickr)',license='CC BY 2.0',page='https://www.flickr.com/photos/dnevill/53212106778/',
+   caption='West Point Inn, built in 1904 for railway passengers.'),
+ porch=dict(short='Porch',cls='inn',url='https://live.staticflickr.com/131/351406411_34e5e31e35_b.jpg',artist='sparkle glowplug (Flickr)',license='CC BY-NC 2.0',page='https://www.flickr.com/photos/sparkleglowplug/351406411/',
+   caption='What you came for: the inn&#8217;s porch, looking over Richardson Bay to the East Bay hills.'),
+ fog=dict(short='Fog',cls='fogpic',file='File:Fog over Mill Valley near Mt. Tamalpais.jpg',crop=(0,0.18,1,0.68),caption='Summer fog pouring in below the mountain.'),
+ grass=dict(short='Grassland',cls='bio',file='File:Tree on MT Tam - Flickr - Andrew V Kearns.jpg',caption='Wind-shaped tree, summer-gold grass, fog below.'),
+ serpentine=dict(short='Serpentine',cls='bio',file='File:Arctostaphylos montana.jpg',caption='Serpentine rock and the manzanita found only here.'),
+ chaparral=dict(short='Chaparral',cls='bio',url='https://live.staticflickr.com/5157/29936612395_facd884832_b.jpg',artist='vrkrebs (Flickr)',license='CC BY-NC-ND 2.0',page='https://www.flickr.com/photos/raykrebs/29936612395/',
+   caption='Chaparral near West Point Inn.'),
+ woodland=dict(short='Madrone',cls='bio',file='File:Arbutus menziesii Mount Tam Blithedale Ridge Road 4.jpg',caption='Madrone: orange limbs, peeling bark.'),
+ redwood=dict(short='Redwoods',cls='bio',file='File:Biking on Mount Tamalpais.JPG',caption='Slim upland redwoods in a damp gully.'),
 )

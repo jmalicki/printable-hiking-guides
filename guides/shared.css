@@ -71,3 +71,19 @@ figure.bio img { height:30mm; }
 .cmp.narrow td:first-child { width: 25mm; }
 figure.strip img { height:22mm; }
 figure.bio img { height:25mm; }
+/* habitat rows with a photo each */
+.biome3 { display:grid; grid-template-columns: 36mm 1fr; gap:0 4.5mm; border-top:.5pt solid #d8d2c2; padding:1.6mm 0 0; break-inside:avoid; }
+.biome3 figure.photo { margin:0; }
+.biome3 figure.bio img { width:36mm; height:25.5mm; }
+.biome3 figcaption { margin-top:.6mm !important; line-height:1.2 !important; }
+.biome3 figcaption { font-size:6.9pt !important; }
+.biome3 b.t { font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:10.4pt; }
+.biome3 span.w { font-size:7.6pt; color:#55635a; margin-left:1.5mm; }
+.biome3 p { margin:.6mm 0 0; }
+.setting { display:grid; grid-template-columns: 1fr 46mm; gap:5mm; align-items:start; }
+figure.fogpic img { height:27mm; }
+.inset { padding:3mm 5mm 2.5mm !important; }
+figure.inn img { height:36mm; }
+.special { background:#fff; border:.6pt solid #d8d2c2; border-radius:1.5mm; padding:2.2mm 3.5mm 1mm; margin-top:2.5mm; }
+.special p { font-size:8.3pt; margin-bottom:1.2mm; }
+figure.inn img { height:42mm; object-position:50% 88%; }

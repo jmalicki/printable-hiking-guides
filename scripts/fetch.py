@@ -54,7 +54,11 @@ def photos():
     meta=json.load(open(mf)) if os.path.exists(mf) else {}
     for k,c in P.items():
         f='%s/photos/%s.jpg'%(C.DATA,k)
-        if os.path.exists(f) and meta.get(k,{}).get('file')==c['file']:continue
+        src=c.get('file') or c['url']
+        if os.path.exists(f) and meta.get(k,{}).get('file')==src:continue
+        if 'url' in c:                      # direct image URL (e.g. Flickr); credit comes from the config
+            open(f,'wb').write(get(c['url']));meta[k]=dict(file=src,artist=c['artist'],license=c['license'],page=c.get('page',''))
+            json.dump(meta,open(mf,'w'),indent=1);print('photo',k,c['license'],c['artist']);time.sleep(2);continue
         u='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(dict(action='query',format='json',titles=c['file'],prop='imageinfo',iiprop='url|extmetadata',iiurlwidth=1280))
         ii=list(json.loads(get(u))['query']['pages'].values())[0]['imageinfo'][0];m=ii['extmetadata']
         g=lambda x:re.sub('<[^>]+>','',m.get(x,{}).get('value','')).strip()
