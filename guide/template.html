@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Muir Woods by the back door</title>
+<style>
+@page { size: A4; margin: 11mm 14mm 10mm; }
+:root { --ink:#1b2a22; --green:#2f6b4f; --red:#c8102e; --blue:#1d4ed8; --paper:#fbfaf6; --rule:#d9ddd3; --soft:#eef1ea; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin:0; color:var(--ink); font: 8.8pt/1.36 "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+h1,h2,h3 { font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-weight:700; margin:0; }
+h1 { font-size: 27pt; line-height:1.02; letter-spacing:-.01em; }
+h2 { font-size: 14.5pt; margin: 0 0 1.8mm; }
+h3 { font-size: 10.4pt; margin: 2.6mm 0 .8mm; }
+p { margin: 0 0 1.7mm; }
+ul { margin: 0 0 2mm; padding-left: 4.2mm; }
+li { margin-bottom: .6mm; }
+.page { break-after: page; }
+.page:last-child { break-after: auto; }
+.kicker { font-size: 7.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--green); font-weight:600; margin-bottom:3mm; }
+.sub { font: italic 11.5pt/1.3 "Iowan Old Style", Palatino, Georgia, serif; color:#3d4b43; margin: 2mm 0 3.5mm; max-width: 150mm; }
+.stats { display:grid; grid-template-columns: repeat(5,1fr); border-top:1.2pt solid var(--ink); border-bottom:1.2pt solid var(--ink); margin: 0 0 4mm; }
+.stats div { padding: 1.8mm 2mm 1.6mm 0; }
+.stats div + div { border-left: .6pt solid var(--rule); padding-left: 3mm; }
+.stats b { display:block; font: 700 13.5pt/1.1 "Iowan Old Style", Palatino, Georgia, serif; }
+.stats span { font-size: 7pt; text-transform:uppercase; letter-spacing:.08em; color:#55635a; }
+.cols { display:grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
+.box { background: var(--soft); border-radius: 2mm; padding: 3mm 4mm 1.5mm; }
+.box.front { background:#f3efe9; }
+.box h3 { margin-top:0; }
+.tag { display:inline-block; font-size:7.4pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:.5mm 2mm; border-radius: 1mm; color:#fff; background:var(--green); margin-bottom:1.5mm; }
+.tag.grey { background:#8a8378; }
+.verdict { border-left: 3pt solid var(--red); padding: .5mm 0 .5mm 4mm; margin: 2mm 0 2.5mm; font: 600 10.2pt/1.32 "Iowan Old Style", Palatino, Georgia, serif; }
+table { border-collapse: collapse; width:100%; }
+th { text-align:left; font-size:7.6pt; text-transform:uppercase; letter-spacing:.08em; color:#55635a; border-bottom:1pt solid var(--ink); padding: 1mm 2mm 1mm 0; }
+td { vertical-align: top; padding: 1.25mm 2mm 1.25mm 0; border-bottom: .5pt solid var(--rule); }
+td.n { width: 8mm; }
+td.d { width: 25mm; white-space:nowrap; font-variant-numeric: tabular-nums; }
+td.d small { color:#55635a; display:block; }
+.num { display:inline-block; width:5.6mm; height:5.6mm; border-radius:50%; background:var(--ink); color:#fff; font-weight:700; font-size:8.6pt; text-align:center; line-height:5.6mm; }
+.cmp td:first-child { width: 43mm; font-weight:600; }
+.map { width:100%; display:block; border:.6pt solid var(--ink); font-family: "Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.profile { width:100%; display:block; margin-top:1mm; font-family: "Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.profile .ax { font-size:19px; fill:#55635a; }
+.profile .note { font-size:20px; font-weight:600; fill:#1b2a22; }
+.legend { display:flex; flex-wrap:wrap; gap: 1.5mm 6mm; font-size:8.4pt; margin: 2mm 0 3mm; align-items:center; }
+.legend i { display:inline-block; width:9mm; height:0; vertical-align:middle; margin-right:1.5mm; }
+.l-main { border-top:1.1mm solid var(--red); }
+.l-short { border-top:1mm dashed var(--blue); }
+.l-spur { border-top:.8mm dotted var(--ink); }
+.small { font-size: 7.8pt; color:#55635a; }
+.maphead { display:flex; justify-content:space-between; align-items:baseline; }
+.food td:first-child { width: 44mm; font-weight:600; }
+.food td:nth-child(2) { width: 30mm; color:#55635a; }
+hr { border:0; border-top:.6pt solid var(--rule); margin: 3mm 0; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+  <div class="kicker">A half-day hike · Mount Tamalpais, Marin County, California</div>
+  <h1>Muir Woods,<br>by the back door</h1>
+  <p class="sub">Start on the mountain at the Mountain Home Inn, walk down through three kinds of forest into the old-growth redwoods, and climb back out to a deck with a view.</p>
+
+  <div class="stats">
+    <div><b>9.3 km</b><span>5.8 miles, loop</span></div>
+    <div><b>≈ 350 m</b><span>total climb &amp; descent</span></div>
+    <div><b>3–3½ h</b><span>with stops</span></div>
+    <div><b>290 → 45 m</b><span>start → lowest point</span></div>
+    <div><b>Moderate</b><span>steep in places, not technical</span></div>
+  </div>
+
+  <h2>Why not just drive to Muir Woods?</h2>
+  <p>You can, and nearly a million people a year do. But the famous grove is the <em>bottom</em> of a much bigger, much emptier forest, and the best way to see it is to arrive on foot from above. Same redwoods, a completely different day.</p>
+  <div class="cols" style="margin:2mm 0 3mm">
+    <div class="box front">
+      <span class="tag grey">The front door</span>
+      <ul>
+        <li>A <b>parking or shuttle reservation is always required</b>, for a timed slot, booked ahead on gomuirwoods.com. Popular days sell out.</li>
+        <li>A winding drive to the valley floor, then a paved path and boardwalk shared with tour-bus groups.</li>
+        <li>Most visitors walk the 1.5 km loop, take the photo and leave within the hour.</li>
+        <li>You see one thing: big trees, from a boardwalk.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <span class="tag">The back door — this hike</span>
+      <ul>
+        <li><b>No reservation.</b> Park at the trailhead opposite the Inn, or take the bus that stops at its door.</li>
+        <li>Two hours of quiet trail first: ridge views to the Pacific, mossy Douglas-fir forest, then a fern canyon beside a tumbling creek.</li>
+        <li>You enter the old growth at its quiet upstream end and walk <em>down</em> through Cathedral Grove — the same celebrated trees, reached on your own legs.</li>
+        <li>It ends at a deck above the fog with a drink in your hand.</li>
+      </ul>
+    </div>
+  </div>
+  <p>The honest trade-off: it costs you a morning rather than an hour, and the redwoods are at the bottom, so <b>every metre you walk down you must walk back up</b>. Read the next section before you commit.</p>
+
+  <hr>
+  <h2>Is this for me? An honest fitness check</h2>
+  <p class="verdict">If you can jog 5 km without stopping, or cycle 40–50 km at touring pace, your heart and lungs will be fine. Your legs are another matter: nothing in the Netherlands prepares them for this much down and up.</p>
+  <table class="cmp">
+    <tr><td>Overall effort</td><td>About the same as a brisk <b>13 km walk on the flat</b> (rule of thumb: every 100 m of climbing costs as much as an extra kilometre). That is 2½ hours of actual walking, plus stops.</td></tr>
+    <tr><td>The total climb</td><td>Roughly 350 m — more than walking from sea level to the top of the <b>Vaalserberg</b> (322 m). Most of it comes in one piece, at the end.</td></tr>
+    <tr><td>The descent (km 3–5)</td><td>250 m down in 2 km on the Bootjack Trail: uneven log steps, roots and rock, an average 12% gradient. Cyclists and runners from flat country usually find this harder than the climb — it is braking work for thighs and knees, and you will feel it on the stairs next morning.</td></tr>
+    <tr><td>The climb out (km 6.3–8.6)</td><td>240 m up in 2.4 km, an average 10% with no flat sections: <b>40–50 minutes of continuous uphill</b>, similar to climbing the stairs of the Dom Tower two and a half times, slowly. A steady pace and two short pauses do it. It is in shade the whole way.</td></tr>
+    <tr><td>Underfoot</td><td>Proper dirt footpaths: narrow, rooty, sometimes muddy. No scrambling, no exposure, nothing that needs hands. Trail-running shoes or light hiking shoes; not city trainers after rain.</td></tr>
+    <tr><td>No easy way out</td><td>Once you are at the bottom the only way back is up. There is <b>no mobile signal</b> in the canyon, so you cannot simply call a taxi. If in doubt, take the short version (page 3) or turn round at Van Wyck Meadow.</td></tr>
+  </table>
+  <p style="margin-top:3mm"><b>Who should think twice:</b> anyone with knee trouble on descents, or who rarely walks more than an hour. <b>Who will find it easy:</b> anyone who hikes in hills a few times a year.</p>
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+  <div class="maphead"><h2>The route</h2><span class="small">North is up · numbers match the directions on the next page</span></div>
+  {{MAP}}
+  <div class="legend">
+    <span><i class="l-main"></i>Main loop, walked anticlockwise (arrows)</span>
+    <span><i class="l-short"></i>Short version: Lost Trail &amp; Fern Creek</span>
+    <span><i class="l-spur"></i>Detour to visitor centre (0.3 km each way)</span>
+  </div>
+  <h3 style="margin-top:1mm">Elevation along the main loop</h3>
+  {{PROFILE}}
+  <p class="small" style="margin-top:2mm">Basemap: USGS The National Map (public domain; its contour labels are in feet). Trail lines © OpenStreetMap contributors. Elevations from the USGS 10 m terrain model, so treat climb figures as ±10%. A GPX file of each route accompanies this guide — load it into Komoot, AllTrails, CalTopo or Gaia <em>before</em> you leave, as there is no signal in the canyon.</p>
+</section>
+
+<!-- ============================ PAGE 3 ============================ -->
+<section class="page">
+  <h2>Step by step</h2>
+  <p>Junctions are well signed with wooden posts giving trail names and distances in miles. Signs are the reason the trail names below matter: follow the names, not the arrows of other hikers.</p>
+  <table>
+    <tr><th></th><th>Distance</th><th>What to do</th></tr>
+    <tr><td class="n"><span class="num">1</span></td><td class="d">0.0 km<small>291 m</small></td>
+      <td><b>Mountain Home trailhead</b>, the car park across the road from the Inn. At the north end of the car park take the short flight of steps (the <b>Trestle Trail</b>) down to a narrow paved lane, <b>Alice Eastwood Road</b>. Turn <b>right</b> and follow it gently downhill.</td></tr>
+    <tr><td class="n"><span class="num">2</span></td><td class="d">0.8 km · 0.5 mi<small>241 m</small></td>
+      <td>Turn <b>right</b> onto the <b>Troop 80 Trail</b>, a level-to-rising footpath contouring through bay laurel, Douglas fir and the first redwoods, crossing several small streams on footbridges. After about 500 m the Sierra Trail crosses; keep straight on Troop 80. The road is above you but you will rarely notice it.</td></tr>
+    <tr><td class="n"><span class="num">3</span></td><td class="d">3.0 km · 1.9 mi<small>314 m — high point</small></td>
+      <td><b>Van Wyck Meadow</b>, a small sunny clearing with a boulder and a hand-painted sign (“population: 3 Steller’s jays”). Good place for a snack. Turn <b>left</b> onto the <b>Bootjack Trail</b>, signed for Muir Woods, and start down. The trail follows Redwood Creek through an ever-deeper canyon, on steps, switchbacks and bridges; the redwoods get bigger as you drop. Ignore the spur to Alice Eastwood Road near the bottom.</td></tr>
+    <tr><td class="n"><span class="num">4</span></td><td class="d">5.1 km · 3.2 mi<small>61 m</small></td>
+      <td>The Bootjack Trail ends at the wide <b>main trail of Muir Woods</b>, close to Bridge 4. You are now in the National Monument. Keep <b>left</b>, heading downstream. Do not cross Bridge 4 (that leads to the Ben Johnson and Hillside trails).</td></tr>
+    <tr><td class="n"><span class="num">5</span></td><td class="d">5.4 km · 3.4 mi<small>55 m</small></td>
+      <td>The Fern Creek Trail comes in from the left (this is where the short version joins). Carry on down the main trail into <b>Cathedral Grove</b>, the heart of the old growth: trees up to 75 m tall and 600–800 years old. It is a designated quiet zone. Take your time here; this is what you came for.</td></tr>
+    <tr><td class="n"><span class="num">6</span></td><td class="d">6.3 km · 3.9 mi<small>47 m — low point</small></td>
+      <td>Just before <b>Founders Grove</b>, a signed trail with steps climbs away on the <b>left</b>: the <b>Canopy View Trail</b>. That is your way home. <em>Optional:</em> first continue 300 m down the main trail to the visitor centre for the café, toilets, water and to pay the entrance fee, then come back to this junction (adds 0.6 km).<br>Then climb. Canopy View rises steadily on switchbacks out of the redwoods into Douglas fir. No views despite the name, but deep quiet.</td></tr>
+    <tr><td class="n"><span class="num">7</span></td><td class="d">8.2 km · 5.1 mi<small>220 m</small></td>
+      <td>The Lost Trail joins from the left. Keep <b>straight on, uphill</b>, staying on Canopy View. The hardest part is behind you.</td></tr>
+    <tr><td class="n"><span class="num">8</span></td><td class="d">8.6 km · 5.4 mi<small>285 m</small></td>
+      <td>The trail tops out just below the Panoramic Highway. Turn <b>left</b> onto the <b>Panoramic Trail</b>, which runs level beside the road with views over the canyon you just climbed out of, towards the Pacific. After 330 m it meets Alice Eastwood Road: follow the lane and the Trestle steps back up to the car park.</td></tr>
+    <tr><td class="n"><span class="num">1</span></td><td class="d">9.3 km · 5.8 mi<small>291 m</small></td>
+      <td>Back at the trailhead. Cross the road to the Inn’s deck.</td></tr>
+  </table>
+
+  <div class="box" style="margin-top:3.5mm">
+    <h3 style="color:var(--blue)">The short version — 6.4 km (4.0 mi), about 260 m of climbing, 2–2½ hours</h3>
+    <p>Same redwoods, same climb out, but you skip Troop 80, the meadow and the Bootjack canyon. At the bottom of the Trestle steps turn <b>left</b> instead of right, pick up the <b>Panoramic Trail</b> (0.4 km) and turn right down the <b>Canopy View Trail</b> to point 7 (1.1 km). There turn <b>right</b> onto the <b>Lost Trail</b>, which drops 150 m in 800 m on a long series of steps — short, but the steepest thing in this guide. At the bottom turn <b>left</b> on the <b>Fern Creek Trail</b> and follow the creek 600 m to the main trail at point 5 (2.5 km). Continue as above from point 5.</p>
+    <p style="margin-bottom:1mm">Choose this if time or daylight is short, or if you would rather save your legs for the climb. Choose the main loop if you can: the Bootjack descent beside the creek is the most beautiful part of the day.</p>
+  </div>
+</section>
+
+<!-- ============================ PAGE 4 ============================ -->
+<section class="page">
+  <h2>Practical</h2>
+  <div class="cols">
+    <div>
+      <h3 style="margin-top:0">Getting to the start</h3>
+      <p><b>Mountain Home Inn, 810 Panoramic Highway, Mill Valley.</b> About 35 minutes from San Francisco: Highway 101 north over the Golden Gate, exit “Stinson Beach / Highway 1”, then follow signs for Mount Tamalpais onto Panoramic Highway. The public car park (free at the time of writing) is on the left, opposite the Inn. It is small and fills early on fine weekends: arrive before 9:00, or come on a weekday.</p>
+      <p><b>Without a car:</b> Marin Transit route 61 (the West Marin Stagecoach) stops at the Inn, with a handful of trips a day from Marin City and Mill Valley. Check marintransit.org/routes/61.</p>
+      <h3>When to go</h3>
+      <p>Any time of year. Muir Woods is open from 8:00 until about sunset (17:00 in winter, as late as 20:00 in summer), and Mount Tamalpais State Park closes at sunset too. <b>In winter start by 11:00 at the latest</b>; 9:00 is ideal, and the grove is at its quietest before 10:00. Fog is common and suits the redwoods. November to March is the rainy season: expect mud, a louder creek, and from December perhaps spawning salmon in it.</p>
+      <h3>Fees</h3>
+      <p>Walking in is allowed, and no parking reservation is needed if you do not park at Muir Woods. The <b>entrance fee still applies</b>: US$15 per person aged 16 and over, payable at the visitor centre (point 6 detour). A US national-parks pass covers it.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0">Bring</h3>
+      <ul>
+        <li>1 litre of water each. Taps at the trailhead and the Muir Woods visitor centre; nothing in between.</li>
+        <li>Shoes with grip, and a warm layer: the canyon floor can be 8–10 °C cooler than the ridge.</li>
+        <li>The route downloaded for offline use, and a payment card.</li>
+        <li>A snack for Van Wyck Meadow. Note that picnicking is not allowed inside Muir Woods itself.</li>
+      </ul>
+      <h3>Good to know</h3>
+      <ul>
+        <li><b>No mobile signal</b> in Muir Woods or most of the canyon.</li>
+        <li>Toilets: at the trailhead and at the visitor centre.</li>
+        <li>No dogs, bikes or drones on these trails. Stay on the path — the redwood roots are shallow.</li>
+        <li><b>Poison oak</b> grows beside the trails: a shrub with glossy leaves in threes, red in autumn. Touching it gives an itchy rash a day later. Just do not brush against the greenery.</li>
+        <li>Check for ticks afterwards. Rattlesnakes and mountain lions live here but are very rarely seen.</li>
+        <li>Car break-ins happen at trailheads. Leave nothing visible in the car — not even a jacket.</li>
+        <li>Emergency: 911. Park rangers: +1 415 388 2070.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+  <h2>Afterwards: where to eat</h2>
+  <p><b>At the finish — Mountain Home Inn.</b> The whole point of ending here: a wooden deck on the ridge looking over Mill Valley, the bay and, on a clear day, the East Bay hills. Hikers have been stopping here for over a century. Food is casual (one recent report says counter service rather than waiters) and opening hours vary by season, so check before you count on lunch: +1 415 381 9000, mtnhomeinn.com. Thursday is “locals night”, 17:00–20:00, with live music.</p>
+  <p><b>Down in Mill Valley</b>, 10–15 minutes’ drive back the way you came, a small town in a redwood canyon with a walkable centre around Throckmorton Avenue and Miller Avenue:</p>
+  <table class="food">
+    <tr><th>Place</th><th>Kind</th><th>Good for</th></tr>
+    <tr><td>Sol Food</td><td>Puerto Rican, casual</td><td>The best post-hike plate in town: garlicky chicken, plantains, rice and beans. Order at the counter; open through the afternoon into the evening.</td></tr>
+    <tr><td>Joe’s Taco Lounge</td><td>Mexican, casual</td><td>Fish and carnitas tacos, cold beer, a wall of hot sauces. Lunch or early dinner.</td></tr>
+    <tr><td>Le Marais Bakery</td><td>French bakery-café</td><td>Coffee and very good pastry if you finish mid-afternoon. Closes around 16:00.</td></tr>
+    <tr><td>Kitchen Sunnyside</td><td>Brunch</td><td>A late breakfast before or after a morning start. Closes mid-afternoon.</td></tr>
+    <tr><td>Bungalow 44</td><td>Californian, bar</td><td>Lively dinner downtown; good cocktails, something for everyone.</td></tr>
+    <tr><td>Piazza D’Angelo</td><td>Italian</td><td>House-made pasta in the centre of town; relaxed, a local institution.</td></tr>
+    <tr><td>Buckeye Roadhouse</td><td>American classic</td><td>The celebratory dinner: a 1937 roadhouse by the Highway 101 junction, known for ribs and steaks. Book ahead; dinner only on weekdays.</td></tr>
+    <tr><td>Piatti</td><td>Italian</td><td>Dinner with a view over the water at the edge of town.</td></tr>
+  </table>
+  <p class="small" style="margin-top:2.5mm">Restaurant details were checked in November 2026 against current listings, but hours change: look each one up on the day. Trail and park information from the US National Park Service and California State Parks, November 2026; no closures affected this route at the time of writing.</p>
+</section>
+
+</body>
+</html>
