@@ -1,10 +1,14 @@
-"""Search Wikimedia Commons for freely licensed photos. usage: commons_search.py "query" [n]
-Prints title | size | license | author | thumb url (for picking images to add to a guide's PHOTOS list)."""
-import sys,json,urllib.request,urllib.parse,re
-q=sys.argv[1];n=int(sys.argv[2]) if len(sys.argv)>2 else 8
-u='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(dict(action='query',format='json',generator='search',gsrsearch=q+' filetype:bitmap',gsrnamespace=6,gsrlimit=n,prop='imageinfo',iiprop='url|size|extmetadata',iiurlwidth=1400))
-r=json.load(urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'hike-guide-script/1.0'}),timeout=60))
-for p in sorted(r.get('query',{}).get('pages',{}).values(),key=lambda p:p.get('index',0)):
-    ii=p['imageinfo'][0];m=ii.get('extmetadata',{})
-    g=lambda k:re.sub('<[^>]+>','',m.get(k,{}).get('value','')).strip()[:60]
-    print('%s | %dx%d | %s | %s'%(p['title'],ii['width'],ii['height'],g('LicenseShortName'),g('Artist')))
+"""Search Wikimedia Commons for freely licensed photos, to pick images for a guide's PHOTOS config.
+usage: commons_search.py "query one" "query two" ...   (prints title | size | licence | author; pauses between queries)"""
+import sys,json,time,urllib.request,urllib.parse,re
+UA={'User-Agent':'hike-guide-builder/1.0 (personal, low volume)'}
+for q in sys.argv[1:]:
+    print('##',q)
+    u='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(dict(action='query',format='json',generator='search',gsrsearch=q+' filetype:bitmap',gsrnamespace=6,gsrlimit=8,prop='imageinfo',iiprop='size|extmetadata'))
+    try:r=json.load(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60))
+    except Exception as e:print('  failed:',e);time.sleep(20);continue
+    for p in sorted(r.get('query',{}).get('pages',{}).values(),key=lambda p:p.get('index',0)):
+        ii=p['imageinfo'][0];m=ii.get('extmetadata',{})
+        g=lambda k:re.sub('<[^>]+>','',m.get(k,{}).get('value','')).strip()[:40]
+        print('  %s | %dx%d | %s | %s'%(p['title'][:150],ii['width'],ii['height'],g('LicenseShortName'),g('Artist')))
+    time.sleep(4)

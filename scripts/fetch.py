@@ -1,12 +1,13 @@
 """Download everything a guide needs from the network (cached on disk afterwards).
-usage: fetch.py <slug> [osm] [tiles] [access]     (no step names = all three)
+usage: fetch.py <slug> [osm] [tiles] [access] [photos]     (no step names = all)
   osm    -> data/<slug>/osm.json            OpenStreetMap trails (Overpass)
   tiles  -> data/<slug>/basemap.png|json    USGS Topo tiles for the hike map (+ access-basemap for the driving map)
-  access -> data/<slug>/access-route.json   driving route (public OSRM server)"""
+  access -> data/<slug>/access-route.json   driving route (public OSRM server)
+  photos -> data/<slug>/photos/<key>.jpg + photos.json   Wikimedia Commons images named in config PHOTOS"""
 import sys,os,json,math,time,urllib.request,urllib.parse
 from hikelib import load_config,slug_arg,ROOT
-C=load_config(slug_arg());steps=sys.argv[2:] or ['osm','tiles','access']
-UA={'User-Agent':'trail-map-script/1.0'}
+C=load_config(slug_arg());steps=sys.argv[2:] or ['osm','tiles','access','photos']
+UA={'User-Agent':'hike-guide-builder/1.0 (personal, low volume)'}
 def get(url,data=None,timeout=120):
     return urllib.request.urlopen(urllib.request.Request(url,data=data,headers=UA),timeout=timeout).read()
 def osm():
@@ -47,3 +48,21 @@ if 'osm' in steps:osm()
 if 'tiles' in steps:
     tiles('basemap',C.TILES['z'],C.TILES['bbox']);tiles('access-basemap',C.ACCESS['z'],C.ACCESS['bbox'])
 if 'access' in steps:access()
+def photos():
+    import re
+    P=getattr(C,'PHOTOS',{});os.makedirs(C.DATA+'/photos',exist_ok=True);mf=C.DATA+'/photos.json'
+    meta=json.load(open(mf)) if os.path.exists(mf) else {}
+    for k,c in P.items():
+        f='%s/photos/%s.jpg'%(C.DATA,k)
+        if os.path.exists(f) and meta.get(k,{}).get('file')==c['file']:continue
+        u='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(dict(action='query',format='json',titles=c['file'],prop='imageinfo',iiprop='url|extmetadata',iiurlwidth=1280))
+        ii=list(json.loads(get(u))['query']['pages'].values())[0]['imageinfo'][0];m=ii['extmetadata']
+        g=lambda x:re.sub('<[^>]+>','',m.get(x,{}).get('value','')).strip()
+        for attempt in range(5):
+            try:time.sleep(4);b=get(ii['thumburl']);break
+            except Exception as e:print('  retry',k,e);time.sleep(30*(attempt+1))
+        else:print('  gave up on',k);continue
+        open(f,'wb').write(b)
+        meta[k]=dict(file=c['file'],artist=g('Artist'),license=g('LicenseShortName'),page=ii['descriptionurl'])
+        json.dump(meta,open(mf,'w'),indent=1);print('photo',k,meta[k]['license'],meta[k]['artist'][:40]);time.sleep(3)
+if 'photos' in steps:photos()

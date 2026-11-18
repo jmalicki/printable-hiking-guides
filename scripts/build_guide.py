@@ -116,7 +116,7 @@ def photo(m):
         l,t,r,b=c['crop'];im=im.crop((int(l*im.width),int(t*im.height),int(r*im.width),int(b*im.height)))
     if im.width>1300:im=im.resize((1300,int(im.height*1300/im.width)))
     return '<figure class="photo %s"><img src="data:image/jpeg;base64,%s"><figcaption>%s</figcaption></figure>'%(c.get('cls',''),jpeg_b64(im,80),c['caption'])
-credits=' · '.join('%s: %s, %s'%(PH_[k].get('short',k),meta[k]['artist'],meta[k]['license']) for k in PH_ if k in meta)
+credits=' · '.join('%s: %s, %s'%(PH_[k].get('short',k),meta[k]['artist'].split(' from ')[0],meta[k]['license']) for k in PH_ if k in meta)
 html=open(C.DIR+'/template.html').read().replace('{{CSS}}',open(ROOT+'/guides/shared.css').read())
 html=html.replace('{{MAP}}',MAP).replace('{{PROFILE}}',PROFILE).replace('{{ACCESS}}',ACCESS).replace('{{PHOTO_CREDITS}}',credits)
 html=re.sub(r'\{\{PHOTO:(\w+)\}\}',photo,html)
