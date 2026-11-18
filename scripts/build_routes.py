@@ -10,9 +10,10 @@ cvb=nearest((37.8937516,-122.5741258),{'Canopy View Trail'})
 vc=nearest((37.8927962,-122.5724843),{'Redwood Creek Trail','Bohemian Grove Trail','(footway)'})
 J=dict(start=start,t80=313621042,vw=511981002,bj=261758361,fc=261758332,lostfc=361153027,
        lostcv=354582989,cvtop=361152366,cvb=cvb,vc=vc)
+# Direction: clockwise. Down Canopy View (even grade), up Bootjack (steps are kinder to climb than descend).
 ROUTES={
- 'main':  ['start','t80','vw','bj','fc','cvb','lostcv','cvtop','start'],
- 'short': ['start','cvtop','lostcv','lostfc','fc','cvb','lostcv','cvtop','start'],
+ 'main':  ['start','cvtop','lostcv','cvb','fc','bj','vw','t80','start'],
+ 'short': ['start','cvtop','lostcv','cvb','fc','lostfc','lostcv','cvtop','start'],
  'vc_spur':['cvb','vc'],
 }
 def build(stops):
@@ -52,8 +53,8 @@ for name,stops in ROUTES.items():
 json.dump(out,open('data/routes.json','w'))
 json.dump({k:pos[v] for k,v in J.items()},open('data/junctions.json','w'),indent=1)
 
-TITLES={'main':'Mountain Home to Muir Woods - Bootjack descent, Canopy View return',
-        'short':'Mountain Home to Muir Woods - short version via Lost Trail and Fern Creek'}
+TITLES={'main':'Mountain Home to Muir Woods - down Canopy View, back up Bootjack and Troop 80',
+        'short':'Mountain Home to Muir Woods - short version, back up Fern Creek and Lost Trail'}
 for name in('main','short'):
     r=out[name]
     with open('out/muir-woods-%s.gpx'%name,'w') as f:

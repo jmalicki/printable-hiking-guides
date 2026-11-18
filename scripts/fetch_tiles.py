@@ -2,8 +2,11 @@
 Writes data/basemap.json with the Web-Mercator pixel origin so the map script can project onto it."""
 import math,os,json,urllib.request,io,sys
 from PIL import Image
-Z=16
+# usage: fetch_tiles.py [name Z S W N E]   (default: the hike basemap)
+NAME='basemap';Z=16
 S,W,N,E=37.8895,-122.6025,37.9160,-122.5670
+if len(sys.argv)>1:
+    NAME=sys.argv[1];Z=int(sys.argv[2]);S,W,N,E=map(float,sys.argv[3:7])
 def tx(lon):return (lon+180)/360*2**Z
 def ty(lat):
     r=math.radians(lat);return (1-math.log(math.tan(r)+1/math.cos(r))/math.pi)/2*2**Z
@@ -18,6 +21,6 @@ for x in range(x0,x1+1):
             req=urllib.request.Request(u,headers={'User-Agent':'trail-map-script/1.0'})
             open(f,'wb').write(urllib.request.urlopen(req,timeout=60).read())
         img.paste(Image.open(f).convert('RGB'),((x-x0)*256,(y-y0)*256))
-img.save('data/basemap.png')
-json.dump(dict(z=Z,x0=x0,y0=y0,w=img.size[0],h=img.size[1],bbox=[S,W,N,E]),open('data/basemap.json','w'))
+img.save('data/%s.png'%NAME)
+json.dump(dict(z=Z,x0=x0,y0=y0,w=img.size[0],h=img.size[1],bbox=[S,W,N,E]),open('data/%s.json'%NAME,'w'))
 print(img.size,(x1-x0+1)*(y1-y0+1),'tiles')

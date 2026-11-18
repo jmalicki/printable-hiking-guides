@@ -10,5 +10,5 @@ guide: .venv
 pdf: guide
 	sh scripts/make_pdf.sh
 refresh: .venv
-	$(PY) scripts/fetch_osm.py && $(PY) scripts/build_routes.py && $(PY) scripts/fetch_tiles.py && $(MAKE) pdf
+	$(PY) scripts/fetch_osm.py && $(PY) scripts/build_routes.py && $(PY) scripts/fetch_tiles.py && $(PY) scripts/fetch_access.py && $(PY) scripts/fetch_tiles.py access-basemap 14 37.795 -122.615 37.928 -122.455 && $(MAKE) pdf
 .PHONY: all routes guide pdf refresh
