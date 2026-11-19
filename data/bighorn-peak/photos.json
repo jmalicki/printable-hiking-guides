@@ -112,5 +112,29 @@
   "artist": "Jacob W. Frank",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Marten_in_a_tree_(99f5cfa2-054b-4e09-a448-64565f944dd2).jpg"
+ },
+ "elk": {
+  "file": "File:Bull elk bugling on a frosty morning in Canyon area (32060852554).jpg",
+  "artist": "Yellowstone National Park",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Bull_elk_bugling_on_a_frosty_morning_in_Canyon_area_(32060852554).jpg"
+ },
+ "dusky": {
+  "file": "File:Dusky grouse (14952432139).jpg",
+  "artist": "Yellowstone National Park from Yellowstone NP, USA",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Dusky_grouse_(14952432139).jpg"
+ },
+ "ruffed": {
+  "file": "File:Ruffed grouse (15116108746).jpg",
+  "artist": "Yellowstone National Park from Yellowstone NP, USA",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Ruffed_grouse_(15116108746).jpg"
+ },
+ "track": {
+  "file": "File:Grizzly bear track (15242966449).jpg",
+  "artist": "Yellowstone National Park from Yellowstone NP, USA",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Grizzly_bear_track_(15242966449).jpg"
  }
 }

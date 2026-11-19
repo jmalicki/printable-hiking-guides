@@ -328,3 +328,20 @@ front. They also asked that the smaller animals get named, not only bears and mo
 It need not be a separate panel per group; mentioning the species is enough. Do not be cagey about it: the owner had a "what I could not place" disclaimer (no source names these
 animals in these canyons; locations inferred from habitat) removed. Saying where each animal lives by
 habitat is fine without a caveat. Still note in the caption when a photo was not taken in the park.
+
+**Each wildlife page is built from what is seen on that trail, not from the last guide's list.** The first
+Bighorn Peak page reused the Paintbrush–Cascade rows (pika, marmot, weasels, marten each with a photo) and
+the owner, who has hiked it, sent it back: those animals are everywhere in the Teton canyons and scarce
+here, while what this trail has is elk bugling, a lot of bears, and grouse. Before choosing rows:
+
+- Run `scripts/inat_counts.py <slug>` (iNaturalist records inside the guide's `OSM_BBOX`; add a pad such as
+  `0.1` if the box is thin). At Bighorn Peak it would have shown moose, bears, elk and two kinds of grouse,
+  and no pika, weasel, marten or sheep. Counts are small and skewed towards animals near roads, so read
+  them as a ranking, not a census.
+- Tally what dated first-hand trip reports say they saw, heard or found sign of. If four reports of a
+  trail mention no sheep, the page must not promise sheep.
+- A photo row goes to an animal with records or reports on this trail. Animals placed only by habitat
+  ("lives in talus", "found in conifer forest") share one short row, which says they are thinly spread
+  here. Birds count: check them too.
+- Lead with what the hiker is most likely to meet, see sign of, or hear, and say which of those it is.
+- Ask the owner what they saw if they have hiked it.
