@@ -3,11 +3,7 @@
 set -e
 cd "$(dirname "$0")/.."
 SLUG="$1"; set -- $(.venv/bin/python -c "import sys;sys.path.insert(0,'scripts');from hikelib import load_config;c=load_config('$SLUG');print(c.PDF,c.HTML)"); PDF="$1"; HTML="$2"
-if [ "${PDF_ENGINE:-chrome}" = mupdf ]; then
-  .venv/bin/python scripts/print_with_mupdf.py "out/$SLUG/$HTML" "out/$SLUG/$PDF"
-else
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="$PWD/out/$SLUG/$PDF" "file://$PWD/out/$SLUG/$HTML" 2>/dev/null
-fi
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="$PWD/out/$SLUG/$PDF" "file://$PWD/out/$SLUG/$HTML" 2>/dev/null
 .venv/bin/python - "$SLUG" "$PDF" "$HTML" <<'PY'
 import pymupdf,glob,os,sys
 o='out/'+sys.argv[1]

@@ -17,7 +17,6 @@ Style, audience, required sections and working method for writing a new guide ar
 - `make` — rebuild every PDF from cached data (no network)
 - `make UNITS=metric PAPER=a4` — the metric A4 variant, written as `<name>-metric-a4.pdf` (defaults: `UNITS=imperial PAPER=letter`). Templates are written in metric and converted at build time; `{{u:metric text|imperial text}}` overrides the conversion
 - `make GUIDE=west-point` — one guide
-- `make GUIDE=four-lakes PDF_ENGINE=mupdf` — render the Four Lakes guide without launching Chrome
 - `make routes-west-point` — recompute a guide's route + GPX from cached trail data
 - `make refresh GUIDE=west-point` — re-download trails, basemaps, driving route and photos, then rebuild
 

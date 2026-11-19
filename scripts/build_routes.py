@@ -25,23 +25,6 @@ def build(stops):
         marks.setdefault(b if b not in marks else b+'_end',d)
     return coords,cum,marks,off,seq
 def elevations(pts):
-    if getattr(C, 'ELEVATION_RASTER', False):
-        from PIL import Image
-        with open(C.DATA + '/elevation.json') as source:
-            grid = json.load(source)
-        with Image.open(C.DATA + '/elevation.png') as terrain:
-            heights = []
-            for lat, lon in pts:
-                x = (lon - grid['west']) * grid['samples_per_degree']
-                y = (grid['north'] - lat) * grid['samples_per_degree']
-                if not (0 <= x < terrain.width - 1 and 0 <= y < terrain.height - 1):
-                    raise ValueError(f'Track outside elevation raster at {lat}, {lon}')
-                i, j = int(x), int(y)
-                fx, fy = x - i, y - j
-                top = (1-fx)*terrain.getpixel((i,j)) + fx*terrain.getpixel((i+1,j))
-                bottom = (1-fx)*terrain.getpixel((i,j+1)) + fx*terrain.getpixel((i+1,j+1))
-                heights.append((1-fy)*top + fy*bottom)
-        return heights
     f=os.path.join(ROOT,'data','elev-cache.json');cache=json.load(open(f)) if os.path.exists(f) else {}
     key=lambda p:'%.5f,%.5f'%p;need=[p for p in pts if key(p) not in cache]
     for i in range(0,len(need),100):

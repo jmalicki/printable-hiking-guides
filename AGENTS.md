@@ -116,7 +116,7 @@ rebuilt. Each point below is something that was wrong in it.
 - **Check the facts the draft inherited.** Re-read the cited pages and drop or soften what they do not
   support; note conflicts (three sources gave three heights for one pass).
 - **Leave shared scripts tidy.** Extend them generically and say what was added; do not leave an unused
-  parallel code path behind.
+  parallel code path behind. (The draft's MuPDF renderer and per-guide raster elevation option were removed.)
 
 ## Photos
 
