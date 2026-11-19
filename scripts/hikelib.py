@@ -35,7 +35,7 @@ US_WORDS={'centre':'center','centres':'centers','metre':'meter','metres':'meters
  'autumn':'fall','rubbish':'trash','car park':'parking lot','car parks':'parking lots','mobile signal':'cell signal','taps':'faucets',
  'number-plate':'license-plate','timetable':'schedule','roadworks':'road work','fuel':'gas','shops':'stores','shop':'store',
  'pitches':'tent sites','waterproof':'rain jacket','headtorch':'headlamp','head torch':'headlamp','recognise':'recognize','specialise':'specialize'}
-_US=re.compile(r'(?<![\w-])('+'|'.join(sorted(map(re.escape,US_WORDS),key=len,reverse=True))+r')(?![\w-])',re.I)
+_US=re.compile(r'(?<!\w)('+'|'.join(sorted(map(re.escape,US_WORDS),key=len,reverse=True))+r')(?!\w)',re.I)
 def _us(g):
     w=g.group(1);r=US_WORDS[w.lower()];return r.capitalize() if w[0].isupper() else r
 def american(part):return _US.sub(_us,part)
