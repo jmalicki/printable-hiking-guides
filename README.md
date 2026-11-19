@@ -43,31 +43,60 @@ A guide is meant to get rained on. Checked in November 2026; shop offerings and 
 - Print at **100% / "actual size"**, not "fit to page", in colour, double-sided. The maps have a drawn scale bar,
   which stays correct at any size, but shrinking makes the map labels harder to read.
 
+**Best: a plastic sheet from a print shop.** This is the most water-resistant way to print a guide you can
+still fold and put in a pocket. The sheet is polyester with no wood fibre in it, so it has nothing to soak up
+water: it comes out of a wet pocket or a puddle as it went in, and it is very hard to tear. Toner is fused onto the
+surface and stays there when wet.
+
+- **FedEx Office** (formerly Kinko's) sells it under the misleading name **"water-resistant paper"**. It is a
+  7.7 mil synthetic sheet, tear-resistant and grease-proof, in Letter and 11 × 17 in, printed in full colour on
+  both sides. FedEx lists field guides and field manuals among its uses.
+  - At the counter: "full colour, double-sided, letter size, on your water-resistant synthetic paper, 7.7 mil."
+  - Online: *Copies & Custom Documents*, upload the PDF, and choose the water-resistant stock.
+  - Phone the shop first to check it has the stock that day. The self-service machines take standard paper
+    only, and FedEx does not let customers load their own.
+  - FedEx describes it as good for rain, spills and quick dips, and stops short of calling it waterproof for
+    long soaking. It recommends scoring the sheet before folding, so ask them to score it or fold it once,
+    firmly, where you want the crease.
+  - Price: ask. The only figure I found is a government contract rate of $0.92 a double-sided colour sheet
+    (May 2026), so expect a few dollars for a whole guide.
+- **Why it beats coated paper.** "Water-resistant" and "all-weather" papers such as standard Rite in the Rain
+  are wood-pulp paper with a coating. They shed rain well, and the maker's own comparison sheet separates them
+  from its synthetic stock, which it rates for use under water. Coated paper can still tear, and a hiker in
+  coastal Alaska reports that it wets through in the end where the synthetic absorbs nothing.
+- **What people who work in the wet say.**
+  - Philip Tschersich, hiking in coastal Alaska, wrote on Backpacking Light that the synthetic sheet takes up
+    no water and that he would not go back to a zip bag
+    ([2015](https://backpackinglight.com/forums/topic/104121/)).
+  - John Godino of Alpinesavvy calls a plastic sheet close to tear-proof and says it takes colour laser
+    printing very well ([Alpinesavvy](https://www.alpinesavvy.com/blog/use-waterproof-paper-for-maps)).
+  - Orienteering New Zealand reported that maps on a synthetic sheet kept their ink at the folds through a wet
+    four-hour event ([2020](https://www.orienteering.org.nz/blog/waterproof-paper-discussion-june-2020/)).
+  - Orienteering Australia notes that putting paper maps in bags adds cost and work and makes them harder to
+    read ([Orienteering Australia](https://orienteering.asn.au/printing-orienteering-maps/)).
+  - Commercial trail maps are printed this way: Green Trails moved its maps onto a waterproof, tear-resistant
+    synthetic ([Washington Trails Association, 2014](https://www.wta.org/news/signpost/reliable-green-trails-maps-get-a-refresh)).
+- **The other view.** Andrew Skurka prints maps on ordinary paper at FedEx Office, carries them in a gallon
+  zip bag, and judged waterproof stock not worth the extra cost for his mostly dry trips
+  ([andrewskurka.com](https://andrewskurka.com/printing-exporting-topographical-maps-from-digital-sources/)).
+  For a dry-season day hike that is a fair call.
+- **Lamination** seals a page completely, which makes it the one thing more waterproof than the plastic
+  sheet, but it turns each page into a stiff card that should stay flat. It suits a single page such as the
+  route map.
+- **By post:** Doxzoo prints single copies from a PDF on synthetic sheets in both Letter and A4.
+
 **Cheapest: plain paper in a bag.** Print on ordinary paper and carry it folded in a gallon zip-top freezer bag,
 map page outwards. Laser prints cope with damp better than inkjet prints: most inkjet colour inks are dye-based
 and run when wet. Paper of any kind tears once it is soggy.
 
-**At a print shop: ask for water-resistant paper, not vinyl.**
-- **FedEx Office** (formerly Kinko's) sells exactly this, and calls it **"water-resistant paper"**: a thin
-  synthetic (plastic) sheet, 8.5 × 11 in, printable in full colour on both sides.
-  - Online: *Copies & Custom Documents*, upload the PDF, and choose the water-resistant stock under the specialty
-    papers, full colour, double-sided.
-  - At the counter: "water-resistant synthetic paper, letter size, full colour, double-sided".
-  - It is Letter only, so use the Letter edition. FedEx says it is not fully waterproof: fine in rain, not meant
-    to sit under water. It cannot be laminated, and FedEx suggests scoring it before folding. The self-service
-    machines appear to take standard paper only, so order online or at the counter.
-- **Vinyl** is sign material sold by the square foot. It is the wrong product for a few letter-size pages.
-- **Lamination** works but turns each sheet into a stiff card that cannot be folded. It suits one page, such as
-  the route map. Staples lists letter-size pouches from about $2 a sheet. Neither Staples nor The UPS Store lists a
-  synthetic paper for documents.
-- **By post:** Doxzoo prints single copies from a PDF on synthetic sheets in both Letter and A4.
-
 **At home**
-- **Laser printer:** Rite in the Rain all-weather printer paper (Letter and A4; a treated paper) or its DuraCopy
-  sheets (Letter; a true synthetic). Both print on both sides. The maker says neither is for inkjet printers.
-- **Inkjet printer:** most waterproof papers do not take ordinary inkjet ink. Papers such as PuffinPaper and
-  iGage Weatherproof are sold for *pigment*-ink inkjets (and lasers), not dye-ink ones. If you are not sure which
-  you have, print on plain paper and bag it, or let a shop print it.
+- **Laser printer:** buy the same kind of synthetic sheet (Revlar, iGage Weatherproof, TerraSlate) and print
+  on both sides. Check that your printer's manual allows synthetic or label stock: a few fusers run too hot
+  or too cool for it. Rite in the Rain all-weather printer paper (Letter and A4) is the coated-paper
+  alternative, cheaper and less durable.
+- **Inkjet printer:** most waterproof stocks are made for toner and will not hold ordinary inkjet ink. Papers
+  such as PuffinPaper and iGage Weatherproof are sold for *pigment*-ink inkjets (and lasers); dye inks run. If
+  you are not sure which you have, print on plain paper and bag it, or let a shop print it.
 
 ## Building and editing
 
