@@ -5,7 +5,7 @@ Printable guides to hikes within about an hour and a half of San Francisco, shor
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
 | [The balcony of Mount Tam](#the-balcony-of-mount-tam-mount-tamalpais-state-park) (Mount Tamalpais State Park) | 4.7 mi | ≈ 800 ft | 2½–3 h | Easy–moderate |
-| [An easy hike through the wildflowers: Russian Ridge](#an-easy-hike-through-the-wildflowers-russian-ridge-russian-ridge-open-space-preserve) (Russian Ridge Open Space Preserve) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
+| [Russian Ridge in bloom](#russian-ridge-in-bloom-russian-ridge-open-space-preserve) (Russian Ridge Open Space Preserve) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
 | [Muir Woods, by the back door](#muir-woods-by-the-back-door-mount-tamalpais-state-park-and-muir-woods-national-monument) (Mount Tamalpais State Park and Muir Woods National Monument) | 5.8 mi | ≈ 1,150 ft | 3–3½ h | Moderate |
 | [The ghost towns of Mine Hill](#the-ghost-towns-of-mine-hill-almaden-quicksilver-county-park) (Almaden Quicksilver County Park) | 6.0 mi | ≈ 1,300 ft | 3–3½ h | Moderate |
 | [The redwoods that came back](#the-redwoods-that-came-back-purisima-creek-redwoods-preserve) (Purisima Creek Redwoods Preserve) | 9.3 mi | ≈ 2,260 ft | 5–6 h | Strenuous |
@@ -25,15 +25,15 @@ A loop along the sunny south face of the mountain, high above the fog: out on a 
 
 [The guide (PDF)](out/west-point/mount-tam-west-point-loop.pdf) · [GPX](out/west-point/west-point-main.gpx)
 
-## An easy hike through the wildflowers: Russian Ridge (Russian Ridge Open Space Preserve)
+## Russian Ridge in bloom (Russian Ridge Open Space Preserve)
 
 *Russian Ridge Open Space Preserve, Santa Cruz Mountains, California · a half-day hike*
 
-![An easy hike through the wildflowers: Russian Ridge](data/russian-ridge/photos/hero.jpg)
+![Russian Ridge in bloom](data/russian-ridge/photos/hero.jpg)
 
 <sub>Photo: Steve Jurvetson, CC BY 2.0 ([source](https://commons.wikimedia.org/wiki/File:Russian_Ridge-Wildflowers.jpg))</sub>
 
-A gentle loop along a grassy ridge that turns orange and blue with flowers every April, with the Pacific on one side of you and the bay on the other. After the first winter rain, orange newts walk the same trail, and the way home is through a grove of oaks older than the state. There is no shade on top, and the wind finds you.
+Every April the open crest of the mountains above Silicon Valley turns orange with poppies and blue with lupine, and an easy loop takes you straight through it, with the Pacific on one side and the whole bay on the other. Hawks hang at eye level, newts cross the trail after rain, and the way home is through a grove of oaks older than the state. The price is wind, and no shade.
 
 **5.0 mi** loop · **≈ 1,000 ft** total climb & descent · **2½–3 h** · **Easy–moderate**: rolling, never steep for long
 
