@@ -44,7 +44,7 @@ label on every road, including paved ones.
 A fit visitor who does not know the area: someone who runs or cycles, mostly on flat ground, and is not a
 regular mountain walker. Write for that general reader, not for one person or one country. So:
 
-- Do not name the reader's country, city or home hills (no Madrid, Guadarrama, Vaalserberg, Pyrenees).
+- Do not name a reader's country, city or home hills, or compare the hike to places only some readers know.
   Compare effort to things anyone can picture: a brisk walk on the flat, a tall building, "a multi-day walk
   carrying your own gear".
 - Still explain what a visitor would not know: fire roads, trailhead parking rules, wilderness permits,
