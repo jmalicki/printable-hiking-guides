@@ -1,4 +1,4 @@
-@page { size: A4; margin: 11mm 14mm 10mm; }
+/*PAGE*/
 :root { --ink:#1b2a22; --green:#2f6b4f; --red:#c8102e; --blue:#1d4ed8; --paper:#fbfaf6; --rule:#d9ddd3; --soft:#eef1ea; }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }

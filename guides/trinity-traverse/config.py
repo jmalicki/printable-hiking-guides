@@ -39,7 +39,7 @@ DETAIL=dict(bbox=(40.9725,-123.0385,41.0085,-122.9925),overlays=[],markers=MK,ic
   labels=[dict(at='ucl',dx=30,dy=2,text='Upper Canyon Creek Lake',size=20,weight=700),
           dict(at='ucl',dx=30,dy=24,text='trail ends',size=17),
           dict(at='llake',dx=30,dy=8,text='L Lake',size=20,weight=700),
-          dict(at='col',dx=30,dy=4,text='Kalmia Pass, 2,260 m',size=20,weight=700),
+          dict(at='col',dx=30,dy=4,text='Kalmia Pass, {{u:2,260 m|7,420 ft}}',size=20,weight=700),
           dict(at='mirror',dx=-30,dy=8,text='Mirror Lake',anchor='end',size=20,weight=700),
           dict(at='sapp',dx=0,dy=-34,text='Sapphire Lake',anchor='middle',size=20,weight=700),
           dict(at='emer',dx=-30,dy=-14,text='Emerald Lake',anchor='end',size=20,weight=700),

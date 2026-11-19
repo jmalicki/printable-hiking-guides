@@ -1,20 +1,26 @@
 """Build out/<slug>/guide.html (self-contained) from a guide's config, data and template.
 usage: build_guide.py <slug>
-Template placeholders: {{CSS}} {{MAP}} {{DETAIL}} {{PROFILE}} {{ACCESS}} {{PHOTO:key}} {{PHOTO_CREDITS}}"""
+Options (environment): UNITS=imperial|metric, PAPER=letter|a4. Write the template in metric; see hikelib.units.
+Template placeholders: {{u:metric text|imperial text}} {{CSS}} {{MAP}} {{DETAIL}} {{PROFILE}} {{ACCESS}} {{PHOTO:key}} {{PHOTO_CREDITS}}"""
 import json,math,base64,io,bisect,os,re
 from PIL import Image
-from hikelib import load_config,slug_arg,Proj,hav,ROOT
+from hikelib import load_config,slug_arg,Proj,hav,ROOT,UNITS,PAGE_CSS,units
 C=load_config(slug_arg());D=C.DATA
 R=json.load(open(D+'/routes.json'));Jn=json.load(open(D+'/junctions.json'))
 COL=dict(RED='#c8102e',BLUE='#1d4ed8',INK='#1b2a22');RED,BLUE,INK=COL['RED'],COL['BLUE'],COL['INK']
 def jpeg_b64(img,q=88):
     b=io.BytesIO();img.save(b,'JPEG',quality=q);return base64.b64encode(b.getvalue()).decode()
 def text(x,y,t,anchor='start',size=21,weight=600,color='INK',halo=6):
-    return '<text x="%.1f" y="%.1f" text-anchor="%s" style="font-size:%dpx;font-weight:%d;paint-order:stroke;stroke:#fff;stroke-width:%dpx;stroke-linejoin:round;fill:%s">%s</text>'%(x,y,anchor,size,weight,halo,COL.get(color,color),t)
+    return '<text x="%.1f" y="%.1f" text-anchor="%s" style="font-size:%dpx;font-weight:%d;paint-order:stroke;stroke:#fff;stroke-width:%dpx;stroke-linejoin:round;fill:%s">%s</text>'%(x,y,anchor,size,weight,halo,COL.get(color,color),units(t))
 
 # ---------------- hike maps (overview + optional close-up) ----------------
 main=R[C.MAIN]
+def nice(x,choices):return min(choices,key=lambda c:abs(math.log(c/x)))
 def scalebar(metres,label,mpp,Hh,k=1.0):
+    if UNITS=='imperial':                       # nearest round imperial length to the configured metric one
+        mi=metres/1609.344
+        if mi<0.2:f=nice(metres*3.28084,[250,500,1000]);metres,label=f/3.28084,'{:,} ft'.format(f)
+        else:n=nice(mi,[0.25,0.5,1,2,3,5,10,20]);metres,label=n*1609.344,'%g mi'%n
     L=metres/mpp;bx,by=40*k,Hh-46*k
     return ('<rect x="%.0f" y="%.0f" width="%.0f" height="%.0f" rx="8" fill="#fff" fill-opacity=".88"/>'%(bx-18*k,by-48*k,L+36*k,74*k)+
      '<path d="M%.0f %.0f h%.1f M%.0f %.0f v%.0f M%.1f %.0f v%.0f M%.1f %.0f v%.0f" stroke="%s" stroke-width="%.1f" fill="none"/>'%(bx,by,L,bx,by+2,-10*k,bx+L/2,by+2,-10*k,bx+L,by+2,-10*k,INK,3.5*k)+
@@ -76,18 +82,26 @@ def draw_profile(main, PF):
     X=lambda d:ML+(PW-ML-MR)*d/Lm
     Y=lambda e:MT+(PH-MT-MB)*(1-(e-e0)/(e1-e0))
     p=['<svg class="profile" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">'%(PW,PH)]
-    for e in range(e0,e1+1,PF['grid']):
-        p.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#cfd6cf" stroke-width="1.5"/>'%(ML,PW-MR,Y(e),Y(e)))
-        if (e-e0)%PF['label_every']==0:p.append('<text x="%d" y="%.1f" text-anchor="end" class="ax">%d m</text>'%(ML-10,Y(e)+7,e))
-    for k in range(0,int(Lm/1000)+1,PF.get('km_step',1)):
-        p.append('<text x="%.1f" y="%d" text-anchor="middle" class="ax">%d km</text><line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/>'%(X(k*1000),PH-14,k,X(k*1000),X(k*1000),Y(e0),Y(e0)+7,INK))
+    if UNITS=='imperial':
+        FT=3.28084;gf=nice((e1-e0)*FT/6,[100,200,250,500,1000,2000]);f=math.ceil(e0*FT/gf)*gf
+        while f<=e1*FT+1:
+            p.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#cfd6cf" stroke-width="1.5"/><text x="%d" y="%.1f" text-anchor="end" class="ax">%s ft</text>'%(ML,PW-MR,Y(f/FT),Y(f/FT),ML-10,Y(f/FT)+7,'{:,}'.format(f)));f+=gf
+        st=nice(PF.get('km_step',1)*0.621371,[0.5,1,2,5,10]);n=0
+        while n*st*1609.344<=Lm:
+            x=X(n*st*1609.344);p.append('<text x="%.1f" y="%d" text-anchor="middle" class="ax">%g mi</text><line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/>'%(x,PH-14,n*st,x,x,Y(e0),Y(e0)+7,INK));n+=1
+    else:
+        for e in range(e0,e1+1,PF['grid']):
+            p.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#cfd6cf" stroke-width="1.5"/>'%(ML,PW-MR,Y(e),Y(e)))
+            if (e-e0)%PF['label_every']==0:p.append('<text x="%d" y="%.1f" text-anchor="end" class="ax">%d m</text>'%(ML-10,Y(e)+7,e))
+        for k in range(0,int(Lm/1000)+1,PF.get('km_step',1)):
+            p.append('<text x="%.1f" y="%d" text-anchor="middle" class="ax">%d km</text><line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/>'%(X(k*1000),PH-14,k,X(k*1000),X(k*1000),Y(e0),Y(e0)+7,INK))
     for a_,b_ in main.get('offtrail',[]):p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="#c8102e" fill-opacity=".10"/>'%(X(a_),MT,X(b_)-X(a_),PH-MT-MB))
     pp=' '.join('%.1f,%.1f'%(X(d),Y(e)) for d,e in zip(main['cum'],main['ele']))
     p.append('<polygon points="%.1f,%.1f %s %.1f,%.1f" fill="#2f6b4f" fill-opacity=".22"/><polyline points="%s" fill="none" stroke="%s" stroke-width="5" stroke-linejoin="round"/>'%(X(0),Y(e0),pp,X(Lm),Y(e0),pp,RED))
     for k,n,dx in PF['markers']:
         d=main['marks'][k];e=main['ele'][bisect.bisect_left(main['cum'],d)];cx,cy=X(d)+dx,Y(e)-30
         p.append('<line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/><circle cx="%.1f" cy="%.1f" r="15" fill="%s"/><text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:19px;font-weight:700;fill:#fff">%s</text>'%(X(d),cx,Y(e),cy,INK,cx,cy,INK,cx,cy+7,n))
-    for d,e,t in PF['notes']:p.append('<text x="%.1f" y="%.1f" text-anchor="middle" class="note">%s</text>'%(X(d),Y(e),t))
+    for d,e,t in PF['notes']:p.append('<text x="%.1f" y="%.1f" text-anchor="middle" class="note">%s</text>'%(X(d),Y(e),units(t)))
     p.append('</svg>');return ''.join(p)
 PROFILE = draw_profile(main, C.PROFILE)
 
@@ -136,12 +150,12 @@ def photo(m):
     if c.get('crop'):                       # crop = (left,top,right,bottom) as fractions
         l,t,r,b=c['crop'];im=im.crop((int(l*im.width),int(t*im.height),int(r*im.width),int(b*im.height)))
     if im.width>1300:im=im.resize((1300,int(im.height*1300/im.width)))
-    return '<figure class="photo %s"><img src="data:image/jpeg;base64,%s"><figcaption>%s</figcaption></figure>'%(c.get('cls',''),jpeg_b64(im,80),c['caption'])
+    return '<figure class="photo %s"><img src="data:image/jpeg;base64,%s"><figcaption>%s</figcaption></figure>'%(c.get('cls',''),jpeg_b64(im,80),units(c['caption']))
 credits=' · '.join('%s: %s, %s'%(PH_[k].get('short',k),meta[k]['artist'].split(' from ')[0],meta[k]['license']) for k in PH_ if k in meta)
-html=open(C.DIR+'/template.html').read().replace('{{CSS}}',open(ROOT+'/guides/shared.css').read())
+html=units(open(C.DIR+'/template.html').read()).replace('{{CSS}}',open(ROOT+'/guides/shared.css').read().replace('/*PAGE*/',PAGE_CSS))
 html=html.replace('{{MAP}}',MAP).replace('{{DETAIL}}',DETAIL).replace('{{PROFILE}}',PROFILE).replace('{{ACCESS}}',ACCESS).replace('{{PHOTO_CREDITS}}',credits)
 for name, settings in getattr(C, 'PROFILES', {}).items():
     html = html.replace('{{PROFILE:' + name + '}}', draw_profile(R[name], settings))
 html=re.sub(r'\{\{PHOTO:(\w+)\}\}',photo,html)
-open(C.OUT+'/guide.html','w').write(html)
+open(C.OUT+'/'+C.HTML,'w').write(html)
 print('%s: map %dx%d, access %dx%d, html %.1f MB'%(C.SLUG,W,H,AW,AH,len(html)/1e6))

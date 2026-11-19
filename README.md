@@ -1,6 +1,6 @@
 # Hike guides (Mount Tamalpais, Muir Woods, Trinity Alps)
 
-Printable A4 hiking guides with maps, built from scripts. One folder per guide under `guides/`.
+Printable hiking guides with maps (US Letter in feet and miles by default; A4 and metric as a build option), built from scripts. One folder per guide under `guides/`.
 
 | Guide | Folder | PDF |
 |---|---|---|
@@ -15,13 +15,14 @@ Style, audience, required sections and working method for writing a new guide ar
 
 ## Build
 - `make` — rebuild every PDF from cached data (no network)
+- `make UNITS=metric PAPER=a4` — the metric A4 variant, written as `<name>-metric-a4.pdf` (defaults: `UNITS=imperial PAPER=letter`). Templates are written in metric and converted at build time; `{{u:metric text|imperial text}}` overrides the conversion
 - `make GUIDE=west-point` — one guide
 - `make GUIDE=four-lakes PDF_ENGINE=mupdf` — render the Four Lakes guide without launching Chrome
 - `make routes-west-point` — recompute a guide's route + GPX from cached trail data
 - `make refresh GUIDE=west-point` — re-download trails, basemaps, driving route and photos, then rebuild
 
 ## Where to edit
-- **Words**: `guides/<slug>/template.html` (placeholders: `{{MAP}} {{PROFILE}} {{ACCESS}} {{PHOTO:key}} {{PHOTO_CREDITS}}`)
+- **Words**: `guides/<slug>/template.html` (placeholders: `{{u:metric|imperial}} {{MAP}} {{DETAIL}} {{PROFILE:route}} {{PROFILE}} {{ACCESS}} {{PHOTO:key}} {{PHOTO_CREDITS}}`)
 - **Route, map labels, profile notes, driving-map markers, photos**: `guides/<slug>/config.py`
 - **Shared look**: `guides/shared.css`
 - **Finding photos**: `.venv/bin/python scripts/commons_search.py "query"` then add the `File:` title to `PHOTOS` in the config; or a Flickr CC photo by direct URL with `artist`, `license`, `page`

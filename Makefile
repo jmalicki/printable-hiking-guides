@@ -3,6 +3,8 @@ GUIDES=$(notdir $(patsubst %/config.py,%,$(wildcard guides/*/config.py)))
 # make                      rebuild every guide's PDF from cached data (no network)
 # make GUIDE=west-point     just one guide
 # make refresh GUIDE=...    re-download trails, basemaps, driving route, photos, then rebuild
+# make UNITS=metric PAPER=a4   metric figures on A4 (default: UNITS=imperial PAPER=letter); output gets a -metric / -a4 suffix
+export UNITS PAPER
 ifdef GUIDE
 GUIDES=$(GUIDE)
 endif
