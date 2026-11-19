@@ -104,6 +104,31 @@ In roughly this page order (5–6 pages; see the existing templates):
 8. **Sources and photo credits** on the last page, wrapped in `<div class="foot">` so they sit at the
    bottom of the page as footnotes, not directly under the last paragraph (the owner asked for this).
 
+## History woven into the route
+
+When a place has a story (Almaden Quicksilver is the model), the history goes **where the hiker is
+standing**, not in an essay at the back. The owner asked for this, on the pattern of the red and white rock
+in the Four Lakes guide.
+
+- **The step-by-step table carries it.** Each stop says what to do and then what happened on that spot and
+  what is left to see. A red date tag (`<span class="tag when">1866</span>`) opens the stop, so the table
+  reads as a timeline even though the trail does not visit things in date order.
+- **A strip of dated moments** (`<div class="dates">`, six cells) under the map gives the whole story in
+  thirty seconds, so the stops make sense in any order.
+- **One inset** (`.inset`) holds what does not belong to a single spot: why the thing is here (geology),
+  what it was for, who did the work and on what terms, and what it left behind. Be as blunt about the
+  cost (poisoned workers, unequal pay, pollution still in the creek) as about the achievement.
+- **The title and pitch come from the story**, written from the walker's position ("A hundred miles of
+  tunnel under your boots").
+- **Say what remains.** For every site, state what is physically there today (a fenced furnace, a sealed
+  portal, a flagpole), so nobody hikes to a ruin that is only a sign.
+- **History needs sourcing more than anything else in a guide.** Local history pages repeat each other's
+  errors. Give figures only when two sources agree or name the range; put the disagreements in a small
+  note at the foot of the inset; drop superlatives that trace back to a plaque ("richest mine in
+  California"); mark single-source stories as such. Do not add motives or explanations of your own to
+  events (why Lincoln backed down, why the Cornish were hired) unless a source gives them.
+- Use a period photograph if a public-domain one exists, credited with photographer and date.
+
 ## Backpacking guides: water
 
 Any overnight guide has a **Water** section (`.cols.water`), because the reader plans the trip around it.
@@ -240,3 +265,13 @@ rebuilt. Each point below is something that was wrong in it.
 - `make_pdf.sh` assumes Google Chrome at the macOS default path.
 - `fetch.py` skips a photo whose source is unchanged, so replacing a photo means changing its URL or
   deleting the cached file.
+
+## Wildlife
+
+The owner asked for wildlife sidebars (Paintbrush–Cascade is the model, November 2026), on the pattern of
+the history and geology insets. One `.inset` of `.biome3.sm` rows, a photo each: what the animal is, how to
+recognise it, **where on this loop to look** (keyed to the route markers), and the park's distance rules up
+front. They also asked that the smaller animals get named, not only bears and moose: the weasel family
+(short-tailed weasel/stoat, long-tailed weasel, marten, mink, otter, badger, wolverine), marmots, pikas.
+It need not be a separate panel per group; mentioning the species is enough. Say where a location is your
+inference from habitat and not a record, and where a photo was not taken in the park.

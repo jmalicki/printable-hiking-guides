@@ -8,6 +8,8 @@ Printable hiking guides with maps (US Letter in feet and miles by default; A4 an
 | The balcony of Mount Tam (Rock Spring – West Point Inn – Matt Davis – Bootjack) | `guides/west-point` | `out/west-point/mount-tam-west-point-loop.pdf` |
 | Trinity Alps: Canyon Creek Lakes over Kalmia Pass to Sapphire Lake (off-trail traverse) | `guides/trinity-traverse` | `out/trinity-traverse/trinity-alps-canyon-creek-to-sapphire.pdf` |
 | Four lakes around Siligo Peak (Long Canyon and Stoney Ridge entrances) | `guides/four-lakes` | `out/four-lakes/trinity-alps-four-lakes-loop.pdf` |
+| Behind the Grand Teton: Paintbrush Canyon, Paintbrush Divide, Lake Solitude and Cascade Canyon from String Lake | `guides/paintbrush-cascade` | `out/paintbrush-cascade/grand-teton-paintbrush-cascade-loop.pdf` |
+| Almaden Quicksilver: the Mine Hill mining-history loop from the Hacienda entrance | `guides/almaden-quicksilver` | `out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf` |
 
 Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
 

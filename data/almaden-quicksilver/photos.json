@@ -1,0 +1,44 @@
+{
+ "hero": {
+  "file": "File:USA-San Jose-Almaden Quicksilver Park-Rotary Furnace-5.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:USA-San_Jose-Almaden_Quicksilver_Park-Rotary_Furnace-5.jpg"
+ },
+ "camp": {
+  "file": "File:USA-San Jose-Almaden Quicksilver Park-English Camp-3.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:USA-San_Jose-Almaden_Quicksilver_Park-English_Camp-3.jpg"
+ },
+ "sancris": {
+  "file": "File:USA-San Jose-Almaden Quicksilver Park-San Cristobal Mine.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:USA-San_Jose-Almaden_Quicksilver_Park-San_Cristobal_Mine.jpg"
+ },
+ "trestle": {
+  "file": "File:USA-San Jose-Almaden Quicksilver Park-April Tunnel.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:USA-San_Jose-Almaden_Quicksilver_Park-April_Tunnel.jpg"
+ },
+ "valley": {
+  "file": "File:USA-San Jose-Almaden Quicksilver Park-Mine Hill Trail-1.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:USA-San_Jose-Almaden_Quicksilver_Park-Mine_Hill_Trail-1.jpg"
+ },
+ "casa": {
+  "file": "File:Casa Grande 11 (8400595006).jpg",
+  "artist": "Tom Hilton",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Casa_Grande_11_(8400595006).jpg"
+ },
+ "town": {
+  "file": "PLACEHOLDER-640",
+  "artist": "Carleton Watkins, c. 1867",
+  "license": "no known copyright restrictions",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Town_at_the_Mine,_New_Almaden._(6131063220).jpg"
+ }
+}
