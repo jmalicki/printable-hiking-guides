@@ -36,17 +36,20 @@ def tiles(name,z,bbox):
     img.save('%s/%s.png'%(C.DATA,name))
     json.dump(dict(z=z,x0=x0,y0=y0,w=img.size[0],h=img.size[1]),open('%s/%s.json'%(C.DATA,name),'w'))
     print(name,img.size)
-def access():
-    A,B=C.ACCESS['from'],C.ACCESS['to']
+def drive(A,B,out):
     r=json.loads(get('https://router.project-osrm.org/route/v1/driving/%f,%f;%f,%f?overview=full&geometries=geojson&steps=true'%(A[1],A[0],B[1],B[0]),timeout=60))
     rt=r['routes'][0]
     st=[dict(name=s.get('name',''),dist=s['distance'],type=s['maneuver']['type'],mod=s['maneuver'].get('modifier',''),loc=s['maneuver']['location'][::-1]) for s in rt['legs'][0]['steps']]
-    json.dump(dict(coords=[c[::-1] for c in rt['geometry']['coordinates']],length_m=rt['distance'],duration_s=rt['duration'],steps=st),open(C.DATA+'/access-route.json','w'))
-    print('access %.1f km, %.0f min'%(rt['distance']/1000,rt['duration']/60));cum=0
+    json.dump(dict(coords=[c[::-1] for c in rt['geometry']['coordinates']],length_m=rt['distance'],duration_s=rt['duration'],steps=st),open(out,'w'))
+    print('%s %.1f km, %.0f min'%(os.path.basename(out),rt['distance']/1000,rt['duration']/60));cum=0
     for s in st:print('  %5.1f km %-10s %-11s %-26s +%.1f km'%(cum/1000,s['type'],s['mod'],s['name'],s['dist']/1000));cum+=s['dist']
+def access():
+    drive(C.ACCESS['from'],C.ACCESS['to'],C.DATA+'/access-route.json')
+    for i,x in enumerate(C.ACCESS.get('extra',[])):time.sleep(2);drive(x['from'],x['to'],'%s/access-extra-%d.json'%(C.DATA,i))
 if 'osm' in steps:osm()
 if 'tiles' in steps:
     tiles('basemap',C.TILES['z'],C.TILES['bbox']);tiles('access-basemap',C.ACCESS['z'],C.ACCESS['bbox'])
+    if hasattr(C,'DETAIL_TILES'):tiles('detail-basemap',C.DETAIL_TILES['z'],C.DETAIL_TILES['bbox'])
 if 'access' in steps:access()
 def photos():
     import re

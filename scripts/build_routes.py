@@ -1,16 +1,29 @@
 """Compute a guide's routes from its OSM data, sample elevation, write routes.json + GPX.
 usage: build_routes.py <slug>"""
 import json,os,time,urllib.request,bisect
-from hikelib import load_config,slug_arg,Graph,ROOT
+from hikelib import load_config,slug_arg,Graph,ROOT,hav
 C=load_config(slug_arg());G=Graph(C.DATA+'/osm.json')
 J={k:G.resolve(v) for k,v in C.JUNCTIONS.items()}
+for k,v in getattr(C,'POINTS',{}).items():J[k]=-len(J)-1;G.pos[J[k]]=tuple(v)   # free points (lakes, cols) not on a mapped trail
+OFF=json.load(open(C.DATA+'/offtrail.json')) if os.path.exists(C.DATA+'/offtrail.json') else {}
+def leg(a,b):
+    """-> list of ((lat,lon), way name, metres). Off-trail legs come from dem_route.py (key 'a-b' or reversed 'b-a')."""
+    for key,rev in((a+'-'+b,False),(b+'-'+a,True)):
+        if key in OFF:
+            pts=[tuple(p) for p in OFF[key]];pts=pts[::-1] if rev else pts
+            return [(q,'(off-trail)',hav(p,q)) for p,q in zip(pts,pts[1:])]
+    return [(G.pos[n],nm,w) for n,nm,w in G.path(J[a],J[b],getattr(C,'LEG_ALLOW',{}).get((a,b)))]
 def build(stops):
-    nodes=[J[stops[0]]];marks={stops[0]:0.0};d=0.0;cum=[0.0]
+    coords=[G.pos[J[stops[0]]]];marks={stops[0]:0.0};d=0.0;cum=[0.0];off=[];seq=[]
     for a,b in zip(stops,stops[1:]):
-        for n,nm,w in G.path(J[a],J[b],C.LEG_ALLOW.get((a,b)) if hasattr(C,'LEG_ALLOW') else None):
-            d+=w;nodes.append(n);cum.append(d)
+        d0=d
+        for p,nm,w in leg(a,b):
+            d+=w;coords.append(p);cum.append(d)
+            if seq and seq[-1][0]==nm:seq[-1][1]+=w
+            else:seq.append([nm,w])
+        if (a+'-'+b) in OFF or (b+'-'+a) in OFF:off.append([d0,d])
         marks.setdefault(b if b not in marks else b+'_end',d)
-    return nodes,cum,marks
+    return coords,cum,marks,off,seq
 def elevations(pts):
     f=os.path.join(ROOT,'data','elev-cache.json');cache=json.load(open(f)) if os.path.exists(f) else {}
     key=lambda p:'%.5f,%.5f'%p;need=[p for p in pts if key(p) not in cache]
@@ -23,18 +36,12 @@ def elevations(pts):
     return [cache[key(p)] for p in pts]
 out={}
 for name,stops in C.ROUTES.items():
-    nodes,cum,marks=build(stops);coords=[G.pos[n] for n in nodes];ele=elevations(coords)
+    coords,cum,marks,off,seq=build(stops);ele=elevations(coords)
     sm=[sum(ele[max(0,i-2):i+3])/len(ele[max(0,i-2):i+3]) for i in range(len(ele))]   # tame DEM noise
-    gain=sum(max(0,b-a) for a,b in zip(sm,sm[1:]))
-    out[name]=dict(coords=coords,cum=cum,ele=sm,marks=marks,length_m=cum[-1],gain_m=gain,min_ele=min(sm),max_ele=max(sm))
-    print(name,'%.2f km %.2f mi'%(cum[-1]/1000,cum[-1]/1609.34),'gain ~%d m'%gain,'ele %d-%d'%(min(sm),max(sm)))
+    gain=sum(max(0,b-a) for a,b in zip(sm,sm[1:]));loss=sum(max(0,a-b) for a,b in zip(sm,sm[1:]))
+    out[name]=dict(coords=coords,cum=cum,ele=sm,marks=marks,offtrail=off,length_m=cum[-1],gain_m=gain,loss_m=loss,min_ele=min(sm),max_ele=max(sm))
+    print(name,'%.2f km %.2f mi'%(cum[-1]/1000,cum[-1]/1609.34),'gain ~%d m loss ~%d m'%(gain,loss),'ele %d-%d'%(min(sm),max(sm)))
     for k,v in marks.items():print('   %-12s %.2f km  %.2f mi  ele %d m'%(k,v/1000,v/1609.34,sm[bisect.bisect_left(cum,v)]))
-    # per-leg trail names, to sanity-check the route follows what the text says
-    seq=[]
-    for a,b in zip(stops,stops[1:]):
-        for n,nm,w in G.path(J[a],J[b],C.LEG_ALLOW.get((a,b)) if hasattr(C,'LEG_ALLOW') else None):
-            if seq and seq[-1][0]==nm:seq[-1][1]+=w
-            else:seq.append([nm,w])
     print('   via: '+' > '.join('%s %dm'%(n,w) for n,w in seq if w>25))
 json.dump(out,open(C.DATA+'/routes.json','w'));json.dump({k:G.pos[v] for k,v in J.items()},open(C.DATA+'/junctions.json','w'),indent=1)
 for name,title in C.GPX.items():

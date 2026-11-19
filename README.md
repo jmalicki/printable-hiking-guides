@@ -1,4 +1,4 @@
-# Hike guides (Mount Tamalpais / Muir Woods)
+# Hike guides (Mount Tamalpais, Muir Woods, Trinity Alps)
 
 Printable A4 hiking guides with maps, built from scripts. One folder per guide under `guides/`.
 
@@ -6,6 +6,8 @@ Printable A4 hiking guides with maps, built from scripts. One folder per guide u
 |---|---|---|
 | Muir Woods by the back door (Mountain Home Inn loop) | `guides/muir-woods` | `out/muir-woods/muir-woods-back-door.pdf` |
 | The balcony of Mount Tam (Rock Spring – West Point Inn – Matt Davis – Bootjack) | `guides/west-point` | `out/west-point/mount-tam-west-point-loop.pdf` |
+
+| Trinity Alps: Canyon Creek Lakes over Kalmia Pass to Sapphire Lake (off-trail traverse) | `guides/trinity-traverse` | `out/trinity-traverse/trinity-alps-canyon-creek-to-sapphire.pdf` |
 
 Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
 
@@ -20,6 +22,9 @@ Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails)
 - **Route, map labels, profile notes, driving-map markers, photos**: `guides/<slug>/config.py`
 - **Shared look**: `guides/shared.css`
 - **Finding photos**: `.venv/bin/python scripts/commons_search.py "query"` then add the `File:` title to `PHOTOS` in the config
+
+## Off-trail legs
+`scripts/dem_route.py <slug>` samples a terrain grid (config `DEM`) and traces a least-steep line between the waypoints in `OFFTRAIL`; `build_routes.py` splices those legs in and marks them so maps draw them dashed. The traced line is an approximation for the map, not a surveyed track. A guide can also have a close-up map (`DETAIL`, `DETAIL_TILES`, `{{DETAIL}}`) and extra driving routes (`ACCESS['extra']`).
 
 ## New guide
 Copy a guide folder, edit `config.py` (bounding boxes, junctions, route order), then

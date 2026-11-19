@@ -1,0 +1,451 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-19T02:05:30Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 358762874,
+  "lat": 41.0040731,
+  "lon": -123.0370740,
+  "tags": {
+    "ele": "2714",
+    "gnis:feature_id": "220366",
+    "name": "Caesar Peak",
+    "natural": "peak",
+    "wikidata": "Q49017540"
+  }
+},
+{
+  "type": "node",
+  "id": 358796280,
+  "lat": 41.0004603,
+  "lon": -123.0481947,
+  "tags": {
+    "ele": "2726",
+    "gnis:feature_id": "255139",
+    "name": "Thompson Peak",
+    "natural": "peak",
+    "wikidata": "Q7795763"
+  }
+},
+{
+  "type": "node",
+  "id": 358798147,
+  "lat": 40.9568424,
+  "lon": -123.0539194,
+  "tags": {
+    "ele": "2694",
+    "gnis:feature_id": "261362",
+    "name": "Mount Hilton",
+    "natural": "peak",
+    "wikidata": "Q49053034"
+  }
+},
+{
+  "type": "node",
+  "id": 358799566,
+  "lat": 40.9728985,
+  "lon": -123.0030154,
+  "tags": {
+    "ele": "2662",
+    "gnis:feature_id": "265891",
+    "name": "Sawtooth Mountain",
+    "natural": "peak",
+    "wikidata": "Q49071617"
+  }
+},
+{
+  "type": "node",
+  "id": 358800567,
+  "lat": 40.9923625,
+  "lon": -123.0480903,
+  "tags": {
+    "ele": "2605",
+    "gnis:feature_id": "268837",
+    "name": "Wedding Cake",
+    "natural": "peak",
+    "wikidata": "Q49087959"
+  }
+},
+{
+  "type": "node",
+  "id": 13314432630,
+  "lat": 40.9884217,
+  "lon": -123.0274445,
+  "tags": {
+    "natural": "peak"
+  }
+},
+{
+  "type": "node",
+  "id": 13314959157,
+  "lat": 40.9607451,
+  "lon": -122.9738475,
+  "tags": {
+    "natural": "peak"
+  }
+},
+{
+  "type": "node",
+  "id": 13317361199,
+  "lat": 40.9681390,
+  "lon": -123.0553767,
+  "tags": {
+    "natural": "peak"
+  }
+},
+{
+  "type": "node",
+  "id": 13317878058,
+  "lat": 41.0044652,
+  "lon": -123.0602752,
+  "tags": {
+    "natural": "peak"
+  }
+},
+{
+  "type": "node",
+  "id": 13317878067,
+  "lat": 41.0075728,
+  "lon": -123.0616684,
+  "tags": {
+    "natural": "peak"
+  }
+},
+{
+  "type": "way",
+  "id": 91372533,
+  "center": {
+    "lat": 41.0189623,
+    "lon": -122.9448208
+  },
+  "tags": {
+    "ele": "5818.0",
+    "gnis:feature_id": "262025",
+    "name": "Josephine Lake",
+    "natural": "water",
+    "nhd:fdate": "2007-05-12",
+    "nhd:reach_code": "18010210000838",
+    "source": "NHD"
+  }
+},
+{
+  "type": "way",
+  "id": 91372577,
+  "center": {
+    "lat": 40.9441679,
+    "lon": -123.0447349
+  },
+  "tags": {
+    "gnis:feature_id": "276941",
+    "name": "Forbidden Lakes",
+    "natural": "water",
+    "nhd:com_id": "111577241",
+    "nhd:fdate": "Tue Jun 08 00:00:00 PDT 2010",
+    "nhd:reach_code": "18010211009671",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91372764,
+  "center": {
+    "lat": 41.0160721,
+    "lon": -122.9905244
+  },
+  "tags": {
+    "gnis:feature_id": "276906",
+    "name": "Moraine Lake",
+    "natural": "water",
+    "nhd:fdate": "2007-05-12",
+    "nhd:reach_code": "18010210002830",
+    "source": "NHD"
+  }
+},
+{
+  "type": "way",
+  "id": 91372787,
+  "center": {
+    "lat": 41.0106852,
+    "lon": -123.0639177
+  },
+  "tags": {
+    "gnis:feature_id": "254930",
+    "name": "Lois Lake",
+    "natural": "water",
+    "nhd:com_id": "111585789",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211009753",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91374649,
+  "center": {
+    "lat": 40.9721689,
+    "lon": -123.0673693
+  },
+  "tags": {
+    "gnis:feature_id": "264501",
+    "name": "Papoose Lake",
+    "natural": "water",
+    "nhd:com_id": "111577205",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211001663",
+    "source": "NHD",
+    "water": "lake",
+    "wikidata": "Q49307935"
+  }
+},
+{
+  "type": "way",
+  "id": 91374688,
+  "center": {
+    "lat": 40.9955533,
+    "lon": -123.0285226
+  },
+  "tags": {
+    "gnis:feature_id": "263698",
+    "name": "Mirror Lake",
+    "natural": "water",
+    "nhd:com_id": "111577163",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211001662",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91375221,
+  "center": {
+    "lat": 40.9990865,
+    "lon": -123.0118450
+  },
+  "tags": {
+    "ele": "5882.0",
+    "gnis:feature_id": "232574",
+    "name": "Sapphire Lake",
+    "natural": "water",
+    "nhd:com_id": "111591867",
+    "nhd:fdate": "Tue Jun 08 00:00:00 PDT 2010",
+    "nhd:reach_code": "18010211001685",
+    "source": "NHD",
+    "wikidata": "Q7336755"
+  }
+},
+{
+  "type": "way",
+  "id": 91375450,
+  "center": {
+    "lat": 41.0181815,
+    "lon": -123.0148866
+  },
+  "tags": {
+    "ele": "5959.0",
+    "gnis:feature_id": "254925",
+    "name": "Little South Fork Lake",
+    "natural": "water",
+    "nhd:fdate": "2007-05-12",
+    "nhd:reach_code": "18010210000834",
+    "source": "NHD"
+  }
+},
+{
+  "type": "way",
+  "id": 91375665,
+  "center": {
+    "lat": 40.9710963,
+    "lon": -123.0226297
+  },
+  "tags": {
+    "gnis:feature_id": "257951",
+    "name": "Canyon Creek Lakes",
+    "natural": "water",
+    "nhd:com_id": "111577213",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211001669",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91375688,
+  "center": {
+    "lat": 41.0160242,
+    "lon": -123.0133713
+  },
+  "tags": {
+    "gnis:feature_id": "229041",
+    "name": "Moraine Lake",
+    "natural": "water",
+    "nhd:fdate": "2007-05-12",
+    "nhd:reach_code": "18010210002906",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91375857,
+  "center": {
+    "lat": 40.9639359,
+    "lon": -122.9945859
+  },
+  "tags": {
+    "gnis:feature_id": "233338",
+    "name": "Smith Lake",
+    "natural": "water",
+    "nhd:com_id": "111582891",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211001673",
+    "source": "NHD",
+    "wikidata": "Q49310962"
+  }
+},
+{
+  "type": "way",
+  "id": 91376224,
+  "center": {
+    "lat": 40.9885362,
+    "lon": -123.0318720
+  },
+  "tags": {
+    "gnis:feature_id": "274660",
+    "name": "Kalmia Lake",
+    "natural": "water",
+    "nhd:com_id": "111577173",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211009659",
+    "source": "NHD",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 91376234,
+  "center": {
+    "lat": 40.9446140,
+    "lon": -123.0381509
+  },
+  "tags": {
+    "gnis:fcode": "39004",
+    "gnis:ftype": "LakePond",
+    "name": "Boulder Creek Lakes",
+    "natural": "water",
+    "nhd:com_id": "111577239",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211009670",
+    "source": "NHD"
+  }
+},
+{
+  "type": "way",
+  "id": 91376311,
+  "center": {
+    "lat": 41.0103168,
+    "lon": -123.0507145
+  },
+  "tags": {
+    "ele": "7105.0",
+    "gnis:feature_id": "224640",
+    "name": "Grizzly Lake",
+    "natural": "water",
+    "nhd:com_id": "111585787",
+    "nhd:fdate": "Tue Jun 08 00:00:00 PDT 2010",
+    "nhd:reach_code": "18010211001652",
+    "source": "NHD",
+    "wikidata": "Q49302755"
+  }
+},
+{
+  "type": "way",
+  "id": 91376355,
+  "center": {
+    "lat": 41.0047483,
+    "lon": -122.9982717
+  },
+  "tags": {
+    "ele": "5500.0",
+    "gnis:feature_id": "259893",
+    "name": "Emerald Lake",
+    "natural": "water",
+    "nhd:com_id": "111561763",
+    "nhd:fdate": "Mon Nov 17 00:00:00 PST 2003",
+    "nhd:reach_code": "18010211001660",
+    "source": "NHD",
+    "water": "lake",
+    "wikidata": "Q5370460"
+  }
+},
+{
+  "type": "way",
+  "id": 1451834688,
+  "center": {
+    "lat": 40.9428521,
+    "lon": -122.9913562
+  },
+  "tags": {
+    "name": "Alpine Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1452010212,
+  "center": {
+    "lat": 40.9825101,
+    "lon": -123.0125438
+  },
+  "tags": {
+    "name": "Little Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1452010213,
+  "center": {
+    "lat": 40.9823417,
+    "lon": -123.0130502
+  },
+  "tags": {
+    "name": "L Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1339711,
+  "center": {
+    "lat": 41.0205923,
+    "lon": -122.9767764
+  },
+  "tags": {
+    "ele": "6822.0",
+    "gnis:feature_id": "258000",
+    "name": "Upper Caribou Lake",
+    "natural": "water",
+    "nhd:fdate": "2007-05-12",
+    "nhd:reach_code": "18010210000837",
+    "source": "NHD",
+    "type": "multipolygon",
+    "water": "lake",
+    "wikidata": "Q49300278"
+  }
+}
+
+  ]
+}
