@@ -1,5 +1,6 @@
 """Purisima Creek Redwoods from Skyline: down Whittemore Gulch, up Purisima Creek, across the Craig Britton Trail, up Harkins Ridge."""
 PDF='purisima-creek-redwoods-loop.pdf'
+PARK='Purisima Creek Redwoods Preserve'            # shown after the title in the hike lists
 REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.395,-122.425,37.465,-122.305)
 TILES=dict(z=15,bbox=(37.420,-122.385,37.455,-122.322))

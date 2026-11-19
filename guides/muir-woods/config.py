@@ -1,5 +1,6 @@
 """Muir Woods by the back door: Mountain Home Inn -> Canopy View (down) -> Muir Woods -> Bootjack (up) -> Troop 80."""
 PDF='muir-woods-back-door.pdf'
+PARK='Mount Tamalpais State Park and Muir Woods National Monument'            # shown after the title in the hike lists
 REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.886,-122.612,37.916,-122.562)          # S,W,N,E
 TILES=dict(z=16,bbox=(37.8895,-122.6025,37.9160,-122.5670))
@@ -40,3 +41,5 @@ ACCESS=dict(**{'from':(37.8078,-122.4750),'to':(37.91020,-122.57721)},z=14,bbox=
   places=[dict(at=(37.9060,-122.5475),label='Mill Valley',dx=26,dy=13),
           dict(at=(37.8928,-122.5725),label='Muir Woods',dx=-26,dy=13,anchor='end'),
           dict(at=(37.8030,-122.4790),label='San Francisco',anchor='end',size=40,weight=700,dot=False)])
+PHOTOS=dict(hero=dict(file='File:Muir Woods National Monument (47879029461).jpg',short='Muir Woods',cls='tri',crop=(0,0.28,1,0.66),
+  caption='Old-growth redwoods on the main trail of Muir Woods, halfway round the loop.'))

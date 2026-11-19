@@ -1,6 +1,6 @@
 """Write the hike lists (BAY-AREA-HIKES.md, FURTHER-AFIELD.md) from every built guide: for each hike its cover
 photo, its blurb (the guide's subtitle), the headline figures and links to the PDFs and GPX tracks, under a table of contents.
-Each guide's config may set REGION='bay-area' (default: further afield). Text and figures are read from the built
+Each guide's config may set REGION='bay-area' (default: further afield) and PARK (named after the title). Text and figures are read from the built
 feet-and-miles guide (out/<slug>/guide.html), so run `make` first.
 usage: make_index.py"""
 import re,glob,os,html,json
@@ -27,8 +27,9 @@ for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
         m=json.load(open(meta)).get(key.group(1),{});artist=clean(m.get('artist','')).split(' from ')[0]
         photo='![%s](data/%s/photos/%s.jpg)\n\n<sub>Photo: %s, %s%s</sub>\n\n'%(title,slug,key.group(1),artist or 'unknown',m.get('license','?'),(' ([source](%s))'%m['page']) if m.get('page') else '')
     miles=float(re.sub(r'[^0-9.]','',cells[0]) or 0)
-    section='## %s\n\n*%s · %s*\n\n%s%s\n\n**%s** %s · **%s** %s · **%s** · **%s**: %s\n\n%s\n'%(title,where or kind,kind.lower() if where else '',photo,blurb,cells[0],notes[0],cells[1],notes[1],cells[2],cells[4],notes[4],' · '.join(links))
-    row='| [%s](#%s) | %s | %s | %s | %s |'%(title,re.sub(r'[^a-z0-9 -]','',title.lower()).replace(' ','-'),cells[0],cells[1],cells[2],cells[4])
+    park=getattr(C,'PARK','');head=title+(' (%s)'%park if park else '')
+    section='## %s\n\n*%s · %s*\n\n%s%s\n\n**%s** %s · **%s** %s · **%s** · **%s**: %s\n\n%s\n'%(head,where or kind,kind.lower() if where else '',photo,blurb,cells[0],notes[0],cells[1],notes[1],cells[2],cells[4],notes[4],' · '.join(links))
+    row='| [%s](#%s)%s | %s | %s | %s | %s |'%(title,re.sub(r'[^a-z0-9 -]','',head.lower()).replace(' ','-'),' (%s)'%park if park else '',cells[0],cells[1],cells[2],cells[4])
     hikes['bay-area' if getattr(C,'REGION','')=='bay-area' else 'further'].append((miles,section,row))
 def write(name,title,intro,key):
     hs=sorted(hikes[key])

@@ -4,14 +4,14 @@ Printable guides to hikes within about an hour and a half of San Francisco, shor
 
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
-| [The balcony of Mount Tam](#the-balcony-of-mount-tam) | 4.7 mi | ≈ 800 ft | 2½–3 h | Easy–moderate |
-| [Ocean to the left, bay to the right: Russian Ridge](#ocean-to-the-left-bay-to-the-right-russian-ridge) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
-| [Muir Woods, by the back door](#muir-woods-by-the-back-door) | 5.8 mi | ≈ 1,150 ft | 3–3½ h | Moderate |
-| [The ghost towns of Mine Hill](#the-ghost-towns-of-mine-hill) | 6.0 mi | ≈ 1,300 ft | 3–3½ h | Moderate |
-| [The redwoods that came back](#the-redwoods-that-came-back) | 9.3 mi | ≈ 2,260 ft | 5–6 h | Strenuous |
-| [Chasing the rain to Murietta Falls](#chasing-the-rain-to-murietta-falls) | 12.2 mi | ≈ 4,230 ft | 7–9 h | Strenuous |
+| [The balcony of Mount Tam](#the-balcony-of-mount-tam-mount-tamalpais-state-park) (Mount Tamalpais State Park) | 4.7 mi | ≈ 800 ft | 2½–3 h | Easy–moderate |
+| [Ocean to the left, bay to the right: Russian Ridge](#ocean-to-the-left-bay-to-the-right-russian-ridge-russian-ridge-open-space-preserve) (Russian Ridge Open Space Preserve) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
+| [Muir Woods, by the back door](#muir-woods-by-the-back-door-mount-tamalpais-state-park-and-muir-woods-national-monument) (Mount Tamalpais State Park and Muir Woods National Monument) | 5.8 mi | ≈ 1,150 ft | 3–3½ h | Moderate |
+| [The ghost towns of Mine Hill](#the-ghost-towns-of-mine-hill-almaden-quicksilver-county-park) (Almaden Quicksilver County Park) | 6.0 mi | ≈ 1,300 ft | 3–3½ h | Moderate |
+| [The redwoods that came back](#the-redwoods-that-came-back-purisima-creek-redwoods-preserve) (Purisima Creek Redwoods Preserve) | 9.3 mi | ≈ 2,260 ft | 5–6 h | Strenuous |
+| [Chasing the rain to Murietta Falls](#chasing-the-rain-to-murietta-falls-ohlone-regional-wilderness) (Ohlone Regional Wilderness) | 12.2 mi | ≈ 4,230 ft | 7–9 h | Strenuous |
 
-## The balcony of Mount Tam
+## The balcony of Mount Tam (Mount Tamalpais State Park)
 
 *Mount Tamalpais, Marin County, California · a half-day hike*
 
@@ -25,7 +25,7 @@ A loop along the sunny south face of the mountain, high above the fog: out on a 
 
 [Print it: Letter, feet and miles](out/west-point/mount-tam-west-point-loop.pdf) · [A4, metric](out/west-point/mount-tam-west-point-loop-metric-a4.pdf) · [GPX](out/west-point/west-point-main.gpx)
 
-## Ocean to the left, bay to the right: Russian Ridge
+## Ocean to the left, bay to the right: Russian Ridge (Russian Ridge Open Space Preserve)
 
 *Russian Ridge Open Space Preserve, Santa Cruz Mountains, California · a half-day hike*
 
@@ -39,17 +39,21 @@ Walk the grassy crest of the mountains behind Silicon Valley with the Pacific on
 
 [Print it: Letter, feet and miles](out/russian-ridge/russian-ridge-borel-hill-ancient-oaks.pdf) · [A4, metric](out/russian-ridge/russian-ridge-borel-hill-ancient-oaks-metric-a4.pdf) · [GPX: main](out/russian-ridge/russian-ridge-main.gpx) · [GPX: short](out/russian-ridge/russian-ridge-short.gpx)
 
-## Muir Woods, by the back door
+## Muir Woods, by the back door (Mount Tamalpais State Park and Muir Woods National Monument)
 
 *Mount Tamalpais, Marin County, California · a half-day hike*
 
+![Muir Woods, by the back door](data/muir-woods/photos/hero.jpg)
+
+<sub>Photo: Matthew Dillon, CC BY 2.0 ([source](https://commons.wikimedia.org/wiki/File:Muir_Woods_National_Monument_(47879029461).jpg))</sub>
+
 Start on the mountain at the Mountain Home Inn, walk down through quiet forest into the old-growth redwoods, and climb back out beside a creek to a deck with a view.
 
-**5.8 mi** loop · **≈ 1,150 ft** total climb & descent · **3–3½ h** · **Moderate**: steep in places, not technical
+**5.8 mi** loop · **≈ 1,150 ft** total climb & descent · **3–3½ h** · **Moderate**: steep in places
 
 [Print it: Letter, feet and miles](out/muir-woods/muir-woods-back-door.pdf) · [A4, metric](out/muir-woods/muir-woods-back-door-metric-a4.pdf) · [GPX: main](out/muir-woods/muir-woods-main.gpx) · [GPX: short](out/muir-woods/muir-woods-short.gpx)
 
-## The ghost towns of Mine Hill
+## The ghost towns of Mine Hill (Almaden Quicksilver County Park)
 
 *Almaden Quicksilver County Park, San José · a half-day hike*
 
@@ -63,7 +67,7 @@ Climb a shaded gulch to a hill where two mining towns stood for half a century, 
 
 [Print it: Letter, feet and miles](out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf) · [A4, metric](out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop-metric-a4.pdf) · [GPX](out/almaden-quicksilver/almaden-quicksilver-main.gpx)
 
-## The redwoods that came back
+## The redwoods that came back (Purisima Creek Redwoods Preserve)
 
 *Purisima Creek Redwoods Preserve, on the Skyline ridge above Half Moon Bay · a day hike*
 
@@ -77,7 +81,7 @@ Drop from the ridge into a canyon that was cut to the ground a century ago and h
 
 [Print it: Letter, feet and miles](out/purisima-creek/purisima-creek-redwoods-loop.pdf) · [A4, metric](out/purisima-creek/purisima-creek-redwoods-loop-metric-a4.pdf) · [GPX: main](out/purisima-creek/purisima-creek-main.gpx) · [GPX: short](out/purisima-creek/purisima-creek-short.gpx)
 
-## Chasing the rain to Murietta Falls
+## Chasing the rain to Murietta Falls (Ohlone Regional Wilderness)
 
 *Ohlone Regional Wilderness, above Livermore · one of the bay area’s most strenuous day hikes*
 

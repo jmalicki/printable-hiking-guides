@@ -4,13 +4,13 @@ Printable guides to hikes and backpacking trips elsewhere in California and in t
 
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
-| [Looking down on Half Dome: Clouds Rest from Tenaya Lake](#looking-down-on-half-dome-clouds-rest-from-tenaya-lake) | 12.1 mi | ≈ 3,120 ft | 7–10 h | Strenuous |
-| [To the edge of Yellowstone: Bighorn Peak by Black Butte Creek](#to-the-edge-of-yellowstone-bighorn-peak-by-black-butte-creek) | 12.4 mi | ≈ 3,300 ft | 7–9 h | Strenuous |
-| [A lake behind every ridge: the Four Lakes Loop](#a-lake-behind-every-ridge-the-four-lakes-loop) | 18 mi | ≈ 6,730 ft | 3 days | Strenuous |
-| [Behind the Grand Teton: Paintbrush Divide and Lake Solitude](#behind-the-grand-teton-paintbrush-divide-and-lake-solitude) | 19.0 mi | ≈ 4,130 ft | 2 days | Strenuous |
-| [Over the top: Canyon Creek to Sapphire Lake](#over-the-top-canyon-creek-to-sapphire-lake) | 25 mi | ≈ 5,090 ft | 3 days | Hard |
+| [Looking down on Half Dome: Clouds Rest from Tenaya Lake](#looking-down-on-half-dome-clouds-rest-from-tenaya-lake-yosemite-national-park) (Yosemite National Park) | 12.1 mi | ≈ 3,120 ft | 7–10 h | Strenuous |
+| [To the edge of Yellowstone: Bighorn Peak by Black Butte Creek](#to-the-edge-of-yellowstone-bighorn-peak-by-black-butte-creek-yellowstone-national-park) (Yellowstone National Park) | 12.4 mi | ≈ 3,300 ft | 7–9 h | Strenuous |
+| [A lake behind every ridge: the Four Lakes Loop](#a-lake-behind-every-ridge-the-four-lakes-loop-trinity-alps-wilderness) (Trinity Alps Wilderness) | 18 mi | ≈ 6,730 ft | 3 days | Strenuous |
+| [Behind the Grand Teton: Paintbrush Divide and Lake Solitude](#behind-the-grand-teton-paintbrush-divide-and-lake-solitude-grand-teton-national-park) (Grand Teton National Park) | 19.0 mi | ≈ 4,130 ft | 2 days | Strenuous |
+| [Over the top: Canyon Creek to Sapphire Lake](#over-the-top-canyon-creek-to-sapphire-lake-trinity-alps-wilderness) (Trinity Alps Wilderness) | 25 mi | ≈ 5,090 ft | 3 days | Hard |
 
-## Looking down on Half Dome: Clouds Rest from Tenaya Lake
+## Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite National Park)
 
 *Yosemite National Park, California · a full-day hike*
 
@@ -24,7 +24,7 @@ Walk out along a bare granite ridge until Half Dome is a thousand feet below you
 
 [Print it: Letter, feet and miles](out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake.pdf) · [A4, metric](out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake-metric-a4.pdf) · [GPX: main](out/clouds-rest/clouds-rest-main.gpx) · [GPX: lakes](out/clouds-rest/clouds-rest-lakes.gpx)
 
-## To the edge of Yellowstone: Bighorn Peak by Black Butte Creek
+## To the edge of Yellowstone: Bighorn Peak by Black Butte Creek (Yellowstone National Park)
 
 *Yellowstone National Park, Montana · a full-day hike*
 
@@ -38,7 +38,7 @@ Follow a creek out of the sagebrush, climb through forest and flower meadows, an
 
 [Print it: Letter, feet and miles](out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte.pdf) · [A4, metric](out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte-metric-a4.pdf) · [GPX](out/bighorn-peak/bighorn-peak-main.gpx)
 
-## A lake behind every ridge: the Four Lakes Loop
+## A lake behind every ridge: the Four Lakes Loop (Trinity Alps Wilderness)
 
 *Trinity Alps Wilderness, northern California · a three-day backpacking loop*
 
@@ -52,7 +52,7 @@ Cross one high pass and the trail circles a single peak, handing you a new lake 
 
 [Print it: Letter, feet and miles](out/four-lakes/trinity-alps-four-lakes-loop.pdf) · [A4, metric](out/four-lakes/trinity-alps-four-lakes-loop-metric-a4.pdf) · [GPX: long-canyon](out/four-lakes/four-lakes-long-canyon.gpx) · [GPX: stoney-ridge](out/four-lakes/four-lakes-stoney-ridge.gpx)
 
-## Behind the Grand Teton: Paintbrush Divide and Lake Solitude
+## Behind the Grand Teton: Paintbrush Divide and Lake Solitude (Grand Teton National Park)
 
 *Grand Teton National Park, Wyoming · a two-day backpacking loop*
 
@@ -66,7 +66,7 @@ Everyone photographs these peaks from the road. Climb one canyon, cross a pass a
 
 [Print it: Letter, feet and miles](out/paintbrush-cascade/grand-teton-paintbrush-cascade-loop.pdf) · [A4, metric](out/paintbrush-cascade/grand-teton-paintbrush-cascade-loop-metric-a4.pdf) · [GPX](out/paintbrush-cascade/paintbrush-cascade-loop.gpx)
 
-## Over the top: Canyon Creek to Sapphire Lake
+## Over the top: Canyon Creek to Sapphire Lake (Trinity Alps Wilderness)
 
 *Trinity Alps Wilderness, northern California · a three-day mountain traverse*
 

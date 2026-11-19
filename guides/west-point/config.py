@@ -1,5 +1,6 @@
 """The balcony of Mount Tam: Rock Spring -> Mountain Theater -> Rock Spring Trail -> West Point Inn -> Nora -> Matt Davis -> Bootjack."""
 PDF='mount-tam-west-point-loop.pdf'
+PARK='Mount Tamalpais State Park'            # shown after the title in the hike lists
 REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.895,-122.640,37.932,-122.570)
 TILES=dict(z=16,bbox=(37.9020,-122.6290,37.9220,-122.5770))

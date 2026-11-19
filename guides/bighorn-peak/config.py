@@ -1,5 +1,6 @@
 """Yellowstone: Bighorn Peak by the Black Butte Creek Trail from US 191, out and back."""
 PDF='yellowstone-bighorn-peak-from-black-butte.pdf'
+PARK='Yellowstone National Park'            # shown after the title in the hike lists
 OSM_BBOX=(44.97,-111.20,45.11,-110.97)
 TILES=dict(z=15,bbox=(45.022,-111.135,45.080,-111.030))
 JUNCTIONS=dict(th=3076159384,                  # Black Butte trailhead, US 191 (east side of the road)

@@ -1,5 +1,6 @@
 """Yosemite: Clouds Rest from Tenaya Lake (Sunrise Lakes trailhead), out and back; lower Sunrise Lake as the short variant."""
 PDF='yosemite-clouds-rest-from-tenaya-lake.pdf'
+PARK='Yosemite National Park'            # shown after the title in the hike lists
 OSM_BBOX=(37.750,-119.515,37.845,-119.425)
 TILES=dict(z=15,bbox=(37.758,-119.508,37.840,-119.440))
 JUNCTIONS=dict(th=11189397252,                 # Sunrise Lakes trailhead, Tioga Road

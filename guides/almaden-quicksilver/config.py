@@ -1,5 +1,6 @@
 """Almaden Quicksilver County Park: the mining-history loop over Mine Hill from the Hacienda entrance, New Almaden."""
 PDF='almaden-quicksilver-mine-hill-loop.pdf'
+PARK='Almaden Quicksilver County Park'            # shown after the title in the hike lists
 REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.150,-121.905,37.215,-121.800)
 TILES=dict(z=16,bbox=(37.166,-121.860,37.190,-121.814))

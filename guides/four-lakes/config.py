@@ -1,5 +1,6 @@
 """Trinity Alps: the Four Lakes Loop round Siligo Peak, walked in from Long Canyon (main) or Stoney Ridge (alternative)."""
 PDF='trinity-alps-four-lakes-loop.pdf'
+PARK='Trinity Alps Wilderness'            # shown after the title in the hike lists
 OSM_BBOX=(40.875,-122.92,40.962,-122.80)
 TILES=dict(z=14,bbox=OSM_BBOX)
 DETAIL_TILES=dict(z=16,bbox=(40.9370,-122.915,40.959,-122.882))    # close-up of the loop

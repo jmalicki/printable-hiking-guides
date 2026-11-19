@@ -1,5 +1,6 @@
 """Grand Teton: Paintbrush Canyon over Paintbrush Divide to Lake Solitude and down Cascade Canyon, from String Lake."""
 PDF='grand-teton-paintbrush-cascade-loop.pdf'
+PARK='Grand Teton National Park'            # shown after the title in the hike lists
 OSM_BBOX=(43.735,-110.875,43.825,-110.695)
 TILES=dict(z=14,bbox=OSM_BBOX)
 JUNCTIONS=dict(start=1381857059,                 # String Lake trailhead

@@ -1,5 +1,6 @@
 """Trinity Alps: Canyon Creek Lakes over the ridge to Mirror and Sapphire Lakes (off-trail crossing)."""
 PDF='trinity-alps-canyon-creek-to-sapphire.pdf'
+PARK='Trinity Alps Wilderness'            # shown after the title in the hike lists
 OSM_BBOX=(40.850,-123.090,41.020,-122.780)
 TILES=dict(z=14,bbox=(40.855,-123.075,41.020,-122.895))          # overview: trailhead to trailhead
 DETAIL_TILES=dict(z=16,bbox=(40.970,-123.040,41.010,-122.990))    # close-up of the off-trail crossing
