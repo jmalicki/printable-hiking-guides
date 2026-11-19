@@ -6,6 +6,39 @@ how they should read and look, and the working method that produced them. Read b
 repairing a guide, and read one existing `guides/<slug>/template.html` end to end as the model
 (`trinity-traverse` and `four-lakes` for multi-day trips, `west-point` for a day walk).
 
+## How to read this file
+
+Most of what follows records a decision the owner made about **one guide**, with the case that prompted it.
+Treat each as "in a situation like that one, do this", not as something every guide must now contain.
+Over-reading has already cost rework twice: a remark that the owner liked one guide's "Read this first"
+box turned into disclaimers on a guide that needed none, and a request for road warnings turned into a
+label on every road, including paved ones.
+
+- **The owner liking something once is not a request for it everywhere.** Each element has to earn its
+  place on the hike in front of you.
+- **Check the condition before applying a rule.** The table below says when each optional element belongs.
+- **Do not escalate.** If a rule says "a line", do not write a paragraph; if it says "sparingly", most
+  guides get none.
+- **Existing guides are the tie-breaker.** If a comparable guide does without something, the new one
+  probably should too. When a new guide seems to need an element no guide has, ask the owner first.
+- **Dated notes about the owner's reasons that say "inference" are guesses.** Follow the example, hold the
+  explanation loosely.
+
+| Element | Belongs when | Does not belong when |
+|---|---|---|
+| Cover pitch, stat strip, "Is this for me?", map, profile, step table, getting there, practical, sources | always | |
+| Red `.warn` box on page 1 | a real hazard (snow slope, off-trail ground, old mine workings), or directions that rest on thin evidence where being wrong is dangerous | an ordinary signed trail; general unfamiliarity; facts you could verify |
+| "Compiled, not walked" | a few words in the sources footer | never in the red box, unless route-finding itself is unverified (the Trinity off-trail crossing) |
+| "I could not confirm…" in the text | one fact that matters to the plan and cannot be checked (a bear-canister rule) | routine details: verify them or leave them out |
+| Inset explaining the place | the place has something that needs explaining (habitats, geology, a mine) | nothing does: do not manufacture one |
+| History in the step table, date tags, date strip | the hike is about its history (Almaden) | a hike with a ruin or two: a sentence at that stop is enough |
+| Wildlife inset | the owner asks, or animals are a reason to go | otherwise a line under "Watch for" |
+| Water section | overnight trips | day hikes: one line in Practical on whether there is a tap |
+| "Last water" sign in the step table | a stretch dry and long enough to be dangerous | ordinary gaps between streams |
+| Road warning box, and its line on page 1 | an unpaved approach graded "mixed reports" or "high clearance" | paved or good gravel: "any car should be fine" in the running text, nothing more |
+| A photo of a named place | it shows the reader something they need to recognise or want to see | filling space; the original brief was "only where they add something" |
+| Shorter variant, no-car option, food | a sensible one exists | none does: say so in a line, or omit |
+
 ## Who reads them
 
 A fit visitor who does not know the area: someone who runs or cycles, mostly on flat ground, and is not a
@@ -70,10 +103,12 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   handing you a new lake each time you top a ridge: four in seven miles… You pay for it on day one."
   (The reasons are the writing agent's inference from this one exchange in November 2026; the owner said
   only which versions they liked and disliked.)
-- **Never assert what was not checked.** Unverified items (turn directions from memory, opening hours,
-  facilities, road surface, fire and canister rules, ecology written from memory) are either verified against
-  a source, worded as uncertain in the guide ("I could not confirm…"), or left out. Tell the owner in chat
-  which ones remain unverified. When sources disagree on a figure, use the route's own computed number.
+- **Never assert what was not checked, and check before hedging.** First try to verify (a second source, the
+  agency's own page, the route data). What still cannot be confirmed is left out if it is minor, or stated
+  once as uncertain if the reader's plan depends on it ("I could not confirm whether the canister rule
+  covers Deer Creek"). A guide sprinkled with "I could not confirm" reads as unreliable; one or two such
+  lines is normal, five is a sign the research is not finished. Tell the owner in chat what remains
+  unverified. When sources disagree on a figure, use the route's own computed number.
 - **Do not be cagey, and do not disclaim by reflex.** The red box is for hazards and for guidance that
   rests on thin evidence where being wrong is dangerous (the off-trail crossing in the Trinity traverse).
   An ordinary signed trail in a park needs no "nobody walked this" warning: the owner asked why the Almaden
@@ -86,16 +121,18 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   in the browser pane trigger a download prompt for the owner, so ask before opening one.
 - If the owner's premise is wrong, say so before building on it (Bootjack was not the gentler climb; no
   trail joins Canyon Creek Lakes to Sapphire Lake).
-- **Warnings up front.** Hazards get a red `.warn` box on page 1. The owner singled out the Trinity traverse's
-  "Read this first" box as something they love: it says in bold, before anything else, what the guide does
-  not know (the off-trail section was compiled from reports and not walked) and what to do about it (carry
-  a real map, phone the ranger station). Write one whenever part of a guide rests on thin evidence or the
-  route has a serious hazard, with explicit "Turn back if" rules. Say on the last page that the route was
-  compiled from maps and reports and not walked, when that is the case.
+- **Warnings up front, when there is something to warn about.** A hazard, or a rough road, goes in a red
+  `.warn` box on page 1 so it is read before anything is planned. The owner singled out the Trinity
+  traverse's "Read this first" box as something they love: it says in bold what the reader must know
+  before committing (the off-trail line is approximate and unsurveyed) and what to do about it (carry a
+  real map, phone the ranger station), with explicit "Turn back if" rules. What they liked is a serious
+  warning stated plainly and early. It is not a licence to open every guide with caveats: the Muir Woods
+  and West Point guides have no red box at all, and that is correct.
 
-## What every guide contains
+## What a guide contains
 
-In roughly this page order (5–6 pages; see the existing templates):
+In roughly this page order (5–6 pages; see the existing templates). Items 1–3, 5, 6 and 8 are in every
+guide; 4 and 7 only when there is something to say:
 
 1. **Cover**: `.kicker`, title, `.sub`, hero photo, the five-cell `.stats` strip (distance, climb, time, high
    point, grade), the pitch, "Is this for me?" as a `.verdict` line plus a `.cmp` table, any `.warn` box.
@@ -103,7 +140,7 @@ In roughly this page order (5–6 pages; see the existing templates):
 3. **Step by step**: a table keyed to the map's markers, with cumulative distance, height, trail names as
    signed, which way to turn, and what you see there. Views and points of interest are called out where
    they occur. Include a shorter variant if a sensible one exists.
-4. **An inset that explains the place** (`.inset`): why it looks the way it does (West Point: five habitats
+4. **An inset that explains the place** (`.inset`), when the place needs explaining: why it looks the way it does (West Point: five habitats
    and the fog/geology/aspect reasons; Four Lakes: red peridotite, white granite, cirques). Use "worlds" or
    "habitats", not "biome". Give real numbers with sources if claiming something is special.
 5. **Getting there**: driving map with lettered markers, turn-by-turn table, parking stated explicitly
@@ -116,8 +153,9 @@ In roughly this page order (5–6 pages; see the existing templates):
 
 ## History woven into the route
 
-When a place has a story (Almaden Quicksilver is the model), the history goes **where the hiker is
-standing**, not in an essay at the back. The owner asked for this, on the pattern of the red and white rock
+This section applies when the history is the reason for the hike (Almaden Quicksilver is the model). A
+hike that merely passes an old cabin gets one sentence at that stop and none of the machinery below.
+Where it does apply, the history goes **where the hiker is standing**, not in an essay at the back. The owner asked for this, on the pattern of the red and white rock
 in the Four Lakes guide.
 
 - **The step-by-step table carries it.** Each stop says what to do and then what happened on that spot and
@@ -141,7 +179,8 @@ in the Four Lakes guide.
 
 ## Backpacking guides: water
 
-Any overnight guide has a **Water** section (`.cols.water`), because the reader plans the trip around it.
+Overnight guides only. A day hike needs one line in Practical saying whether there is a tap. Any overnight
+guide has a **Water** section (`.cols.water`), because the reader plans the trip around it.
 Research it properly: the Forest Service pages, then dated trip reports, and note the month and year of
 each observation. It has two halves:
 
@@ -162,6 +201,7 @@ and 700 m in the sun with no sure water and no tap at the trailhead).
 
 ## The drive: rating the road to the trailhead
 
+This matters only for unpaved approaches; most trailheads are on paved roads and get no treatment at all.
 The owner's rule: **an easy road gets a few words in the running text ("any car should be fine") and no
 box; a rough or high-clearance road gets a red box that cannot be missed** (`<div class="roadwarn">` with a
 `<span class="h">` heading, inside the driving-table cell). **A rough or high-clearance road is also flagged on page 1**, as a bold line in
@@ -218,8 +258,9 @@ rebuilt. Each point below is something that was wrong in it.
   width. A driving map that covers under 60 km needs `z=13` tiles, not `z=11`, or it prints blurred with
   oversized lines. Keep the scale bar clear of markers and move labels off the route line.
 - **Profile notes go inside the filled area under the line**, away from marker circles, not across the line.
-- **A photo for each place the guide names as a highlight** (each of the four lakes, each habitat), found on
-  Commons or Flickr and looked at before use. One hero and one flower is not enough.
+- **A photo for each thing the guide is built around** (each of the four lakes, each of the five habitats),
+  found on Commons or Flickr and looked at before use. This is about the handful of headline subjects,
+  not every stop in the step table: photos go only where they add something.
 - **The cover photo must show its whole subject.** A wide strip crop that cuts the top off the mountain is
   wrong; put the photo beside the pitch at a taller aspect (`figure.cover`) if needed.
 - **Elevations come from the shared 10 m source** (`build_routes.py`, cached in `data/elev-cache.json`), so
