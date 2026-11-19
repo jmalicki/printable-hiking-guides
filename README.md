@@ -43,5 +43,8 @@ Copy a guide folder, edit `config.py` (bounding boxes, junctions, route order), 
 Needs python3, Google Chrome (headless PDF), venv with pillow + pymupdf (`make .venv`).
 Data: trails (c) OpenStreetMap contributors; basemap USGS The National Map; elevation USGS 3DEP via opentopodata.org; driving route OSRM; photos Wikimedia Commons and Flickr (credited in each guide).
 
-## Credits and third-party material
-Photos, trail data and basemaps belong to others and keep their own terms: see [NOTICE.md](NOTICE.md) and [CREDITS.md](CREDITS.md) (regenerate with `scripts/make_credits.py`).
+## Licence
+- Code (`scripts/`, `Makefile`, `guides/shared.css`): MIT, see [LICENSE](LICENSE).
+- Guide text, templates, maps and profiles: CC BY 4.0, see [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+- Photos, trail data and basemaps belong to others and keep their own terms: see [NOTICE.md](NOTICE.md) and
+  [CREDITS.md](CREDITS.md) (regenerate with `scripts/make_credits.py`).
