@@ -71,10 +71,14 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
 - Use `{{u:metric text|imperial text}}` wherever automatic conversion would read badly:
   - words: `{{u:seven kilometres|five miles}}`, `every few hundred {{u:metres|yards}}`;
   - short horizontal distances, which should be fractions of a mile, not thousands of feet: `{{u:600 m|0.4 mi}}`;
-  - other units: `{{u:12–15 kg|25–35 lb}}`, `{{u:8 °C|15 °F}}`, `{{u:2 litres|2 quarts (2 liters)}}`;
+  - other units: `{{u:12–15 kg|25–35 lb}}`, `{{u:8 °C|15 °F}}`;
   - a published figure that differs from the converted one by rounding (`{{u:2,260 m|7,420 ft}}`), so one
     place never shows two values;
   - stat-strip captions that would repeat the headline (`{{u:25 miles, trailhead to trailhead|trailhead to trailhead}}`);
+  - **water is in litres in both builds.** Write `2 litres` plain, with no `{{u:}}` override: the imperial
+    build only respells it ("2 liters"). American hikers measure water bottles and bladders in liters, and
+    the owner had every "quart" removed (November 2026). Do not write quarts, gallons or fluid ounces for
+    drinking water;
   - things that must not convert: `{{u:10 m|10 m}}` terrain model, and **"jog {{u:5 km|5 km}}"**. A 5K is a
     running distance in the US as well; the owner asked for it to stay.
 - After editing text, build both variants and read the imperial output for leftovers ("km", "metres",
