@@ -1,0 +1,62 @@
+{
+ "hero": {
+  "file": "File:Yosemite Panorama - Flickr - Moo.The.Cow.jpg",
+  "artist": "Michael Kwok",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yosemite_Panorama_-_Flickr_-_Moo.The.Cow.jpg"
+ },
+ "hero2": {
+  "file": "File:View of Yosemite Valley from Summit of Clouds Rest.jpg",
+  "artist": "Natecation",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Yosemite_Valley_from_Summit_of_Clouds_Rest.jpg"
+ },
+ "pano": {
+  "file": "File:Yosemite Valley, as seen from Cloud's Rest.jpg",
+  "artist": "Paxson Woelber",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yosemite_Valley,_as_seen_from_Cloud%27s_Rest.jpg"
+ },
+ "ridge": {
+  "file": "File:Clouds Rest with Half Dome in the background.jpg",
+  "artist": "Jimmy Harris from Melbourne, Australia",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clouds_Rest_with_Half_Dome_in_the_background.jpg"
+ },
+ "face": {
+  "file": "File:Clouds rest in Yosemite.jpg",
+  "artist": "Stegasaurusrcool",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Clouds_rest_in_Yosemite.jpg"
+ },
+ "face2": {
+  "file": "File:Clouds Rest 08325.JPG",
+  "artist": "Walter Siegmund",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Clouds_Rest_08325.JPG"
+ },
+ "tenaya": {
+  "file": "File:Lake Tenaya in Yosemite NP.jpg",
+  "artist": "Brocken Inaglory",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lake_Tenaya_in_Yosemite_NP.jpg"
+ },
+ "back": {
+  "file": "File:Tenaya Lake From Clouds Rest.JPG",
+  "artist": "Inklein",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tenaya_Lake_From_Clouds_Rest.JPG"
+ },
+ "olmsted": {
+  "file": "File:Olmsted Point vista.jpg",
+  "artist": "Jimbennettgeek",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Olmsted_Point_vista.jpg"
+ },
+ "people": {
+  "file": "File:Clouds Rest Yosemite 2007.JPG",
+  "artist": "Eric T Gunther",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clouds_Rest_Yosemite_2007.JPG"
+ }
+}
