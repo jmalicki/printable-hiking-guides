@@ -79,6 +79,7 @@ DETAIL=draw_map(C.DETAIL,'detail-basemap')[0] if hasattr(C,'DETAIL') else ''
 # ---------------- elevation profile ----------------
 def draw_profile(main, PF):
     PW,PH,ML,MR,MT,MB=1400,PF.get('height',330),78,24,30,48;Lm=main['length_m'];e0,e1=PF['emin'],PF['emax']
+    if UNITS=='imperial' and e1*3.28084>=10000:ML=96        # room for five-figure heights in feet
     X=lambda d:ML+(PW-ML-MR)*d/Lm
     Y=lambda e:MT+(PH-MT-MB)*(1-(e-e0)/(e1-e0))
     p=['<svg class="profile" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">'%(PW,PH)]
