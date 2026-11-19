@@ -1,0 +1,50 @@
+{
+ "falls": {
+  "file": "https://live.staticflickr.com/4031/4302943546_7d1f853f0a_b.jpg",
+  "artist": "Joe Navratil (Flickr)",
+  "license": "CC BY-NC-ND 2.0",
+  "page": "https://www.flickr.com/photos/navratil/4302943546/"
+ },
+ "road": {
+  "file": "https://live.staticflickr.com/1665/24407350173_9a15ff522c_b.jpg",
+  "artist": "C N / scorpio-tiger (Flickr)",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/30971561@N08/24407350173/"
+ },
+ "lake": {
+  "file": "https://live.staticflickr.com/5184/5765947854_bd98b1040d_b.jpg",
+  "artist": "David / randomcuriosity (Flickr)",
+  "license": "CC BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/81232363@N00/5765947854/"
+ },
+ "post": {
+  "file": "https://live.staticflickr.com/65535/51899195812_64d7a3b527_b.jpg",
+  "artist": "Bart Teeuwisse (Flickr)",
+  "license": "CC BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/44124365893@N01/51899195812/"
+ },
+ "oak": {
+  "file": "https://live.staticflickr.com/1508/24999123029_54f7a650f4_b.jpg",
+  "artist": "Kee Yip (Flickr)",
+  "license": "CC BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/11249863@N04/24999123029/"
+ },
+ "gulch": {
+  "file": "https://live.staticflickr.com/1458/25034042085_3c778f4b9b_b.jpg",
+  "artist": "C N / scorpio-tiger (Flickr)",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/30971561@N08/25034042085/"
+ },
+ "rock": {
+  "file": "https://live.staticflickr.com/1497/24941073371_374194539a_b.jpg",
+  "artist": "C N / scorpio-tiger (Flickr)",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/30971561@N08/24941073371/"
+ },
+ "pond": {
+  "file": "https://live.staticflickr.com/5050/5383173769_1d577aca3b_b.jpg",
+  "artist": "Joseph Dsilva (Flickr)",
+  "license": "CC BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/46645318@N02/5383173769/"
+ }
+}
