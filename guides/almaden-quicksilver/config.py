@@ -37,10 +37,10 @@ ACCESS=dict(**{'from':(37.2553,-121.8760),'to':(37.17420,-121.82473)},z=14,bbox=
   places=[dict(at=(37.17842,-121.81954),label='Museum',dx=34,dy=-6,size=40)])
 EZ='Eugene Zelenko'
 PHOTOS=dict(
- hero=dict(file='File:USA-San Jose-Almaden Quicksilver Park-Rotary Furnace-5.jpg',short='Rotary furnace',cls='hero',crop=(0,0.12,1,0.80),
-   caption='The rotary furnace on Mine Hill, where the last mercury was roasted out of the ore in the 1970s.'),
- camp=dict(file='File:USA-San Jose-Almaden Quicksilver Park-English Camp-3.jpg',short='English Camp',cls='tri',
-   caption='English Camp: one of the last buildings of a town of a thousand.'),
+ hero=dict(file='File:USA-San Jose-Almaden Quicksilver Park-Rotary Furnace-5.jpg',short='Rotary furnace',cls='tri',
+   caption='The rotary furnace on Mine Hill, last fired in the 1970s.'),
+ camp=dict(file='File:USA-San Jose-Almaden Quicksilver Park-English Camp-3.jpg',short='English Camp',cls='hero',crop=(0,0.10,1,0.88),
+   caption='English Camp, where about a thousand people lived in the 1880s. By 1909 it was empty.'),
  sancris=dict(file='File:USA-San Jose-Almaden Quicksilver Park-San Cristobal Mine.jpg',short='San Cristobal',cls='tri',crop=(0,0.08,1,0.62),
    caption='The San Cristobal tunnel, opened in 1866, the one working you can still step into.'),
  trestle=dict(file='File:USA-San Jose-Almaden Quicksilver Park-April Tunnel.jpg',short='April trestle',cls='tri',

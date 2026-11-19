@@ -118,8 +118,8 @@ in the Four Lakes guide.
 - **One inset** (`.inset`) holds what does not belong to a single spot: why the thing is here (geology),
   what it was for, who did the work and on what terms, and what it left behind. Be as blunt about the
   cost (poisoned workers, unequal pay, pollution still in the creek) as about the achievement.
-- **The title and pitch come from the story**, written from the walker's position ("A hundred miles of
-  tunnel under your boots").
+- **The title and pitch come from the story**, written from the walker's position. For Almaden the owner preferred the people to the engineering: "The ghost towns of
+  Mine Hill" replaced "A hundred miles of tunnel under your boots".
 - **Say what remains.** For every site, state what is physically there today (a fenced furnace, a sealed
   portal, a flagpole), so nobody hikes to a ruin that is only a sign.
 - **History needs sourcing more than anything else in a guide.** Local history pages repeat each other's
