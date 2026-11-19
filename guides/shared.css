@@ -125,3 +125,5 @@ figure.cover img { height:80mm; }
 /* wildlife rows: the habitat-row layout with smaller photos, so eight fit a page */
 .biome3.sm { grid-template-columns: 30mm 1fr; gap:0 4mm; padding-top:1.4mm; }
 .biome3.sm figure.bio img { width:30mm; height:21mm; }
+/* a pair of taller photos side by side (almaden: museum and village) */
+figure.tall img { height:54mm; }

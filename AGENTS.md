@@ -37,7 +37,7 @@ label on every road, including paved ones.
 | "Last water" sign in the step table | a stretch dry and long enough to be dangerous | ordinary gaps between streams |
 | Road warning box, and its line on page 1 | an unpaved approach graded "mixed reports" or "high clearance" | paved or good gravel: "any car should be fine" in the running text, nothing more |
 | A photo of a named place | it shows the reader something they need to recognise or want to see | filling space; the original brief was "only where they add something" |
-| Shorter variant, no-car option, food | a sensible one exists | none does: say so in a line, or omit |
+| Shorter variant, no-car option, food | a sensible one exists | none does: leave it out, heading and all. No line saying there is none |
 
 ## Who reads them
 
@@ -92,6 +92,31 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   and does not prepare you for (descents, uneven footing, heat, altitude, exposure). For anything off trail,
   say that skill matters more than fitness.
 - Second person, plain sentences, concrete nouns. No brochure adjectives, no exclamation marks.
+- **Do not report an absence.** Every sentence gives the reader something to act on or look at. The
+  Almaden guide had an "Afterwards" section that opened "New Almaden has no café", a "Without a car"
+  section that read "I found no public transport to New Almaden", and a parking line ending "I found no
+  reliable account of how early". The owner had all three removed: each records what the research turned
+  up empty, and the reader can do nothing with it. The cause was filling in the outline: a heading from
+  the model guide was kept and then had to say something. When a section has nothing to offer, delete the
+  heading with it. Two things survive this rule. An absence the reader plans around is stated as a plain
+  fact where they plan ("no water at the trailhead", "no shuttle between the trailheads" on a
+  point-to-point trip). And one "I could not confirm" is allowed for a fact the plan depends on, as
+  below. Before finishing, search the template for "no ", "none", "I found no" and "could not" and
+  justify each hit.
+- **Headings inside the guide follow the same rule as titles: one plain phrase that says something about
+  this place.** The owner called "Quicksilver: what it was for, who dug it, and what it left" AI slop. It
+  is a label, a colon, and then a three-part list that is only a table of contents for the paragraphs
+  under it. It became "The mercury behind the Gold Rush", and the bold run-in heads under it went from
+  "What it was for", "Who dug it", "What it left" to "Gold needed it", "The miners", "The waste". What
+  failed was the combination: a label, a colon, and a string of "what/who/why" clauses. Test: if the
+  heading could be generated from the paragraph headings below it, it adds nothing. This is narrow. A
+  plain label that lists what a section holds ("Parking, fees and the gate", "Grass, cattle and ponds")
+  is fine, and so is a short question the section answers ("Why this way round", "Will there be water?").
+  A subagent told to apply the first wording of this rule rewrote five such headings in the Murietta
+  guide, and they were put back.
+  One exception the owner kept: **"Who lives here"** (or "Who lives here now") as the head for the animals
+  paragraph. It recurs from guide to guide (West Point, Murietta Falls, Purisima) as a running thread, so
+  use those words wherever a guide has that paragraph and do not "fix" it.
 - **Titles and the subtitle are written from the walker's position.** The title names a moment the walker
   will have, or a way of experiencing the place: "Muir Woods, by the back door", "The balcony of Mount Tam",
   "A lake behind every ridge: the Four Lakes Loop". The owner rejected "Round the mountain" (the route's
@@ -145,9 +170,9 @@ guide; 4 and 7 only when there is something to say:
    and the fog/geology/aspect reasons; Four Lakes: red peridotite, white granite, cirques). Use "worlds" or
    "habitats", not "biome". Give real numbers with sources if claiming something is special.
 5. **Getting there**: driving map with lettered markers, turn-by-turn table, parking stated explicitly
-   (including free roadside parking), no-car options, shuttle if needed.
+   (including free roadside parking), a no-car option if one exists, shuttle if needed.
 6. **Practical**: when to go, fees/permits, what to bring, hazards, rules.
-7. **Afterwards**: where to eat, with links to each restaurant's own site. Open every link and check it is
+7. **Afterwards**: where a hiker in boots would actually eat nearby; if there is nowhere, no section. Links to each restaurant's own site. Open every link and check it is
    the real business (one domain had become a gambling page; it was dropped). No link beats a wrong one.
 8. **Sources and photo credits** on the last page, wrapped in `<div class="foot">` so they sit at the
    bottom of the page as footnotes, not directly under the last paragraph (the owner asked for this).

@@ -49,8 +49,8 @@ PHOTOS=dict(
    caption='What is left of the ore-car trestle outside the April Tunnel.'),
  town=dict(file='File:The Town at the Mine, New Almaden. (6131063220).jpg',short='Town at the mine, c. 1867',cls='duo',crop=(0.075,0.06,0.495,0.86),
    caption='“The Town at the Mine”, photographed by Carleton Watkins about 1867 (DeGolyer Library, SMU).'),
- valley=dict(file='File:USA-San Jose-Almaden Quicksilver Park-Mine Hill Trail-1.jpg',short='Mine Hill Trail',cls='duo',crop=(0,0.10,1,0.85),
+ valley=dict(file='File:USA-San Jose-Almaden Quicksilver Park-Mine Hill Trail-1.jpg',short='Mine Hill Trail',cls='tall',crop=(0,0.10,1,0.85),
    caption='Coming down the Mine Hill Trail: the Santa Clara Valley, which the mine’s money helped build.'),
- casa=dict(file='File:Casa Grande 11 (8400595006).jpg',short='Casa Grande',cls='duo',
+ casa=dict(file='File:Casa Grande 11 (8400595006).jpg',short='Casa Grande',cls='tall',
    caption='Casa Grande, the mine manager’s house of 1854, now the mining museum.'),
 )
