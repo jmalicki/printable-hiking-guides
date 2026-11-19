@@ -14,6 +14,7 @@ Printable hiking guides with maps (US Letter in feet and miles by default; A4 an
 | Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite, day hike) | `guides/clouds-rest` | `out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake.pdf` |
 | Chasing the rain to Murietta Falls (Ohlone Wilderness from Del Valle, out and back) | `guides/murietta-falls` | `out/murietta-falls/ohlone-murietta-falls.pdf` |
 | To the edge of Yellowstone: Bighorn Peak by Black Butte Creek (Gallatin Range, day hike, out and back) | `guides/bighorn-peak` | `out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte.pdf` |
+| Ocean to the left, bay to the right: Russian Ridge (Borel Hill, Hawk Ridge and the Ancient Oaks, with wildflower, salamander and wildlife pages) | `guides/russian-ridge` | `out/russian-ridge/russian-ridge-borel-hill-ancient-oaks.pdf` |
 
 Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
 

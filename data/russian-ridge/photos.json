@@ -1,0 +1,146 @@
+{
+ "hero": {
+  "file": "File:Russian Ridge-Wildflowers.jpg",
+  "artist": "Steve Jurvetson",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Russian_Ridge-Wildflowers.jpg"
+ },
+ "poppy": {
+  "file": "File:1 California poppy.jpg",
+  "artist": "Martin Jambon",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1_California_poppy.jpg"
+ },
+ "lupine": {
+  "file": "File:Fabaceae lupinus nanus sky lupine.jpg",
+  "artist": "Sgerbic",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fabaceae_lupinus_nanus_sky_lupine.jpg"
+ },
+ "owl": {
+  "file": "File:Orobanchaceae Castilleja exserta Pink Owls clover.jpg",
+  "artist": "Sgerbic",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Orobanchaceae_Castilleja_exserta_Pink_Owls_clover.jpg"
+ },
+ "tidy": {
+  "file": "File:Tidy Tips (Layia platyglossa) (7060913097).jpg",
+  "artist": "Franco Folini from San Francisco, USA",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tidy_Tips_(Layia_platyglossa)_(7060913097).jpg"
+ },
+ "checker": {
+  "file": "File:Sidalcea malviflora ssp malviflora 3.jpg",
+  "artist": "Stan Shebs",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sidalcea_malviflora_ssp_malviflora_3.jpg"
+ },
+ "blue": {
+  "file": "File:Blue Eyed Grass, Bay Area.jpg",
+  "artist": "Dawn Endico from Menlo Park, California",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Eyed_Grass,_Bay_Area.jpg"
+ },
+ "newt": {
+  "file": "File:Taricha torosa, Napa County, CA.jpg",
+  "artist": "Connor Long",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taricha_torosa,_Napa_County,_CA.jpg"
+ },
+ "rough": {
+  "file": "File:Roughed Skinned Newt (16744025149).jpg",
+  "artist": "Rennett Stowe from USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roughed_Skinned_Newt_(16744025149).jpg"
+ },
+ "belly": {
+  "file": "File:California Newt (Taricha torosa) (4415749606).jpg",
+  "artist": "Steve Jurvetson from Menlo Park, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:California_Newt_(Taricha_torosa)_(4415749606).jpg"
+ },
+ "ensatina": {
+  "file": "File:Yellow-eyed Ensatina (Ensatina eschscholtzii xanthoptica).jpg",
+  "artist": "Greg Schechter",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yellow-eyed_Ensatina_(Ensatina_eschscholtzii_xanthoptica).jpg"
+ },
+ "slender": {
+  "file": "File:Batrachoseps attenuatus California slender salamander - 5624597387.jpg",
+  "artist": "Brian Gratwicke",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Batrachoseps_attenuatus_California_slender_salamander_-_5624597387.jpg"
+ },
+ "arboreal": {
+  "file": "File:Aneides lugubris - Arboreal Salamander 05.jpg",
+  "artist": "JLAuckle",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aneides_lugubris_-_Arboreal_Salamander_05.jpg"
+ },
+ "garter": {
+  "file": "File:Thamnophis sirtalis tetrataenia (2005 10 16) - uitsnede.jpg",
+  "artist": "Taka",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_tetrataenia_(2005_10_16)_-_uitsnede.jpg"
+ },
+ "oaks": {
+  "file": "https://live.staticflickr.com/8621/15887249468_676aff9d67_b.jpg",
+  "artist": "bgwashburn (Flickr)",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/bgwashburn/15887249468/"
+ },
+ "grass": {
+  "file": "File:Russian Ridge Open Space.jpg",
+  "artist": "Inklein",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Russian_Ridge_Open_Space.jpg"
+ },
+ "badger": {
+  "file": "File:Taxidea taxus (Point Reyes, 2007).jpg",
+  "artist": "Yathin S Krishnappa",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taxidea_taxus_(Point_Reyes,_2007).jpg"
+ },
+ "coyote": {
+  "file": "File:Alert Coyote (39381073180).jpg",
+  "artist": "Justin Dolske from Cupertino, USA",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alert_Coyote_(39381073180).jpg"
+ },
+ "kestrel": {
+  "file": "File:Hovering Kestrel (8625537353).jpg",
+  "artist": "CheepShot",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hovering_Kestrel_(8625537353).jpg"
+ },
+ "bunting": {
+  "file": "File:Lazuli Bunting (male) Bob Rodrigues's Yard Portal AZ 2018-05-10 08-10-58 (29961352838).jpg",
+  "artist": "Bettina Arrigoni",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lazuli_Bunting_(male)_Bob_Rodrigues%27s_Yard_Portal_AZ_2018-05-10_08-10-58_(29961352838).jpg"
+ },
+ "checkerspot": {
+  "file": "File:Variable Checkerspot (Euphydryas chalcedona).jpg",
+  "artist": "Steve Berardi",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Variable_Checkerspot_(Euphydryas_chalcedona).jpg"
+ },
+ "lizard": {
+  "file": "File:Sceloporus occidentalis, Sacramento County, California.jpg",
+  "artist": "Connor Long",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sceloporus_occidentalis,_Sacramento_County,_California.jpg"
+ },
+ "violet": {
+  "file": "File:JOHNNY JUMP-UP (viola pedunculata) (4-13-07) -canet (535408937).jpg",
+  "artist": "ALAN SCHMIERER",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:JOHNNY_JUMP-UP_(viola_pedunculata)_(4-13-07)_-canet_(535408937).jpg"
+ },
+ "clarkia": {
+  "file": "File:Ruby chalice clarkia (Clarkia rubicunda) (7778062648).jpg",
+  "artist": "Franco Folini from San Francisco, USA",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ruby_chalice_clarkia_(Clarkia_rubicunda)_(7778062648).jpg"
+ }
+}
