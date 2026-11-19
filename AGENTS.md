@@ -74,11 +74,13 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   facilities, road surface, fire and canister rules, ecology written from memory) are either verified against
   a source, worded as uncertain in the guide ("I could not confirm…"), or left out. Tell the owner in chat
   which ones remain unverified. When sources disagree on a figure, use the route's own computed number.
-- **Do not be cagey.** One plain sentence about what the guide rests on is enough ("Nobody walked this loop for
-  the guide… where a sign disagrees with it, believe the sign"). The owner called a paragraph listing what
-  "could not be read" and what "needs checking on the day" excessively cagey. Never put tooling problems in
-  a guide (a blocked web page is not the reader's concern), and do not hedge facts you could verify with a
-  little more work: verify them.
+- **Do not be cagey, and do not disclaim by reflex.** The red box is for hazards and for guidance that
+  rests on thin evidence where being wrong is dangerous (the off-trail crossing in the Trinity traverse).
+  An ordinary signed trail in a park needs no "nobody walked this" warning: the owner asked why the Almaden
+  guide had one when the others did not, and it was removed. That a guide was compiled and not walked goes
+  in the sources footer, in a few words ("Compiled November 2026; not walked for this guide"). Never put
+  tooling problems in a guide (a blocked web page is not the reader's concern), and do not hedge facts you
+  could verify with a little more work: verify them.
 - **A page that refuses automated fetching (HTTP 403) is not unreadable.** Open it in the browser pane and
   read it there before writing around it; the county park pages for Almaden read fine that way. PDFs opened
   in the browser pane trigger a download prompt for the owner, so ask before opening one.
