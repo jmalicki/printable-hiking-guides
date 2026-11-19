@@ -1,0 +1,38 @@
+{
+ "deer": {
+  "file": "File:Trinity Alps Deer Lake.jpg",
+  "artist": "Lm3DC",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trinity_Alps_Deer_Lake.jpg"
+ },
+ "diamond": {
+  "file": "File:Diamond Lake, Sawtooth Mountain.jpg",
+  "artist": "Tom Hilton",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Diamond_Lake,_Sawtooth_Mountain.jpg"
+ },
+ "flower": {
+  "file": "https://live.staticflickr.com/2626/3703698663_95af6e7210_b.jpg",
+  "artist": "Tom Hilton",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/tomhilton/3703698663/"
+ },
+ "summit": {
+  "file": "https://live.staticflickr.com/3468/3703697127_da6621a3e3_b.jpg",
+  "artist": "Tom Hilton (Flickr)",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/tomhilton/3703697127/"
+ },
+ "luella": {
+  "file": "https://live.staticflickr.com/3450/3701611342_f5657d2687_b.jpg",
+  "artist": "Tom Hilton (Flickr)",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/tomhilton/3701611342/"
+ },
+ "redwhite": {
+  "file": "https://live.staticflickr.com/65535/54364584195_3444eeecc6_b.jpg",
+  "artist": "AditiStargazer (Flickr)",
+  "license": "CC BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/aditithestargazer/54364584195/"
+ }
+}

@@ -7,6 +7,7 @@ Printable A4 hiking guides with maps, built from scripts. One folder per guide u
 | Muir Woods by the back door (Mountain Home Inn loop) | `guides/muir-woods` | `out/muir-woods/muir-woods-back-door.pdf` |
 | The balcony of Mount Tam (Rock Spring – West Point Inn – Matt Davis – Bootjack) | `guides/west-point` | `out/west-point/mount-tam-west-point-loop.pdf` |
 | Trinity Alps: Canyon Creek Lakes over Kalmia Pass to Sapphire Lake (off-trail traverse) | `guides/trinity-traverse` | `out/trinity-traverse/trinity-alps-canyon-creek-to-sapphire.pdf` |
+| Four lakes around Siligo Peak (Long Canyon and Stoney Ridge entrances) | `guides/four-lakes` | `out/four-lakes/trinity-alps-four-lakes-loop.pdf` |
 
 Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
 
@@ -15,6 +16,7 @@ Style, audience, required sections and working method for writing a new guide ar
 ## Build
 - `make` — rebuild every PDF from cached data (no network)
 - `make GUIDE=west-point` — one guide
+- `make GUIDE=four-lakes PDF_ENGINE=mupdf` — render the Four Lakes guide without launching Chrome
 - `make routes-west-point` — recompute a guide's route + GPX from cached trail data
 - `make refresh GUIDE=west-point` — re-download trails, basemaps, driving route and photos, then rebuild
 

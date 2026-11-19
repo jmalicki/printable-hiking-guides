@@ -50,8 +50,8 @@ def draw_map(M,base,cls='map'):
     for n,(a,b) in enumerate(zip(cuts,cuts[1:])):
         i=bisect.bisect_left(main['cum'],a);j=bisect.bisect_left(main['cum'],b)
         if j>i:line(main['coords'][i:j+1],'RED',9*k,'%.0f %.0f'%(11*k,9*k) if n%2 else None)
-    mk=[main['marks'][kk] for kk,_ in M['markers']] or [0];dd=M.get('arrow_start',450)
-    while dd<main['length_m']-200:
+    mk=[main['marks'][kk] for kk,_ in M['markers'] if kk in main['marks']] or [0];dd=M.get('arrow_start',450)
+    while dd<M.get('arrow_end',main['length_m']-200):
         if min(abs(dd-m) for m in mk)>M.get('arrow_clear',130):
             i=bisect.bisect_left(main['cum'],dd);a=P(main['coords'][max(0,i-3)]);b=P(main['coords'][min(len(main['coords'])-1,i+3)]);c=P(main['coords'][i])
             if 0<c[0]<W and 0<c[1]<H:s.append('<polygon points="15,0 -11,-12 -5,0 -11,12" transform="translate(%.1f %.1f) rotate(%.1f) scale(%.2f)" fill="%s" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>'%(c[0],c[1],math.degrees(math.atan2(b[1]-a[1],b[0]-a[0])),k,RED))
@@ -71,23 +71,25 @@ MAP,W,H=draw_map(C.MAP,'basemap')
 DETAIL=draw_map(C.DETAIL,'detail-basemap')[0] if hasattr(C,'DETAIL') else ''
 
 # ---------------- elevation profile ----------------
-PF=C.PROFILE;PW,PH,ML,MR,MT,MB=1400,PF.get('height',330),78,24,30,48;Lm=main['length_m'];e0,e1=PF['emin'],PF['emax']
-X=lambda d:ML+(PW-ML-MR)*d/Lm
-Y=lambda e:MT+(PH-MT-MB)*(1-(e-e0)/(e1-e0))
-p=['<svg class="profile" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">'%(PW,PH)]
-for e in range(e0,e1+1,PF['grid']):
-    p.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#cfd6cf" stroke-width="1.5"/>'%(ML,PW-MR,Y(e),Y(e)))
-    if (e-e0)%PF['label_every']==0:p.append('<text x="%d" y="%.1f" text-anchor="end" class="ax">%d m</text>'%(ML-10,Y(e)+7,e))
-for k in range(0,int(Lm/1000)+1,PF.get('km_step',1)):
-    p.append('<text x="%.1f" y="%d" text-anchor="middle" class="ax">%d km</text><line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/>'%(X(k*1000),PH-14,k,X(k*1000),X(k*1000),Y(e0),Y(e0)+7,INK))
-for a_,b_ in main.get('offtrail',[]):p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="#c8102e" fill-opacity=".10"/>'%(X(a_),MT,X(b_)-X(a_),PH-MT-MB))
-pp=' '.join('%.1f,%.1f'%(X(d),Y(e)) for d,e in zip(main['cum'],main['ele']))
-p.append('<polygon points="%.1f,%.1f %s %.1f,%.1f" fill="#2f6b4f" fill-opacity=".22"/><polyline points="%s" fill="none" stroke="%s" stroke-width="5" stroke-linejoin="round"/>'%(X(0),Y(e0),pp,X(Lm),Y(e0),pp,RED))
-for k,n,dx in PF['markers']:
-    d=main['marks'][k];e=main['ele'][bisect.bisect_left(main['cum'],d)];cx,cy=X(d)+dx,Y(e)-30
-    p.append('<line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/><circle cx="%.1f" cy="%.1f" r="15" fill="%s"/><text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:19px;font-weight:700;fill:#fff">%s</text>'%(X(d),cx,Y(e),cy,INK,cx,cy,INK,cx,cy+7,n))
-for d,e,t in PF['notes']:p.append('<text x="%.1f" y="%.1f" text-anchor="middle" class="note">%s</text>'%(X(d),Y(e),t))
-p.append('</svg>');PROFILE=''.join(p)
+def draw_profile(main, PF):
+    PW,PH,ML,MR,MT,MB=1400,PF.get('height',330),78,24,30,48;Lm=main['length_m'];e0,e1=PF['emin'],PF['emax']
+    X=lambda d:ML+(PW-ML-MR)*d/Lm
+    Y=lambda e:MT+(PH-MT-MB)*(1-(e-e0)/(e1-e0))
+    p=['<svg class="profile" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">'%(PW,PH)]
+    for e in range(e0,e1+1,PF['grid']):
+        p.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#cfd6cf" stroke-width="1.5"/>'%(ML,PW-MR,Y(e),Y(e)))
+        if (e-e0)%PF['label_every']==0:p.append('<text x="%d" y="%.1f" text-anchor="end" class="ax">%d m</text>'%(ML-10,Y(e)+7,e))
+    for k in range(0,int(Lm/1000)+1,PF.get('km_step',1)):
+        p.append('<text x="%.1f" y="%d" text-anchor="middle" class="ax">%d km</text><line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/>'%(X(k*1000),PH-14,k,X(k*1000),X(k*1000),Y(e0),Y(e0)+7,INK))
+    for a_,b_ in main.get('offtrail',[]):p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="#c8102e" fill-opacity=".10"/>'%(X(a_),MT,X(b_)-X(a_),PH-MT-MB))
+    pp=' '.join('%.1f,%.1f'%(X(d),Y(e)) for d,e in zip(main['cum'],main['ele']))
+    p.append('<polygon points="%.1f,%.1f %s %.1f,%.1f" fill="#2f6b4f" fill-opacity=".22"/><polyline points="%s" fill="none" stroke="%s" stroke-width="5" stroke-linejoin="round"/>'%(X(0),Y(e0),pp,X(Lm),Y(e0),pp,RED))
+    for k,n,dx in PF['markers']:
+        d=main['marks'][k];e=main['ele'][bisect.bisect_left(main['cum'],d)];cx,cy=X(d)+dx,Y(e)-30
+        p.append('<line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="2"/><circle cx="%.1f" cy="%.1f" r="15" fill="%s"/><text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:19px;font-weight:700;fill:#fff">%s</text>'%(X(d),cx,Y(e),cy,INK,cx,cy,INK,cx,cy+7,n))
+    for d,e,t in PF['notes']:p.append('<text x="%.1f" y="%.1f" text-anchor="middle" class="note">%s</text>'%(X(d),Y(e),t))
+    p.append('</svg>');return ''.join(p)
+PROFILE = draw_profile(main, C.PROFILE)
 
 # ---------------- access (driving) map ----------------
 A=C.ACCESS;AR=json.load(open(D+'/access-route.json'));AJ=Proj(json.load(open(D+'/access-basemap.json')))
@@ -138,6 +140,8 @@ def photo(m):
 credits=' · '.join('%s: %s, %s'%(PH_[k].get('short',k),meta[k]['artist'].split(' from ')[0],meta[k]['license']) for k in PH_ if k in meta)
 html=open(C.DIR+'/template.html').read().replace('{{CSS}}',open(ROOT+'/guides/shared.css').read())
 html=html.replace('{{MAP}}',MAP).replace('{{DETAIL}}',DETAIL).replace('{{PROFILE}}',PROFILE).replace('{{ACCESS}}',ACCESS).replace('{{PHOTO_CREDITS}}',credits)
+for name, settings in getattr(C, 'PROFILES', {}).items():
+    html = html.replace('{{PROFILE:' + name + '}}', draw_profile(R[name], settings))
 html=re.sub(r'\{\{PHOTO:(\w+)\}\}',photo,html)
 open(C.OUT+'/guide.html','w').write(html)
 print('%s: map %dx%d, access %dx%d, html %.1f MB'%(C.SLUG,W,H,AW,AH,len(html)/1e6))

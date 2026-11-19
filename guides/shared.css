@@ -99,3 +99,5 @@ figure.nd img { height:auto; }
 .days td small { color:#55635a; display:block; }
 .l-off { border-top:1.1mm dashed var(--red); }
 figure.hero.short img, .trinity figure.hero img { height:58mm; }
+/* cover photo beside the pitch (four-lakes) */
+figure.cover img { height:80mm; }
