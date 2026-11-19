@@ -55,8 +55,18 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   and does not prepare you for (descents, uneven footing, heat, altitude, exposure). For anything off trail,
   say that skill matters more than fitness.
 - Second person, plain sentences, concrete nouns. No brochure adjectives, no exclamation marks.
-- Titles are an image plus a plain subtitle: "Muir Woods, by the back door", "The balcony of Mount Tam",
-  "A lake behind every ridge: the Four Lakes Loop".
+- **Titles and the subtitle are written from the walker's position.** The title names a moment the walker
+  will have, or a way of experiencing the place: "Muir Woods, by the back door", "The balcony of Mount Tam",
+  "A lake behind every ridge: the Four Lakes Loop". The owner rejected "Round the mountain" (the route's
+  shape; fits any loop), "Four lakes, one mountain" (a count that restates the trail's name) and "Red rock,
+  white rock, four lakes" (a feature list with no walker in it). Test: could the title go on another hike,
+  and does it read like a map legend? If so, try again.
+  The subtitle is not the itinerary. The rejected one listed the stages, a height and the logistics, all
+  of which the stat strip and pitch already carry. The accepted one uses verbs, keeps one number for where
+  it impresses, and ends on the honest cost: "Cross one high pass and the trail circles a single peak,
+  handing you a new lake each time you top a ridge: four in seven miles… You pay for it on day one."
+  (The reasons are the writing agent's inference from this one exchange in November 2026; the owner said
+  only which versions they liked and disliked.)
 - **Never assert what was not checked.** Unverified items (turn directions from memory, opening hours,
   facilities, road surface, fire and canister rules, ecology written from memory) are either verified against
   a source, worded as uncertain in the guide ("I could not confirm…"), or left out. Tell the owner in chat
