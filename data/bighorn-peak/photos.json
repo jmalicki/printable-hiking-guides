@@ -1,0 +1,116 @@
+{
+ "hero": {
+  "file": "File:Big Horn Peak.jpg",
+  "artist": "Yellowstone National Park",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Big_Horn_Peak.jpg"
+ },
+ "sign": {
+  "file": "File:Views along the Sky Rim Trail- Big Horn trail junction (2) (53069066351).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Sky_Rim_Trail-_Big_Horn_trail_junction_(2)_(53069066351).jpg"
+ },
+ "junction": {
+  "file": "File:Views along the Black Butte Creek Trail- trail junction (53069067386).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Black_Butte_Creek_Trail-_trail_junction_(53069067386).jpg"
+ },
+ "bloom": {
+  "file": "File:Views along the Black Butte Creek Trail- full bloom (53069462355).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Black_Butte_Creek_Trail-_full_bloom_(53069462355).jpg"
+ },
+ "ridge": {
+  "file": "File:Views along the Sky Rim Trail- trail looking north (53068465917).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Sky_Rim_Trail-_trail_looking_north_(53068465917).jpg"
+ },
+ "petrified": {
+  "file": "File:Views along the Sky Rim Trail- petrified wood (53069238189).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Sky_Rim_Trail-_petrified_wood_(53069238189).jpg"
+ },
+ "flank": {
+  "file": "File:Views along the Sky Rim Trail- Big Horn Peak flank.jpg",
+  "artist": "Yellowstone National Park",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Sky_Rim_Trail-_Big_Horn_Peak_flank.jpg"
+ },
+ "lone": {
+  "file": "File:Views along the Sky Rim Trail- Lone Mountain (53069258984).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Sky_Rim_Trail-_Lone_Mountain_(53069258984).jpg"
+ },
+ "parking": {
+  "file": "File:Black Butte Trailhead Parking (356f3948-c1dd-465e-b893-d11e9576e7e2).jpg",
+  "artist": "NPS/Diane Renkin",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_Butte_Trailhead_Parking_(356f3948-c1dd-465e-b893-d11e9576e7e2).jpg"
+ },
+ "trailhead": {
+  "file": "File:Black Butte Trailhead (1299516a-4d28-4987-aa4d-24c428eb107c).jpg",
+  "artist": "NPS/Diane Renkin",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_Butte_Trailhead_(1299516a-4d28-4987-aa4d-24c428eb107c).jpg"
+ },
+ "forest": {
+  "file": "File:Views along the Black Butte Creek Trail- freshly cleared trail (53069260529).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Views_along_the_Black_Butte_Creek_Trail-_freshly_cleared_trail_(53069260529).jpg"
+ },
+ "sheep": {
+  "file": "File:Ram and ewe bighorn sheep (37991290334).jpg",
+  "artist": "Yellowstone National Park",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Ram_and_ewe_bighorn_sheep_(37991290334).jpg"
+ },
+ "goat": {
+  "file": "File:Mountain goats on Sepulcher Mountain (8468633942).jpg",
+  "artist": "Yellowstone National Park, USA by Diane Renkin",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Mountain_goats_on_Sepulcher_Mountain_(8468633942).jpg"
+ },
+ "grizzly": {
+  "file": "File:Grizzly Bear on Swan Lake Flat - Flickr - YellowstoneNPS.jpg",
+  "artist": "Yellowstone National Park",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Grizzly_Bear_on_Swan_Lake_Flat_-_Flickr_-_YellowstoneNPS.jpg"
+ },
+ "moose": {
+  "file": "File:Cow and calf moose (df0ea03b-2518-4358-89ef-edef4eb07799).jpg",
+  "artist": "Neal Herbert",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_and_calf_moose_(df0ea03b-2518-4358-89ef-edef4eb07799).jpg"
+ },
+ "marmot": {
+  "file": "File:Yellow-bellied marmot (54571541454).jpg",
+  "artist": "YellowstoneNPS",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Yellow-bellied_marmot_(54571541454).jpg"
+ },
+ "pika": {
+  "file": "File:Pika - Ochotona princeps (38240594396).jpg",
+  "artist": "Yellowstone National Park by Jacob W. Frank",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Pika_-_Ochotona_princeps_(38240594396).jpg"
+ },
+ "weasel": {
+  "file": "File:Short-tailed weasel perched on a rock (30917471668).jpg",
+  "artist": "Yellowstone National Park by Jacob W. Frank",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Short-tailed_weasel_perched_on_a_rock_(30917471668).jpg"
+ },
+ "marten": {
+  "file": "File:Marten in a tree (99f5cfa2-054b-4e09-a448-64565f944dd2).jpg",
+  "artist": "Jacob W. Frank",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Marten_in_a_tree_(99f5cfa2-054b-4e09-a448-64565f944dd2).jpg"
+ }
+}

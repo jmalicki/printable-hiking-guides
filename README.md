@@ -12,6 +12,7 @@ Printable hiking guides with maps (US Letter in feet and miles by default; A4 an
 | Almaden Quicksilver: the Mine Hill mining-history loop from the Hacienda entrance | `guides/almaden-quicksilver` | `out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf` |
 | Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite, day hike) | `guides/clouds-rest` | `out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake.pdf` |
 | Chasing the rain to Murietta Falls (Ohlone Wilderness from Del Valle, out and back) | `guides/murietta-falls` | `out/murietta-falls/ohlone-murietta-falls.pdf` |
+| To the edge of Yellowstone: Bighorn Peak by Black Butte Creek (Gallatin Range, day hike, out and back) | `guides/bighorn-peak` | `out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte.pdf` |
 
 Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
 
