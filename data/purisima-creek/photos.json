@@ -1,0 +1,38 @@
+{
+ "hero": {
+  "file": "File:Purisima Creek Trail 5.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Purisima_Creek_Trail_5.JPG"
+ },
+ "road": {
+  "file": "File:Purisima Creek Trail 1.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Purisima_Creek_Trail_1.JPG"
+ },
+ "creek": {
+  "file": "File:Purisima Creek Trail 6.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Purisima_Creek_Trail_6.JPG"
+ },
+ "slug": {
+  "file": "File:Banana slug on Purisima Creek Trail.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Banana_slug_on_Purisima_Creek_Trail.JPG"
+ },
+ "stand": {
+  "file": "File:Purisima Creek Redwoods, Aug 2019 3.jpg",
+  "artist": "Thomson200",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Purisima_Creek_Redwoods,_Aug_2019_3.jpg"
+ },
+ "vista": {
+  "file": "File:Purisima Creek vista.jpg",
+  "artist": "Tom Radulovich",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Purisima_Creek_vista.jpg"
+ }
+}

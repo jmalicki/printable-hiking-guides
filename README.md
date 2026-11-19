@@ -10,6 +10,7 @@ Printable hiking guides with maps (US Letter in feet and miles by default; A4 an
 | Four lakes around Siligo Peak (Long Canyon and Stoney Ridge entrances) | `guides/four-lakes` | `out/four-lakes/trinity-alps-four-lakes-loop.pdf` |
 | Behind the Grand Teton: Paintbrush Canyon, Paintbrush Divide, Lake Solitude and Cascade Canyon from String Lake | `guides/paintbrush-cascade` | `out/paintbrush-cascade/grand-teton-paintbrush-cascade-loop.pdf` |
 | Almaden Quicksilver: the Mine Hill mining-history loop from the Hacienda entrance | `guides/almaden-quicksilver` | `out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf` |
+| Purisima Creek Redwoods: creek, Craig Britton Trail and Harkins Ridge loop | `guides/purisima-creek` | `out/purisima-creek/purisima-creek-redwoods-loop.pdf` |
 | Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite, day hike) | `guides/clouds-rest` | `out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake.pdf` |
 | Chasing the rain to Murietta Falls (Ohlone Wilderness from Del Valle, out and back) | `guides/murietta-falls` | `out/murietta-falls/ohlone-murietta-falls.pdf` |
 | To the edge of Yellowstone: Bighorn Peak by Black Butte Creek (Gallatin Range, day hike, out and back) | `guides/bighorn-peak` | `out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte.pdf` |
