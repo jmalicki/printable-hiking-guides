@@ -6,6 +6,7 @@
 <style>
 @page { size: A4; margin: 9mm 12mm 8mm; }
 html { zoom: .95; }
+:root { --pageh: 291mm; }
 :root { --ink:#1b2a22; --green:#2f6b4f; --red:#c8102e; --blue:#1d4ed8; --paper:#fbfaf6; --rule:#d9ddd3; --soft:#eef1ea; }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -118,6 +119,11 @@ figure.cover img { height:80mm; }
 /* amber: officially fit for cars (FS level 3) but reports are mixed; red (default): not maintained for cars */
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
+/* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
+.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > * { flex:none; }
+.foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
+.foot p { margin-bottom:1.2mm; }
 
 </style>
 </head>
@@ -310,7 +316,9 @@ figure.cover img { height:80mm; }
       <p class="small">Kitchens close around 9 pm. Hours change: check on the day.</p>
     </div>
   </div>
+  <div class="foot">
   <p class="small" style="margin-top:2mm">Park information: California State Parks and the West Point Inn Association, November 2026. Photos, Wikimedia Commons — Skyline: Pi.1415926535, CC BY-SA 4.0 · Theater: Dicklyon, CC BY-SA 4.0 · Inn: lamblukas (Flickr), CC BY 2.0 · Porch: sparkle glowplug (Flickr), CC BY-NC 2.0 · Fog: Dheera, CC BY-SA 4.0 · Grassland: Andrew Kearns, CC BY 2.0 · Serpentine: Alexander Wentworth, CC BY 4.0 · Chaparral: vrkrebs (Flickr), CC BY-NC-ND 2.0 · Madrone: Awinch1001, CC BY 4.0 · Redwoods: Wordcraft, CC BY-SA 3.0.</p>
+  </div>
 </section>
 
 </body>

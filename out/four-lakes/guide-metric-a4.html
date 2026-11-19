@@ -6,6 +6,7 @@
 <style>
 @page { size: A4; margin: 9mm 12mm 8mm; }
 html { zoom: .95; }
+:root { --pageh: 291mm; }
 :root { --ink:#1b2a22; --green:#2f6b4f; --red:#c8102e; --blue:#1d4ed8; --paper:#fbfaf6; --rule:#d9ddd3; --soft:#eef1ea; }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -118,6 +119,11 @@ figure.cover img { height:80mm; }
 /* amber: officially fit for cars (FS level 3) but reports are mixed; red (default): not maintained for cars */
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
+/* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
+.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > * { flex:none; }
+.foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
+.foot p { margin-bottom:1.2mm; }
 
 </style>
 </head>
@@ -329,9 +335,10 @@ figure.cover img { height:80mm; }
       <p>Weaverville is a well-kept gold-rush town with motels and places to eat; <a href="https://thenuggetrestaurant.com/">The Nugget</a> (790 Main St) is the classic diner for the meal afterwards. To start early, camp the night before at one of the Forest Service campgrounds along Highway 3 on Trinity Lake.</p>
     </div>
   </div>
-  <hr>
+  <div class="foot">
   <p class="small"><b>Sources.</b> Trail descriptions checked against <a href="https://hikemtshasta.com/trails-further-afield/trinity-alps-trails/four-lakes-loop/">Hike Mt. Shasta: Four Lakes Loop</a> and <a href="https://hikemtshasta.com/trails-further-afield/trinity-alps-trails/stoney-ridge-trail/">Stoney Ridge Trail</a>, and <a href="https://trailcatjim.com/four-lakes-loop-siligo-peak-via-long-canyon-deer-creek-pass/">Jim Brisbine’s October 2020 trip report</a>. Rules from Shasta-Trinity National Forest, <a href="https://www.fs.usda.gov/sites/nfs/files/r05/klamath/publication/alerts/14-25-03%20Trinity%20Alps%20Wilderness%20Area%20Restrictions.pdf">Forest Order 14-25-03</a>. This route was compiled from maps and published reports in November 2026 and not walked for this guide; conditions, rules and road access change, so confirm with the Weaverville ranger station, +1 530 623 2121.</p>
   <p class="small"><b>Photos</b> (Wikimedia Commons and Flickr, Creative Commons) — Diamond Lake: Tom Hilton, CC BY 2.0 · Summit Lake: Tom Hilton (Flickr), CC BY 2.0 · Luella Lake: Tom Hilton (Flickr), CC BY 2.0 · Deer Lake: Lm3DC, CC BY 4.0 · Red and white rock: AditiStargazer (Flickr), CC BY-NC-SA 2.0.</p>
+  </div>
 </section>
 
 </body>

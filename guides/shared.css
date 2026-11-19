@@ -111,3 +111,8 @@ figure.cover img { height:80mm; }
 /* amber: officially fit for cars (FS level 3) but reports are mixed; red (default): not maintained for cars */
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
+/* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
+.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > * { flex:none; }
+.foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
+.foot p { margin-bottom:1.2mm; }

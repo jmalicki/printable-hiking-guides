@@ -101,7 +101,8 @@ In roughly this page order (5–6 pages; see the existing templates):
 6. **Practical**: when to go, fees/permits, what to bring, hazards, rules.
 7. **Afterwards**: where to eat, with links to each restaurant's own site. Open every link and check it is
    the real business (one domain had become a gambling page; it was dropped). No link beats a wrong one.
-8. **Sources and photo credits** on the last page.
+8. **Sources and photo credits** on the last page, wrapped in `<div class="foot">` so they sit at the
+   bottom of the page as footnotes, not directly under the last paragraph (the owner asked for this).
 
 ## Backpacking guides: water
 
