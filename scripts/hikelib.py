@@ -34,7 +34,7 @@ US_WORDS={'centre':'center','centres':'centers','metre':'meter','metres':'meters
  'favourite':'favorite','neighbours':'neighbors','neighbour':'neighbor','grey':'gray','storey':'story','towards':'toward',
  'autumn':'fall','rubbish':'trash','car park':'parking lot','car parks':'parking lots','mobile signal':'cell signal','taps':'faucets',
  'number-plate':'license-plate','petrol station':'gas station','timetable':'schedule','roadworks':'road work','fuel':'gas','shops':'stores','shop':'store',
- 'pitches':'tent sites','waterproof':'rain jacket','headtorch':'headlamp','head torch':'headlamp','recognise':'recognize','anticlockwise':'counterclockwise','sulphide':'sulfide','sulphur':'sulfur','tonnes':'metric tons','specialise':'specialize','trainers':'sneakers','mould':'mold','chequered':'checkered','letterbox':'mail slot','travelled':'traveled','neighbouring':'neighboring'}
+ 'pitches':'tent sites','waterproof':'rain jacket','headtorch':'headlamp','head torch':'headlamp','recognise':'recognize','anticlockwise':'counterclockwise','sulphide':'sulfide','sulphur':'sulfur','tonnes':'metric tons','specialise':'specialize','trainers':'sneakers','mould':'mold','chequered':'checkered','letterbox':'mail slot','travelled':'traveled','neighbouring':'neighboring','harbour':'harbor','specialises':'specializes','tarmac':'pavement'}
 _US=re.compile(r'(?<!\w)('+'|'.join(sorted(map(re.escape,US_WORDS),key=len,reverse=True))+r')(?!\w)',re.I)
 def _us(g):
     w=g.group(1);r=US_WORDS[w.lower()];return r.capitalize() if w[0].isupper() else r

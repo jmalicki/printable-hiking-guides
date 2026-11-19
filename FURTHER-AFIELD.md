@@ -4,11 +4,26 @@ Printable guides to hikes and backpacking trips elsewhere in California and in t
 
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
+| [The otter coves of Point Lobos](#the-otter-coves-of-point-lobos-point-lobos-state-natural-reserve) (Point Lobos State Natural Reserve) | 5.5 mi | ≈ 750 ft | 3–4 h | Easy |
 | [Looking down on Half Dome: Clouds Rest from Tenaya Lake](#looking-down-on-half-dome-clouds-rest-from-tenaya-lake-yosemite-national-park) (Yosemite National Park) | 12.1 mi | ≈ 3,120 ft | 7–10 h | Strenuous |
 | [To the edge of Yellowstone: Bighorn Peak by Black Butte Creek](#to-the-edge-of-yellowstone-bighorn-peak-by-black-butte-creek-yellowstone-national-park) (Yellowstone National Park) | 12.4 mi | ≈ 3,300 ft | 7–9 h | Strenuous |
 | [A lake behind every ridge: the Four Lakes Loop](#a-lake-behind-every-ridge-the-four-lakes-loop-trinity-alps-wilderness) (Trinity Alps Wilderness) | 18 mi | ≈ 6,730 ft | 3 days | Strenuous |
 | [Behind the Grand Teton: Paintbrush Divide and Lake Solitude](#behind-the-grand-teton-paintbrush-divide-and-lake-solitude-grand-teton-national-park) (Grand Teton National Park) | 19.0 mi | ≈ 4,130 ft | 2 days | Strenuous |
 | [Over the top: Canyon Creek to Sapphire Lake](#over-the-top-canyon-creek-to-sapphire-lake-trinity-alps-wilderness) (Trinity Alps Wilderness) | 25 mi | ≈ 5,090 ft | 3 days | Hard |
+
+## The otter coves of Point Lobos (Point Lobos State Natural Reserve)
+
+*Point Lobos State Natural Reserve, Carmel, California · a half-day hike*
+
+![The otter coves of Point Lobos](data/point-lobos/photos/hero.jpg)
+
+<sub>Photo: Jay Galvin, CC BY 2.0 ([source](https://commons.wikimedia.org/wiki/File:China_Cove,_Point_Lobos_State_Park.jpg))</sub>
+
+Walk in from the gate and follow the edge of the land all the way round: a dozen coves of clear green water floored with kelp, and in the kelp, most days, sea otters asleep on their backs. Seals lie on the rocks below the path, sea lions bark from the rocks offshore, and the cypresses on the headland grow wild in only one other place on Earth. You share it with a great many people.
+
+**5.5 mi** loop · **≈ 750 ft** climb, in short ups and downs · **3–4 h** · **Easy**: some steps, roots and rock
+
+[The guide (PDF)](out/point-lobos/point-lobos-shore-loop.pdf) · [GPX: main](out/point-lobos/point-lobos-main.gpx) · [GPX: short](out/point-lobos/point-lobos-short.gpx)
 
 ## Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite National Park)
 
