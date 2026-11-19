@@ -125,6 +125,15 @@ figure.cover img { height:80mm; }
 .page:last-child > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
+/* history: a strip of dated moments, and a date tag in step tables */
+.dates { display:grid; grid-template-columns:repeat(6,1fr); gap:0; border-top:1.2pt solid var(--ink); margin:2mm 0 0; }
+.dates div { padding:1.6mm 2.5mm 0 0; font-size:8.1pt; line-height:1.3; }
+.dates div + div { border-left:.6pt solid var(--rule); padding-left:2.5mm; }
+.dates b { display:block; font:700 12pt/1.15 "Iowan Old Style",Palatino,Georgia,serif; color:var(--red); }
+.tag.when { background:var(--red); margin:0 1.5mm 0 0; }
+/* wildlife rows: the habitat-row layout with smaller photos, so seven fit a page with a note box */
+.biome3.sm { grid-template-columns: 30mm 1fr; gap:0 4mm; padding-top:1.4mm; }
+.biome3.sm figure.bio img { width:30mm; height:21mm; }
 
 </style>
 </head>
@@ -301,12 +310,12 @@ figure.cover img { height:80mm; }
         <li><b>When:</b> all year. April–May for wildflowers and green hills; summer for the sea of fog; fall for the clearest air; winter after rain for running creeks (and mud on the Nora Trail).</li>
         <li><b>Daylight:</b> in winter the sun sets around 5 pm. Start by 1 pm at the latest.</li>
         <li><b>Poison oak</b> (glossy leaves in threes, red in fall) lines the forest sections; do not touch. Check for ticks afterwards. Rattlesnakes sun themselves on the rocky first half in warm weather: watch your feet, and give one room.</li>
-        <li>No dogs or bikes on these trails. Leave nothing visible in the car. Emergency: 911; rangers +1 415 388 2070.</li>
+        <li>No dogs or bikes on these trails. Leave nothing visible in the car. Emergency: 911; rangers (415) 388-2070.</li>
       </ul>
     </div>
     <div>
       <h2>Afterwards</h2>
-      <p><b>On the way down:</b> the <a href="https://www.mtnhomeinn.com/">Mountain Home Inn</a> is 3.1 mi back along Panoramic Highway, with a deck over the bay. Casual food; check opening hours first (+1 415 381 9000).</p>
+      <p><b>On the way down:</b> the <a href="https://www.mtnhomeinn.com/">Mountain Home Inn</a> is 3.1 mi back along Panoramic Highway, with a deck over the bay. Casual food; check opening hours first ((415) 381-9000).</p>
       <p><b>In Mill Valley</b>, 20 minutes down the hill (left at the four-way junction, E):</p>
       <ul>
         <li><a href="https://www.playamv.com/">Playa</a> — modern Mexican, patio, good margaritas. Closed Monday.</li>

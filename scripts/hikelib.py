@@ -38,7 +38,8 @@ US_WORDS={'centre':'center','centres':'centers','metre':'meter','metres':'meters
 _US=re.compile(r'(?<!\w)('+'|'.join(sorted(map(re.escape,US_WORDS),key=len,reverse=True))+r')(?!\w)',re.I)
 def _us(g):
     w=g.group(1);r=US_WORDS[w.lower()];return r.capitalize() if w[0].isupper() else r
-def american(part):return _US.sub(_us,part)
+_PHONE=re.compile(r'\+1[ \u00a0](\d{3})[ \u00a0](\d{3})[ \u00a0](\d{4})')        # source: +1 408 535 4070 -> (408) 535-4070
+def american(part):return _PHONE.sub(r'(\1) \2-\3',_US.sub(_us,part))
 def units(text):
     """Source text is metric ('9.3 km', '2,260 m', optionally followed by '(5.8 mi)').
     metric build: unchanged apart from {{u:metric|imperial}} -> metric.

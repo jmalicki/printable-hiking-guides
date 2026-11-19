@@ -125,6 +125,12 @@ figure.cover img { height:80mm; }
 .page:last-child > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
+/* history: a strip of dated moments, and a date tag in step tables */
+.dates { display:grid; grid-template-columns:repeat(6,1fr); gap:0; border-top:1.2pt solid var(--ink); margin:2mm 0 0; }
+.dates div { padding:1.6mm 2.5mm 0 0; font-size:8.1pt; line-height:1.3; }
+.dates div + div { border-left:.6pt solid var(--rule); padding-left:2.5mm; }
+.dates b { display:block; font:700 12pt/1.15 "Iowan Old Style",Palatino,Georgia,serif; color:var(--red); }
+.tag.when { background:var(--red); margin:0 1.5mm 0 0; }
 
 </style>
 </head>
@@ -168,7 +174,7 @@ figure.cover img { height:80mm; }
   </div>
   <div class="warn">
     <h3>Read this first</h3>
-    <p style="margin-bottom:.5mm"><b>The off-trail section is compiled from published trip reports (2001–2020) and a terrain model. It has not been walked or surveyed for this guide.</b> The line on the maps is approximate and cairns come and go. Treat page 3 as a briefing, not turn-by-turn directions; carry a proper topographic map, and ask at the Weaverville ranger station (+1 530 623 2121) before you go.</p>
+    <p style="margin-bottom:.5mm"><b>The off-trail section is compiled from published trip reports (2001–2020) and a terrain model. It has not been walked or surveyed for this guide.</b> The line on the maps is approximate and cairns come and go. Treat page 3 as a briefing, not turn-by-turn directions; carry a proper topographic map, and ask at the Weaverville ranger station ((530) 623-2121) before you go.</p>
   <p style="margin:1mm 0 .5mm"><b>The road to the finish needs high clearance:</b> the last 1.9 mi to the Stuart Fork trailhead, where you leave the second car, are dirt, and the final hill is not maintained for ordinary cars (page 6). The road to the start is paved.</p>
   </div>
 </section>
@@ -361,7 +367,7 @@ figure.cover img { height:80mm; }
     </div>
   </div>
   <div class="foot">
-  <p class="small"><b>Sources.</b> Off-trail description compiled from trip reports by Tim Hult (climber.org, 2004), Cascade Climber (2001), Leor Pantilat (2015), outdoors475 (2018) and Andrew Miller (2020), and from hikemtshasta.com and Hiking Project. Rules from Shasta-Trinity National Forest, Forest Order 14-25-03. Checked November 2026; conditions, rules and road access change, so confirm with the Weaverville ranger station, +1 530 623 2121.</p>
+  <p class="small"><b>Sources.</b> Off-trail description compiled from trip reports by Tim Hult (climber.org, 2004), Cascade Climber (2001), Leor Pantilat (2015), outdoors475 (2018) and Andrew Miller (2020), and from hikemtshasta.com and Hiking Project. Rules from Shasta-Trinity National Forest, Forest Order 14-25-03. Checked November 2026; conditions, rules and road access change, so confirm with the Weaverville ranger station, (530) 623-2121.</p>
   <p class="small"><b>Photos</b> (Flickr, Creative Commons) — Sapphire from above: Beyond the Trail (Flickr), CC BY-NC 2.0 · Falls: PeterDSims (Flickr), CC BY-NC 2.0 · Lower lake: JoeDuck (Flickr), CC BY 2.0 · Upper lake: Tom Hilton (Flickr), CC BY 2.0 · Sapphire from the Mirror Lake side: Beyond the Trail (Flickr), CC BY-NC-ND 2.0 · Mirror Lake: Beyond the Trail (Flickr), CC BY-NC 2.0 · Mining relic: Beyond the Trail (Flickr), CC BY-NC 2.0 · Emerald dam: Beyond the Trail (Flickr), CC BY-NC 2.0.</p>
   </div>
 </section>

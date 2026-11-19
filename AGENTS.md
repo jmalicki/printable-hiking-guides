@@ -55,7 +55,8 @@ regular mountain walker. Write for that general reader, not for one person or on
 - **Write the source in British spelling and vocabulary** (kilometres, colour, car park, autumn). The imperial
   build converts to American (center, color, parking lot, fall) through `US_WORDS` in `scripts/hikelib.py`; the
   metric build keeps the British. When you use a British word that is not in that table, add it. Times of day
-  as am/pm ("9 pm", "by 7:00").
+  as am/pm ("9 pm", "by 7:00"). Write phone numbers as `+1 408 535 4070`; the imperial build prints them the
+  American way, `(408) 535-4070`.
 - They will print it and carry it, so every page must work on paper. Links are a bonus (restaurants,
   permits), never the only way to get a fact.
 
@@ -320,9 +321,10 @@ rebuilt. Each point below is something that was wrong in it.
 ## Wildlife
 
 The owner asked for wildlife sidebars (Paintbrush–Cascade is the model, November 2026), on the pattern of
-the history and geology insets. One `.inset` of `.biome3.sm` rows, a photo each: what the animal is, how to
+the history and geology insets. One `.inset` of `.biome3` rows, a photo each: what the animal is, how to
 recognise it, **where on this loop to look** (keyed to the route markers), and the park's distance rules up
 front. They also asked that the smaller animals get named, not only bears and moose: the weasel family
 (short-tailed weasel/stoat, long-tailed weasel, marten, mink, otter, badger, wolverine), marmots, pikas.
-It need not be a separate panel per group; mentioning the species is enough. Say where a location is your
-inference from habitat and not a record, and where a photo was not taken in the park.
+It need not be a separate panel per group; mentioning the species is enough. Do not be cagey about it: the owner had a "what I could not place" disclaimer (no source names these
+animals in these canyons; locations inferred from habitat) removed. Saying where each animal lives by
+habitat is fine without a caveat. Still note in the caption when a photo was not taken in the park.
