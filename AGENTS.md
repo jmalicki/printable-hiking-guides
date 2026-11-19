@@ -134,9 +134,14 @@ trailhead or a vehicle. The owner asked for this: the driving page alone is too 
 
 | Grade | In the guide | When |
 |---|---|---|
-| Easy | plain sentence: "any car should be fine" | Paved, or Forest Service maintenance level 3–5 with reports agreeing |
-| Rough | red `.roadwarn` box, "Rough road · length · clearance advised" | Level 3 on paper but reports of ruts or rock, or mixed reports |
-| High clearance | red `.roadwarn` box, "… high clearance advised / required" | Level 2 ("not maintained for passenger cars"), or the agency says high clearance or 4WD |
+| Easy | plain sentence: "any car should be fine" | Paved, or Forest Service level 3–5 with reports agreeing |
+| Mixed reports | amber box, `<div class="roadwarn mixed">`: "Road warning · rated for cars, reports mixed · length" | Level 3 on paper (officially fit for ordinary cars) but first-hand reports disagree or describe ruts and rock. Stoney Ridge is the model case |
+| High clearance | red box, `<div class="roadwarn">`: "High-clearance road · length" | Level 2 ("not maintained for passenger cars"), or the agency itself says high clearance or 4WD. The last hill to Stuart Fork is the model case |
+
+The owner wants these two kept **distinct**: "mixed reports" must say that the road is officially rated for
+cars and that the doubt comes from reports; "high clearance" is the official rating. Both are warnings, and
+both are flagged on page 1 in words that keep the same distinction ("may be rough… mixed reports" versus
+"needs high clearance").
 
 - The official basis is the **Forest Service road maintenance level** (2 = high-clearance vehicles, 3 =
   "a prudent driver in a standard passenger car"). Look a road up by number in the FS road data
