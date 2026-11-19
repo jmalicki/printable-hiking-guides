@@ -1,4 +1,4 @@
-# Hike guides (Mount Tamalpais, Muir Woods, Trinity Alps)
+# Printable hiking guides
 
 Printable hiking guides with maps (US Letter in feet and miles by default; A4 and metric as a build option), built from scripts. One folder per guide under `guides/`.
 
@@ -42,3 +42,6 @@ Copy a guide folder, edit `config.py` (bounding boxes, junctions, route order), 
 
 Needs python3, Google Chrome (headless PDF), venv with pillow + pymupdf (`make .venv`).
 Data: trails (c) OpenStreetMap contributors; basemap USGS The National Map; elevation USGS 3DEP via opentopodata.org; driving route OSRM; photos Wikimedia Commons and Flickr (credited in each guide).
+
+## Credits and third-party material
+Photos, trail data and basemaps belong to others and keep their own terms: see [NOTICE.md](NOTICE.md) and [CREDITS.md](CREDITS.md) (regenerate with `scripts/make_credits.py`).
