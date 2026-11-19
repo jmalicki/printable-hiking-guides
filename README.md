@@ -34,6 +34,41 @@ The finished PDFs are in this repository, under `out/<guide>/`, in two editions:
 (`<name>.pdf`) and A4 in metric (`<name>-metric-a4.pdf`). Each folder also has GPX tracks to load into CalTopo,
 Gaia, Komoot or AllTrails.
 
+## Printing a guide
+
+A guide is meant to get rained on. Checked in November 2026; shop offerings and prices change.
+
+**Settings, whatever you print on**
+- Use the Letter edition in the US and the A4 edition elsewhere.
+- Print at **100% / "actual size"**, not "fit to page", in colour, double-sided. The maps have a drawn scale bar,
+  which stays correct at any size, but shrinking makes the map labels harder to read.
+
+**Cheapest: plain paper in a bag.** Print on ordinary paper and carry it folded in a gallon zip-top freezer bag,
+map page outwards. Laser prints cope with damp better than inkjet prints: most inkjet colour inks are dye-based
+and run when wet. Paper of any kind tears once it is soggy.
+
+**At a print shop: ask for water-resistant paper, not vinyl.**
+- **FedEx Office** (formerly Kinko's) sells exactly this, and calls it **"water-resistant paper"**: a thin
+  synthetic (plastic) sheet, 8.5 × 11 in, printable in full colour on both sides.
+  - Online: *Copies & Custom Documents*, upload the PDF, and choose the water-resistant stock under the specialty
+    papers, full colour, double-sided.
+  - At the counter: "water-resistant synthetic paper, letter size, full colour, double-sided".
+  - It is Letter only, so use the Letter edition. FedEx says it is not fully waterproof: fine in rain, not meant
+    to sit under water. It cannot be laminated, and FedEx suggests scoring it before folding. The self-service
+    machines appear to take standard paper only, so order online or at the counter.
+- **Vinyl** is sign material sold by the square foot. It is the wrong product for a few letter-size pages.
+- **Lamination** works but turns each sheet into a stiff card that cannot be folded. It suits one page, such as
+  the route map. Staples lists letter-size pouches from about $2 a sheet. Neither Staples nor The UPS Store lists a
+  synthetic paper for documents.
+- **By post:** Doxzoo prints single copies from a PDF on synthetic sheets in both Letter and A4.
+
+**At home**
+- **Laser printer:** Rite in the Rain all-weather printer paper (Letter and A4; a treated paper) or its DuraCopy
+  sheets (Letter; a true synthetic). Both print on both sides. The maker says neither is for inkjet printers.
+- **Inkjet printer:** most waterproof papers do not take ordinary inkjet ink. Papers such as PuffinPaper and
+  iGage Weatherproof are sold for *pigment*-ink inkjets (and lasers), not dye-ink ones. If you are not sure which
+  you have, print on plain paper and bag it, or let a shop print it.
+
 ## Building and editing
 
 Each guide is a folder under `guides/` holding a `config.py` (route, maps, photos) and a `template.html` (the
