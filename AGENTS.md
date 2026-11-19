@@ -16,6 +16,9 @@ regular mountain walker. Write for that general reader, not for one person or on
   carrying your own gear".
 - Still explain what a visitor would not know: fire roads, trailhead parking rules, wilderness permits,
   poison oak, ticks, bear canisters, what a "use trail" is, that kitchens close early.
+- **"Hike", not "walk", for the trip itself** ("Why this hike", "a day hike", "the most popular hike in the
+  range", "hikers"). "Walk" stays as an ordinary verb ("walk down to the lake") and for flat ground ("a brisk
+  walk on the flat"). The owner corrected this in November 2026.
 - **Write the source in British spelling and vocabulary** (kilometres, colour, car park, autumn). The imperial
   build converts to American (center, color, parking lot, fall) through `US_WORDS` in `scripts/hikelib.py`; the
   metric build keeps the British. When you use a British word that is not in that table, add it. Times of day
@@ -42,8 +45,8 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
     running distance in the US as well; the owner asked for it to stay.
 - After editing text, build both variants and read the imperial output for leftovers ("km", "metres",
   doubled figures such as "18 mi / 18 miles").
-- Letter is 18 mm shorter and 6 mm wider than A4. `hikelib.PAGE_CSS` compensates with tighter margins, a 3%
-  zoom and narrower full-width maps. `make_pdf.sh` prints `*** OVERFLOW ***` when a PDF has more pages than
+- Letter is 18 mm shorter and 6 mm wider than A4. `hikelib.PAGE_CSS` gives both the same working width
+  (tight margins plus a 3% zoom on Letter, 5% on A4), so a layout that fits Letter fits A4. `make_pdf.sh` prints `*** OVERFLOW ***` when a PDF has more pages than
   the template has `<section class="page">`; treat that as a failed build.
 
 ## Voice
@@ -73,8 +76,12 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   which ones remain unverified. When sources disagree on a figure, use the route's own computed number.
 - If the owner's premise is wrong, say so before building on it (Bootjack was not the gentler climb; no
   trail joins Canyon Creek Lakes to Sapphire Lake).
-- Hazards get a red `.warn` box on page 1 with explicit "Turn back if" rules. Say on the last page that the
-  route was compiled from maps and reports and not walked, when that is the case.
+- **Warnings up front.** Hazards get a red `.warn` box on page 1. The owner singled out the Trinity traverse's
+  "Read this first" box as something they love: it says in bold, before anything else, what the guide does
+  not know (the off-trail section was compiled from reports and not walked) and what to do about it (carry
+  a real map, phone the ranger station). Write one whenever part of a guide rests on thin evidence or the
+  route has a serious hazard, with explicit "Turn back if" rules. Say on the last page that the route was
+  compiled from maps and reports and not walked, when that is the case.
 
 ## What every guide contains
 
@@ -95,6 +102,51 @@ In roughly this page order (5–6 pages; see the existing templates):
 7. **Afterwards**: where to eat, with links to each restaurant's own site. Open every link and check it is
    the real business (one domain had become a gambling page; it was dropped). No link beats a wrong one.
 8. **Sources and photo credits** on the last page.
+
+## Backpacking guides: water
+
+Any overnight guide has a **Water** section (`.cols.water`), because the reader plans the trip around it.
+Research it properly: the Forest Service pages, then dated trip reports, and note the month and year of
+each observation. It has two halves:
+
+- **Where it is**, in walking order by day or approach: where the trail is beside water and where it is out
+  of reach, the dry stretches, which sources fail late in the season or in dry years (give the dated
+  report), and whether trailheads and nearby campgrounds have a tap and in which months.
+- **How clean, and what to do to it.** Say plainly whether the water is clear or carries silt, tannin or
+  debris, i.e. whether a filter or tablets alone are enough or it needs settling or pre-filtering first.
+  Give the official treatment advice. Then what is upstream: heavy camping, pack stock, cattle, old mines,
+  recent burns, unusual geology. Where you found nothing, say "I found no report of…" rather than "there
+  is none".
+
+**"Last water" signs** (`<span class="tag water">` in the step table, like "last gas 40 miles"): the owner
+wants these **used sparingly, only for a stretch long and dry enough that running short would be
+dangerous**. Ordinary gaps between streams go in the Water section only. The two so far: L Lake to Mirror
+Lake on the Trinity traverse (5–10 hours off trail), and the Stoney Ridge climb late in the season (8 km
+and 700 m in the sun with no sure water and no tap at the trailhead).
+
+## The drive: rating the road to the trailhead
+
+Every unpaved approach gets a one-line rating in the driving table (`<span class="tag road …">`), so
+someone in a rental car knows before they commit. Three grades:
+
+| Tag class | Label | Meaning |
+|---|---|---|
+| `tag road` | paved / gravel · any car | Paved, or Forest Service maintenance level 3–5 with reports agreeing |
+| `tag road rough` | rough dirt · clearance advised | Level 3 on paper but reports of ruts or rocks, or mixed reports: an ordinary car gets there slowly |
+| `tag road hc` | high clearance advised / required | Level 2 ("not maintained for passenger cars"), or the agency itself says high clearance or 4WD |
+
+- The official basis is the **Forest Service road maintenance level** (2 = high-clearance vehicles, 3 =
+  "a prudent driver in a standard passenger car"). Look a road up by number in the FS road data
+  (`apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RoadBasic_01/MapServer/0`, fields `OPER_MAINT_LEVEL` and
+  `SURFACE_TYPE`); the MVUM layer (`EDW_MVUM_01/MapServer/1`) gives seasonal opening dates.
+- The level states what the road is maintained for, not its condition this year. Always pair the tag with
+  dated first-hand reports and the vehicles they name, and say when the newest report is old or predates
+  a fire. Grade down when reports and the official level disagree.
+- Also state seasonal closure dates, unsigned forks, and whether phone maps misroute.
+- Check the owner's own memory of a road like any other report. For Stoney Ridge they recalled "borderline
+  off-roading"; the research found the Forest Service rates it for passenger cars and most reports agree,
+  with a 2016 Forest Service note against low cars and nothing since the 2025 fire. The guide says all of
+  that and grades it "rough".
 
 ## House style: what went wrong once and must not again
 
@@ -159,6 +211,8 @@ rebuilt. Each point below is something that was wrong in it.
 ## Working method
 
 - Deterministic work goes in scripts, cached under `data/`, so a rebuild costs no network and few tokens.
+- Never leave a build that printed `OVERFLOW` on disk for long: that PDF has stray near-empty pages, and
+  the owner may open it while you are still fitting text. Fix the fit before doing anything else.
 - After every build, look at the `out/<slug>/preview-N.png` pages (tile several into one image to save
   time) and check: page count, no overflow, no half-empty page, no clipped or overlapping map labels,
   photos rendered and uncropped where it matters. The previews show whichever variant was built last, so
