@@ -139,14 +139,16 @@ someone in a rental car knows before they commit. Three grades:
   "a prudent driver in a standard passenger car"). Look a road up by number in the FS road data
   (`apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RoadBasic_01/MapServer/0`, fields `OPER_MAINT_LEVEL` and
   `SURFACE_TYPE`); the MVUM layer (`EDW_MVUM_01/MapServer/1`) gives seasonal opening dates.
-- The level states what the road is maintained for, not its condition this year. Always pair the tag with
-  dated first-hand reports and the vehicles they name, and say when the newest report is old or predates
-  a fire. Grade down when reports and the official level disagree.
-- Also state seasonal closure dates, unsigned forks, and whether phone maps misroute.
-- Check the owner's own memory of a road like any other report. For Stoney Ridge they recalled "borderline
-  off-roading"; the research found the Forest Service rates it for passenger cars and most reports agree,
-  with a 2016 Forest Service note against low cars and nothing since the 2025 fire. The guide says all of
-  that and grades it "rough".
+- **In the guide, the tag plus a short description is enough**: length, surface (gravel, bare dirt), width,
+  the official level in brackets, what to expect (ruts, rock, a ford, a steep hill), seasonal closure dates,
+  unsigned forks, whether phone maps misroute, and which trailhead is the easier drive when there is a
+  choice. **Do not recite trip reports in the guide**; the owner said the rating and a description would
+  have been enough to choose the other trailhead.
+- Reports are for grading, behind the scenes. The level states what a road is maintained for, not its
+  condition this year, so read dated first-hand reports and grade down when they disagree with the level.
+  Check the level against the road geometry, not from memory or distance alone: Stoney Ridge is level 3 for
+  the whole drive (the level 2 section starts just past the turn), and it is graded "rough" because of a
+  2016 Forest Service note against low cars and the owner's own recollection of wishing for a truck.
 
 ## House style: what went wrong once and must not again
 
