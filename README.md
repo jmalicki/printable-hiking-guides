@@ -1,24 +1,45 @@
 # Printable hiking guides
 
-Printable hiking guides with maps (US Letter in feet and miles by default; A4 and metric as a build option), built from scripts. One folder per guide under `guides/`.
+Paper guides to hikes worth the drive: five or six pages you can print, fold into a pocket and follow where a
+phone has no signal.
 
-| Guide | Folder | PDF |
-|---|---|---|
-| Muir Woods by the back door (Mountain Home Inn loop) | `guides/muir-woods` | `out/muir-woods/muir-woods-back-door.pdf` |
-| The balcony of Mount Tam (Rock Spring – West Point Inn – Matt Davis – Bootjack) | `guides/west-point` | `out/west-point/mount-tam-west-point-loop.pdf` |
-| Trinity Alps: Canyon Creek Lakes over Kalmia Pass to Sapphire Lake (off-trail traverse) | `guides/trinity-traverse` | `out/trinity-traverse/trinity-alps-canyon-creek-to-sapphire.pdf` |
-| Four lakes around Siligo Peak (Long Canyon and Stoney Ridge entrances) | `guides/four-lakes` | `out/four-lakes/trinity-alps-four-lakes-loop.pdf` |
-| Behind the Grand Teton: Paintbrush Canyon, Paintbrush Divide, Lake Solitude and Cascade Canyon from String Lake | `guides/paintbrush-cascade` | `out/paintbrush-cascade/grand-teton-paintbrush-cascade-loop.pdf` |
-| Almaden Quicksilver: the Mine Hill mining-history loop from the Hacienda entrance | `guides/almaden-quicksilver` | `out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf` |
-| Purisima Creek Redwoods from Skyline: Whittemore Gulch, the creek, Craig Britton Trail and Harkins Ridge | `guides/purisima-creek` | `out/purisima-creek/purisima-creek-redwoods-loop.pdf` |
-| Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite, day hike) | `guides/clouds-rest` | `out/clouds-rest/yosemite-clouds-rest-from-tenaya-lake.pdf` |
-| Chasing the rain to Murietta Falls (Ohlone Wilderness from Del Valle, out and back) | `guides/murietta-falls` | `out/murietta-falls/ohlone-murietta-falls.pdf` |
-| To the edge of Yellowstone: Bighorn Peak by Black Butte Creek (Gallatin Range, day hike, out and back) | `guides/bighorn-peak` | `out/bighorn-peak/yellowstone-bighorn-peak-from-black-butte.pdf` |
-| Ocean to the left, bay to the right: Russian Ridge (Borel Hill, Hawk Ridge and the Ancient Oaks, with wildflower, salamander and wildlife pages) | `guides/russian-ridge` | `out/russian-ridge/russian-ridge-borel-hill-ancient-oaks.pdf` |
+## The idea
 
-Each `out/<slug>/` also has GPX files (import into CalTopo / Komoot / AllTrails), `guide.html` and page previews.
+Most trail information is either an app that needs signal and battery, or a write-up that sells the hike without
+telling you whether you can do it. Each guide here tries to do five things on a few sheets of paper:
 
-Style, audience, required sections and working method for writing a new guide are in `AGENTS.md`. Read it first.
+- **Make the case for the hike**: why this one, against the obvious alternative.
+- **Say honestly who it is for.** Every guide has an "Is this for me?" section: distance, climb, time, and what is
+  actually hard about it.
+- **Put everything in one place**: a topographic map, an elevation profile, step-by-step directions keyed to the
+  map, how to get to the trailhead, and where to eat afterwards.
+- **Explain what you are looking at**, where you are standing: the geology, the history, the plants and animals.
+- **Warn early.** Snow slopes, rough roads, dry stretches and old mine workings are on page 1, not page 5.
+
+They are written for a fit visitor who does not know the area. They are also honest about their own limits: most
+were compiled from maps, land-manager pages and published trip reports and were not walked for the guide, and each
+one says so. Check conditions and closures with the land manager before you go.
+
+Everything is built by scripts from open data (OpenStreetMap trails, USGS maps and elevation), so a guide can be
+corrected and rebuilt, and new ones added the same way.
+
+## The guides
+
+- **[Bay Area hikes](BAY-AREA-HIKES.md)**: six day hikes around San Francisco Bay, from Mount Tamalpais to the
+  Ohlone Wilderness.
+- **[Further afield](FURTHER-AFIELD.md)**: the Trinity Alps, Yosemite, Yellowstone and Grand Teton, including
+  multi-day backpacking trips.
+
+The finished PDFs are in this repository, under `out/<guide>/`, in two editions: US Letter in feet and miles
+(`<name>.pdf`) and A4 in metric (`<name>-metric-a4.pdf`). Each folder also has GPX tracks to load into CalTopo,
+Gaia, Komoot or AllTrails.
+
+## Building and editing
+
+Each guide is a folder under `guides/` holding a `config.py` (route, maps, photos) and a `template.html` (the
+words). `out/<guide>/` gets the PDFs, GPX files, `guide.html` and page previews. Style, audience, required sections
+and working method for writing a new guide are in `AGENTS.md`: read it first. After adding or changing a guide, run
+`scripts/make_index.py` to refresh the two lists above (set `REGION='bay-area'` in the config for a Bay Area hike).
 
 ## Build
 - `make` — rebuild every PDF from cached data (no network)

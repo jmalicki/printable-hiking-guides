@@ -1,5 +1,6 @@
 """Russian Ridge: Borel Hill, the Ridge Trail, Hawk Ridge, Alder Spring and the Ancient Oaks, from the Alpine Road car park."""
 PDF='russian-ridge-borel-hill-ancient-oaks.pdf'
+REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.295,-122.235,37.345,-122.170)
 TILES=dict(z=16,bbox=(37.300,-122.225,37.340,-122.180))
 JUNCTIONS=dict(start=(37.31496,-122.18853),            # main car park, corner of Alpine Road and Skyline Boulevard

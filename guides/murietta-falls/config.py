@@ -1,6 +1,7 @@
 """Murietta Falls from Del Valle: the eastern end of the Ohlone Wilderness Trail, out and back
 (Lichen Bark picnic area -> sign-in panel -> Rocky Ridge -> Williams Gulch -> Big Burn -> Schlieper Rock -> Johnny's Pond -> falls)."""
 PDF='ohlone-murietta-falls.pdf'
+REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.520,-121.745,37.600,-121.640)
 TILES=dict(z=16,bbox=(37.524,-121.735,37.586,-121.675))
 JUNCTIONS=dict(start=5387382499,panel=1801301067,boyd=1801298931,crest=52981416,wg=6538035424,schl=6538035405,

@@ -305,8 +305,9 @@ rebuilt. Each point below is something that was wrong in it.
   time) and check: page count, no overflow, no half-empty page, no clipped or overlapping map labels,
   photos rendered and uncropped where it matters. The previews show whichever variant was built last, so
   finish with a plain `make`.
-- Ask the owner only real route choices (which trail, which finish). Commit when they ask, and add the
-  guide to the table in `README.md`.
+- Ask the owner only real route choices (which trail, which finish). Commit when they ask, then run
+  `scripts/make_index.py` so the guide appears in `BAY-AREA-HIKES.md` or `FURTHER-AFIELD.md` (set
+  `REGION='bay-area'` in its config for a Bay Area hike).
 - Another session's uncommitted work in this repo is not yours to delete. Work round it and tell the owner.
 
 ## Known snags

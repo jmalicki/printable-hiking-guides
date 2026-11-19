@@ -1,5 +1,6 @@
 """Muir Woods by the back door: Mountain Home Inn -> Canopy View (down) -> Muir Woods -> Bootjack (up) -> Troop 80."""
 PDF='muir-woods-back-door.pdf'
+REGION='bay-area'            # listed in BAY-AREA-HIKES.md by scripts/make_index.py
 OSM_BBOX=(37.886,-122.612,37.916,-122.562)          # S,W,N,E
 TILES=dict(z=16,bbox=(37.8895,-122.6025,37.9160,-122.5670))
 # junctions: OSM node id, or (lat,lon[,way names]) snapped to the nearest trail node
