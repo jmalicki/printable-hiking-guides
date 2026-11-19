@@ -56,7 +56,7 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   say that skill matters more than fitness.
 - Second person, plain sentences, concrete nouns. No brochure adjectives, no exclamation marks.
 - Titles are an image plus a plain subtitle: "Muir Woods, by the back door", "The balcony of Mount Tam",
-  "Round the mountain: the Four Lakes Loop".
+  "A lake behind every ridge: the Four Lakes Loop".
 - **Never assert what was not checked.** Unverified items (turn directions from memory, opening hours,
   facilities, road surface, fire and canister rules, ecology written from memory) are either verified against
   a source, worded as uncertain in the guide ("I could not confirm…"), or left out. Tell the owner in chat
