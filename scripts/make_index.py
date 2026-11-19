@@ -1,5 +1,5 @@
 """Write the hike lists (BAY-AREA-HIKES.md, FURTHER-AFIELD.md) from every built guide: for each hike its cover
-photo, its blurb (the guide's subtitle), the headline figures and links to the PDFs and GPX tracks, under a table of contents.
+photo, its blurb (the guide's subtitle), the headline figures and links to the guide (the Letter PDF) and its GPX tracks, under a table of contents.
 Each guide's config may set REGION='bay-area' (default: further afield) and PARK (named after the title). Text and figures are read from the built
 feet-and-miles guide (out/<slug>/guide.html), so run `make` first.
 usage: make_index.py"""
@@ -16,9 +16,8 @@ for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
     kind,_,where=kick.partition(' · ')
     cells=[clean(a) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
     notes=[clean(b) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
-    base='out/%s/'%slug;pdf=C.PDF.replace('-metric','').replace('-a4','');a4=pdf.replace('.pdf','-metric-a4.pdf')
-    links=['[Print it: Letter, feet and miles](%s%s)'%(base,pdf)]
-    if os.path.exists(os.path.join(C.OUT,a4)):links.append('[A4, metric](%s%s)'%(base,a4))
+    base='out/%s/'%slug;pdf=C.PDF.replace('-metric','').replace('-a4','')
+    links=['[The guide (PDF)](%s%s)'%(base,pdf)]
     links+=['[GPX%s](%s%s-%s.gpx)'%('' if len(C.GPX)==1 else ': '+k,base,slug,k) for k in C.GPX if os.path.exists(os.path.join(C.OUT,'%s-%s.gpx'%(slug,k)))]
     # cover photo = the first photo the template uses, credited from photos.json
     key=re.search(r'\{\{PHOTO:(\w+)\}\}',open(os.path.join(C.DIR,'template.html')).read());photo=''

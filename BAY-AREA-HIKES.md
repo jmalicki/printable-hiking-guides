@@ -5,7 +5,7 @@ Printable guides to hikes within about an hour and a half of San Francisco, shor
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
 | [The balcony of Mount Tam](#the-balcony-of-mount-tam-mount-tamalpais-state-park) (Mount Tamalpais State Park) | 4.7 mi | ≈ 800 ft | 2½–3 h | Easy–moderate |
-| [Ocean to the left, bay to the right: Russian Ridge](#ocean-to-the-left-bay-to-the-right-russian-ridge-russian-ridge-open-space-preserve) (Russian Ridge Open Space Preserve) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
+| [An easy hike through the wildflowers: Russian Ridge](#an-easy-hike-through-the-wildflowers-russian-ridge-russian-ridge-open-space-preserve) (Russian Ridge Open Space Preserve) | 5.0 mi | ≈ 1,000 ft | 2½–3 h | Easy–moderate |
 | [Muir Woods, by the back door](#muir-woods-by-the-back-door-mount-tamalpais-state-park-and-muir-woods-national-monument) (Mount Tamalpais State Park and Muir Woods National Monument) | 5.8 mi | ≈ 1,150 ft | 3–3½ h | Moderate |
 | [The ghost towns of Mine Hill](#the-ghost-towns-of-mine-hill-almaden-quicksilver-county-park) (Almaden Quicksilver County Park) | 6.0 mi | ≈ 1,300 ft | 3–3½ h | Moderate |
 | [The redwoods that came back](#the-redwoods-that-came-back-purisima-creek-redwoods-preserve) (Purisima Creek Redwoods Preserve) | 9.3 mi | ≈ 2,260 ft | 5–6 h | Strenuous |
@@ -23,21 +23,21 @@ A loop along the sunny south face of the mountain, high above the fog: out on a 
 
 **4.7 mi** loop · **≈ 800 ft** total climb & descent · **2½–3 h** · **Easy–moderate**: one real climb, at the end
 
-[Print it: Letter, feet and miles](out/west-point/mount-tam-west-point-loop.pdf) · [A4, metric](out/west-point/mount-tam-west-point-loop-metric-a4.pdf) · [GPX](out/west-point/west-point-main.gpx)
+[The guide (PDF)](out/west-point/mount-tam-west-point-loop.pdf) · [GPX](out/west-point/west-point-main.gpx)
 
-## Ocean to the left, bay to the right: Russian Ridge (Russian Ridge Open Space Preserve)
+## An easy hike through the wildflowers: Russian Ridge (Russian Ridge Open Space Preserve)
 
 *Russian Ridge Open Space Preserve, Santa Cruz Mountains, California · a half-day hike*
 
-![Ocean to the left, bay to the right: Russian Ridge](data/russian-ridge/photos/hero.jpg)
+![An easy hike through the wildflowers: Russian Ridge](data/russian-ridge/photos/hero.jpg)
 
 <sub>Photo: Steve Jurvetson, CC BY 2.0 ([source](https://commons.wikimedia.org/wiki/File:Russian_Ridge-Wildflowers.jpg))</sub>
 
-Walk the grassy crest of the mountains behind Silicon Valley with the Pacific on one side and the bay on the other. In April the slopes under you turn orange and blue with flowers; after the first winter rain, orange newts walk the same trail. Then you drop into a grove of oaks older than the state. There is no shade on top, and the wind finds you.
+A gentle loop along a grassy ridge that turns orange and blue with flowers every April, with the Pacific on one side of you and the bay on the other. After the first winter rain, orange newts walk the same trail, and the way home is through a grove of oaks older than the state. There is no shade on top, and the wind finds you.
 
 **5.0 mi** loop · **≈ 1,000 ft** total climb & descent · **2½–3 h** · **Easy–moderate**: rolling, never steep for long
 
-[Print it: Letter, feet and miles](out/russian-ridge/russian-ridge-borel-hill-ancient-oaks.pdf) · [A4, metric](out/russian-ridge/russian-ridge-borel-hill-ancient-oaks-metric-a4.pdf) · [GPX: main](out/russian-ridge/russian-ridge-main.gpx) · [GPX: short](out/russian-ridge/russian-ridge-short.gpx)
+[The guide (PDF)](out/russian-ridge/russian-ridge-borel-hill-ancient-oaks.pdf) · [GPX: main](out/russian-ridge/russian-ridge-main.gpx) · [GPX: short](out/russian-ridge/russian-ridge-short.gpx)
 
 ## Muir Woods, by the back door (Mount Tamalpais State Park and Muir Woods National Monument)
 
@@ -51,7 +51,7 @@ Start on the mountain at the Mountain Home Inn, walk down through quiet forest i
 
 **5.8 mi** loop · **≈ 1,150 ft** total climb & descent · **3–3½ h** · **Moderate**: steep in places
 
-[Print it: Letter, feet and miles](out/muir-woods/muir-woods-back-door.pdf) · [A4, metric](out/muir-woods/muir-woods-back-door-metric-a4.pdf) · [GPX: main](out/muir-woods/muir-woods-main.gpx) · [GPX: short](out/muir-woods/muir-woods-short.gpx)
+[The guide (PDF)](out/muir-woods/muir-woods-back-door.pdf) · [GPX: main](out/muir-woods/muir-woods-main.gpx) · [GPX: short](out/muir-woods/muir-woods-short.gpx)
 
 ## The ghost towns of Mine Hill (Almaden Quicksilver County Park)
 
@@ -65,7 +65,7 @@ Climb a shaded gulch to a hill where two mining towns stood for half a century, 
 
 **6.0 mi** loop · **≈ 1,300 ft** total climb & descent · **3–3½ h** · **Moderate**: one steep climb, in shade
 
-[Print it: Letter, feet and miles](out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf) · [A4, metric](out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop-metric-a4.pdf) · [GPX](out/almaden-quicksilver/almaden-quicksilver-main.gpx)
+[The guide (PDF)](out/almaden-quicksilver/almaden-quicksilver-mine-hill-loop.pdf) · [GPX](out/almaden-quicksilver/almaden-quicksilver-main.gpx)
 
 ## The redwoods that came back (Purisima Creek Redwoods Preserve)
 
@@ -79,7 +79,7 @@ Drop from the ridge into a canyon that was cut to the ground a century ago and h
 
 **9.3 mi** loop · **≈ 2,260 ft** total descent & climb · **5–6 h** · **Strenuous**: the climb comes last
 
-[Print it: Letter, feet and miles](out/purisima-creek/purisima-creek-redwoods-loop.pdf) · [A4, metric](out/purisima-creek/purisima-creek-redwoods-loop-metric-a4.pdf) · [GPX: main](out/purisima-creek/purisima-creek-main.gpx) · [GPX: short](out/purisima-creek/purisima-creek-short.gpx)
+[The guide (PDF)](out/purisima-creek/purisima-creek-redwoods-loop.pdf) · [GPX: main](out/purisima-creek/purisima-creek-main.gpx) · [GPX: short](out/purisima-creek/purisima-creek-short.gpx)
 
 ## Chasing the rain to Murietta Falls (Ohlone Regional Wilderness)
 
@@ -93,6 +93,6 @@ Go within days of a winter storm and a stream you could step across slides a hun
 
 **12.2 mi** out and back · **≈ 4,230 ft** total climb, a quarter of it on the way home · **7–9 h** · **Strenuous**: long and steep, on good trail
 
-[Print it: Letter, feet and miles](out/murietta-falls/ohlone-murietta-falls.pdf) · [A4, metric](out/murietta-falls/ohlone-murietta-falls-metric-a4.pdf) · [GPX](out/murietta-falls/murietta-falls-main.gpx)
+[The guide (PDF)](out/murietta-falls/ohlone-murietta-falls.pdf) · [GPX](out/murietta-falls/murietta-falls-main.gpx)
 
 Figures are for the feet-and-miles edition. Each guide is 5 or 6 pages. Photos belong to their authors: see [CREDITS.md](CREDITS.md). Generated by `scripts/make_index.py`.
