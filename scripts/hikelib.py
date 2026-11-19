@@ -28,16 +28,27 @@ def _qty(g):
     s1,a,sep,s2,b,sp,unit=g.groups()
     conv=(lambda x:miles(_num(x),'.' in x)) if unit=='km' else (lambda x:feet(_num(x)))
     return s1+conv(a)+((sep+(s2 or '')+conv(b)) if b else '')+(sp or ' ')+('mi' if unit=='km' else 'ft')
+# British source spelling -> American, applied with the imperial build (whole words, capitalisation kept)
+US_WORDS={'centre':'center','centres':'centers','metre':'meter','metres':'meters','kilometre':'kilometer','kilometres':'kilometers',
+ 'litre':'liter','litres':'liters','amphitheatre':'amphitheater','theatre':'theater','colour':'color','colours':'colors','coloured':'colored',
+ 'favourite':'favorite','neighbours':'neighbors','neighbour':'neighbor','grey':'gray','storey':'story','towards':'toward',
+ 'autumn':'fall','rubbish':'trash','car park':'parking lot','car parks':'parking lots','mobile signal':'cell signal','taps':'faucets',
+ 'number-plate':'license-plate','timetable':'schedule','roadworks':'road work','fuel':'gas','shops':'stores','shop':'store',
+ 'pitches':'tent sites','waterproof':'rain jacket','headtorch':'headlamp','head torch':'headlamp','recognise':'recognize','specialise':'specialize'}
+_US=re.compile(r'(?<![\w-])('+'|'.join(sorted(map(re.escape,US_WORDS),key=len,reverse=True))+r')(?![\w-])',re.I)
+def _us(g):
+    w=g.group(1);r=US_WORDS[w.lower()];return r.capitalize() if w[0].isupper() else r
+def american(part):return _US.sub(_us,part)
 def units(text):
     """Source text is metric ('9.3 km', '2,260 m', optionally followed by '(5.8 mi)').
     metric build: unchanged apart from {{u:metric|imperial}} -> metric.
-    imperial build: {{u:..|..}} -> imperial, 'X km (Y mi)' -> 'Y mi', every other km/m figure converted (not inside tags)."""
+    imperial build: American spelling (US_WORDS); {{u:..|..}} -> imperial, 'X km (Y mi)' -> 'Y mi', every other km/m figure converted (not inside tags)."""
     if UNITS=='metric':return _U.sub(lambda g:g.group(1),text)
     text=_U.sub(lambda g:'\x00'+g.group(2)+'\x01',text)                      # shield hand-written imperial text
     out=[]
     for part in re.split(r'(<style.*?</style>|<[^>]+>|\{\{[^}]*\}\}|\x00.*?\x01)',text,flags=re.S):
         if part[:1] in('<','{','\x00'):out.append(part.strip('\x00\x01'));continue
-        out.append(_QTY.sub(_qty,_DUAL.sub(lambda g:g.group(1),part)))
+        out.append(american(_QTY.sub(_qty,_DUAL.sub(lambda g:g.group(1),part))))
     return ''.join(out)
 def slug_arg():
     if len(sys.argv)<2:sys.exit('usage: %s <guide-slug>   (a folder name under guides/)'%sys.argv[0])

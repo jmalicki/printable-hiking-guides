@@ -16,7 +16,10 @@ regular mountain walker. Write for that general reader, not for one person or on
   carrying your own gear".
 - Still explain what a visitor would not know: fire roads, trailhead parking rules, wilderness permits,
   poison oak, ticks, bear canisters, what a "use trail" is, that kitchens close early.
-- British spelling in the source (kilometres, colour). Times of day as am/pm ("9 pm", "by 7:00").
+- **Write the source in British spelling and vocabulary** (kilometres, colour, car park, autumn). The imperial
+  build converts to American (center, color, parking lot, fall) through `US_WORDS` in `scripts/hikelib.py`; the
+  metric build keeps the British. When you use a British word that is not in that table, add it. Times of day
+  as am/pm ("9 pm", "by 7:00").
 - They will print it and carry it, so every page must work on paper. Links are a bonus (restaurants,
   permits), never the only way to get a fact.
 
