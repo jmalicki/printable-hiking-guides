@@ -112,10 +112,9 @@ figure.cover img { height:80mm; }
 .tag.water { background:var(--blue); margin:0 0 1mm; }
 .water h3 { margin-top:0; }
 .water ul { margin-bottom:1mm; }
-/* road rating for the drive to a trailhead (see AGENTS.md): easy / rough / high clearance */
-.tag.road { background:#5f6b62; margin:1mm 0 .5mm; }
-.tag.road.rough { background:#b45309; }
-.tag.road.hc { background:var(--red); }
+/* road warning in the driving table: only for rough or high-clearance roads (see AGENTS.md); easy roads get a plain sentence */
+.roadwarn { border:1.2pt solid var(--red); border-left-width:3.5pt; background:#fdf5f4; border-radius:1.5mm; padding:1.6mm 3mm 1.2mm; margin:1.2mm 0 .5mm; }
+.roadwarn .h { display:block; color:var(--red); font-weight:700; font-size:7.8pt; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.6mm; }
 
 </style>
 </head>
@@ -160,6 +159,7 @@ figure.cover img { height:80mm; }
   <div class="warn">
     <h3>Read this first</h3>
     <p style="margin-bottom:.5mm"><b>The off-trail section is compiled from published trip reports (2001–2020) and a terrain model. It has not been walked or surveyed for this guide.</b> The line on the maps is approximate and cairns come and go. Treat page 3 as a briefing, not turn-by-turn directions; carry a proper topographic map, and ask at the Weaverville ranger station (+1 530 623 2121) before you go.</p>
+  <p style="margin:1mm 0 .5mm"><b>The road to the finish is rough:</b> the last 3 km to the Stuart Fork trailhead, where you leave the second car, are dirt, and high clearance is advised (page 6). The road to the start is paved.</p>
   </div>
 </section>
 
@@ -339,8 +339,9 @@ figure.cover img { height:80mm; }
         <tr><td><span class="num">A</span></td><td><b>Redding.</b> Leave I-5 for <b>Highway 299 west</b> (signed Eureka / Weaverville), a winding mountain road.</td></tr>
         <tr><td><span class="num">B</span></td><td><b>Weaverville</b>, 70 km and about an hour on: last supplies, fuel and the ranger station. Highway 3 north to the finish trailhead leaves from here.</td></tr>
         <tr><td><span class="num">C</span></td><td>Continue 13 km (8 mi) on Highway 299 to <b>Junction City</b> and turn <b>right onto Canyon Creek Road</b>. It is easy to miss: if you pass the shop and fire station you have gone too far.</td></tr>
-        <tr><td><span class="num">P</span></td><td>Follow Canyon Creek Road 21 km (13 mi) to its end at the <b>Canyon Creek trailhead</b>: paved but narrow, about 30 minutes. Large free car park, toilet, no water. Ripstein campground is 1.5 km before the end. <span class="tag road">Road: paved, narrow · any car</span></td></tr>
-        <tr><td><span class="num">F</span></td><td><span class="tag road hc">Road: 3 km dirt · high clearance advised</span><br><b>Stuart Fork trailhead (finish).</b> From Weaverville take Highway 3 north 21 km (13 mi), turn left on Trinity Alps Road, pass through the old resort and continue 3 km on dirt to Bridge Camp, which has drinking water from late May to 31 October. Gravel at first, then a low-water crossing and a steep hill of bare dirt for the last 0.7 km, which the Forest Service does not maintain for ordinary cars (level 2) and says may need high clearance and four-wheel drive.</td></tr>
+        <tr><td><span class="num">P</span></td><td>Follow Canyon Creek Road 21 km (13 mi) to its end at the <b>Canyon Creek trailhead</b>: paved but narrow, about 30 minutes; any car should be fine. Large free car park, toilet, no water. Ripstein campground is 1.5 km before the end.</td></tr>
+        <tr><td><span class="num">F</span></td><td><b>Stuart Fork trailhead (finish).</b> From Weaverville take Highway 3 north 21 km (13 mi), turn left on Trinity Alps Road, pass through the old resort and continue 3 km on dirt to Bridge Camp, which has drinking water from late May to 31 October.
+          <div class="roadwarn"><span class="h">Rough road · last 3 km · high clearance advised</span>Gravel at first, then a low-water crossing and a steep hill of bare dirt for the last 0.7 km. The Forest Service does not maintain that part for ordinary cars and says it may need high clearance and four-wheel drive.</div></td></tr>
       </table>
       <h3>The shuttle</h3>
       <p>The trailheads are about 60 km (38 mi) and 1¼–1½ hours apart by road, through Weaverville. There is no public transport and no regular shuttle service. Bring two cars and leave one at Bridge Camp on the way in, or use the Bear Creek loop finish (page 5).</p>

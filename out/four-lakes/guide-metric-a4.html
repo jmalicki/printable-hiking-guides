@@ -112,10 +112,9 @@ figure.cover img { height:80mm; }
 .tag.water { background:var(--blue); margin:0 0 1mm; }
 .water h3 { margin-top:0; }
 .water ul { margin-bottom:1mm; }
-/* road rating for the drive to a trailhead (see AGENTS.md): easy / rough / high clearance */
-.tag.road { background:#5f6b62; margin:1mm 0 .5mm; }
-.tag.road.rough { background:#b45309; }
-.tag.road.hc { background:var(--red); }
+/* road warning in the driving table: only for rough or high-clearance roads (see AGENTS.md); easy roads get a plain sentence */
+.roadwarn { border:1.2pt solid var(--red); border-left-width:3.5pt; background:#fdf5f4; border-radius:1.5mm; padding:1.6mm 3mm 1.2mm; margin:1.2mm 0 .5mm; }
+.roadwarn .h { display:block; color:var(--red); font-weight:700; font-size:7.8pt; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.6mm; }
 
 </style>
 </head>
@@ -155,8 +154,9 @@ figure.cover img { height:80mm; }
     <tr><td>Two ways in</td><td>This guide follows <b>Long Canyon</b>, the shorter one. <b>Stoney Ridge</b> is 6 km longer, crosses two extra passes, and is described beside it on page 4.</td></tr>
   </table>
   <div class="warn">
-    <h3>Turn back if</h3>
-    <p style="margin-bottom:.5mm"><b>Hard snow covers the traverse above Deer Lake</b> (between <span class="num">3</span> and <span class="num">4</span>). It faces north, holds snow well into July in a normal year, and a slip there runs out a long way. Go down to Deer Lake instead and visit the other lakes from that side. Also turn back if thunder is building before an exposed saddle. Ask the Weaverville ranger station about snow before you drive up: +1 530 623 2121.</p>
+    <h3>Before you go, and when to turn back</h3>
+    <p style="margin-bottom:.5mm"><b>Turn back if hard snow covers the traverse above Deer Lake</b> (between <span class="num">3</span> and <span class="num">4</span>). It faces north, holds snow well into July in a normal year, and a slip there runs out a long way. Go down to Deer Lake instead and visit the other lakes from that side. Also turn back if thunder is building before an exposed saddle. Ask the Weaverville ranger station about snow before you drive up: +1 530 623 2121.</p>
+  <p style="margin:1mm 0 .5mm"><b>The road to the Stoney Ridge trailhead is rough:</b> 10 km of dirt, clearance advised (page 5). Long Canyon, the approach this guide follows, is an easy drive in any car.</p>
   </div>
 </section>
 
@@ -314,9 +314,10 @@ figure.cover img { height:80mm; }
       <table class="drive">
         <tr><td><span class="num">W</span></td><td><b>Weaverville.</b> Last shops, fuel and the ranger station. Take <b>Highway 3 north</b> (Trinity Lake Boulevard) towards Trinity Lake.</td></tr>
         <tr><td><span class="num">L</span></td><td>After 37 km (23 mi) on Highway 3, turn <b>left onto Long Canyon Road</b>.</td></tr>
-        <tr><td><span class="num">1</span></td><td>Follow it 4.0 km (2.5 mi). Where it becomes Mule Creek Road, go 120 m and turn <b>right onto East Stuart Road</b>, then after 550 m bear left on the short spur to the <b>Long Canyon trailhead</b>. Paved until the last 0.6 km of good gravel (Forest Service level 3). Notice board and pit toilet, no water. <span class="tag road">Road: paved, then gravel · any car</span></td></tr>
+        <tr><td><span class="num">1</span></td><td>Follow it 4.0 km (2.5 mi). Where it becomes Mule Creek Road, go 120 m and turn <b>right onto East Stuart Road</b>, then after 550 m bear left on the short spur to the <b>Long Canyon trailhead</b>. Paved until the last 0.6 km of good gravel: any car should be fine. Notice board and pit toilet, no water.</td></tr>
         <tr><td><span class="num">S</span></td><td><b>For Stoney Ridge instead:</b> 22 km (14 mi) from Weaverville, just after the bridge over the Stuart Fork arm of the lake, turn <b>left at the signed Stoney Ridge turn-off</b> (Granite Road on maps).</td></tr>
-        <tr><td><span class="num">A</span></td><td><span class="tag road rough">Road: 10 km rough dirt · clearance advised</span><br>Follow the dirt road 8.2 km, turn right, and reach the <b>Stoney Ridge trailhead</b> in another 1.5 km. Gravel at first, bare dirt for the last 2 km; single lane with unsigned forks, and phone maps misroute, so follow the signs. It is officially kept up for ordinary cars (Forest Service level 3), but expect ruts and rock: drive slowly, and take the vehicle with more clearance if you have a choice. Open 1 May to 31 October. No water or toilet. <b>Long Canyon is the easier drive.</b></td></tr>
+        <tr><td><span class="num">A</span></td><td>Follow the dirt road 8.2 km, turn right, and reach the <b>Stoney Ridge trailhead</b> in another 1.5 km. No water or toilet.
+          <div class="roadwarn"><span class="h">Rough road · 10 km of dirt · clearance advised</span>Gravel at first, bare dirt for the last 2 km. Expect ruts and rock: drive slowly, and take the vehicle with more clearance if you have a choice. Single lane with unsigned forks, and phone maps misroute, so follow the signs. Open 1 May to 31 October. <b>Long Canyon is the easier drive.</b></div></td></tr>
       </table>
       <p><b>Leave nothing in view in the car</b>, and no food at all: this is bear country.</p>
       <h3>Without a car</h3>

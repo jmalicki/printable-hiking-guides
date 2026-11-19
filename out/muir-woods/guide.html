@@ -113,10 +113,9 @@ figure.cover img { height:80mm; }
 .tag.water { background:var(--blue); margin:0 0 1mm; }
 .water h3 { margin-top:0; }
 .water ul { margin-bottom:1mm; }
-/* road rating for the drive to a trailhead (see AGENTS.md): easy / rough / high clearance */
-.tag.road { background:#5f6b62; margin:1mm 0 .5mm; }
-.tag.road.rough { background:#b45309; }
-.tag.road.hc { background:var(--red); }
+/* road warning in the driving table: only for rough or high-clearance roads (see AGENTS.md); easy roads get a plain sentence */
+.roadwarn { border:1.2pt solid var(--red); border-left-width:3.5pt; background:#fdf5f4; border-radius:1.5mm; padding:1.6mm 3mm 1.2mm; margin:1.2mm 0 .5mm; }
+.roadwarn .h { display:block; color:var(--red); font-weight:700; font-size:7.8pt; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.6mm; }
 
 </style>
 </head>

@@ -126,20 +126,23 @@ and 700 m in the sun with no sure water and no tap at the trailhead).
 
 ## The drive: rating the road to the trailhead
 
-Every unpaved approach gets a one-line rating in the driving table (`<span class="tag road …">`), so
-someone in a rental car knows before they commit. Three grades:
+The owner's rule: **an easy road gets a few words in the running text ("any car should be fine") and no
+box; a rough or high-clearance road gets a red box that cannot be missed** (`<div class="roadwarn">` with a
+`<span class="h">` heading, inside the driving-table cell). **A rough or high-clearance road is also flagged on page 1**, as a bold line in
+the red `.warn` box with the page number of the directions, so the reader sees it before choosing a
+trailhead or a vehicle. The owner asked for this: the driving page alone is too late.
 
-| Tag class | Label | Meaning |
+| Grade | In the guide | When |
 |---|---|---|
-| `tag road` | paved / gravel · any car | Paved, or Forest Service maintenance level 3–5 with reports agreeing |
-| `tag road rough` | rough dirt · clearance advised | Level 3 on paper but reports of ruts or rocks, or mixed reports: an ordinary car gets there slowly |
-| `tag road hc` | high clearance advised / required | Level 2 ("not maintained for passenger cars"), or the agency itself says high clearance or 4WD |
+| Easy | plain sentence: "any car should be fine" | Paved, or Forest Service maintenance level 3–5 with reports agreeing |
+| Rough | red `.roadwarn` box, "Rough road · length · clearance advised" | Level 3 on paper but reports of ruts or rock, or mixed reports |
+| High clearance | red `.roadwarn` box, "… high clearance advised / required" | Level 2 ("not maintained for passenger cars"), or the agency says high clearance or 4WD |
 
 - The official basis is the **Forest Service road maintenance level** (2 = high-clearance vehicles, 3 =
   "a prudent driver in a standard passenger car"). Look a road up by number in the FS road data
   (`apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RoadBasic_01/MapServer/0`, fields `OPER_MAINT_LEVEL` and
   `SURFACE_TYPE`); the MVUM layer (`EDW_MVUM_01/MapServer/1`) gives seasonal opening dates.
-- **In the guide, the tag plus a short description is enough**: length, surface (gravel, bare dirt), width,
+- **In the guide, the box heading plus a short description is enough**: length, surface (gravel, bare dirt), width,
   the official level in brackets, what to expect (ruts, rock, a ford, a steep hill), seasonal closure dates,
   unsigned forks, whether phone maps misroute, and which trailhead is the easier drive when there is a
   choice. **Do not recite trip reports in the guide**; the owner said the rating and a description would
