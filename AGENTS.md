@@ -74,6 +74,14 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   facilities, road surface, fire and canister rules, ecology written from memory) are either verified against
   a source, worded as uncertain in the guide ("I could not confirm…"), or left out. Tell the owner in chat
   which ones remain unverified. When sources disagree on a figure, use the route's own computed number.
+- **Do not be cagey.** One plain sentence about what the guide rests on is enough ("Nobody walked this loop for
+  the guide… where a sign disagrees with it, believe the sign"). The owner called a paragraph listing what
+  "could not be read" and what "needs checking on the day" excessively cagey. Never put tooling problems in
+  a guide (a blocked web page is not the reader's concern), and do not hedge facts you could verify with a
+  little more work: verify them.
+- **A page that refuses automated fetching (HTTP 403) is not unreadable.** Open it in the browser pane and
+  read it there before writing around it; the county park pages for Almaden read fine that way. PDFs opened
+  in the browser pane trigger a download prompt for the owner, so ask before opening one.
 - If the owner's premise is wrong, say so before building on it (Bootjack was not the gentler climb; no
   trail joins Canyon Creek Lakes to Sapphire Lake).
 - **Warnings up front.** Hazards get a red `.warn` box on page 1. The owner singled out the Trinity traverse's
