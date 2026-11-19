@@ -101,3 +101,11 @@ figure.nd img { height:auto; }
 figure.hero.short img, .trinity figure.hero img { height:58mm; }
 /* cover photo beside the pitch (four-lakes) */
 figure.cover img { height:80mm; }
+/* water: 'last water' sign in step tables (only for dangerous dry stretches), and the water section */
+.tag.water { background:var(--blue); margin:0 0 1mm; }
+.water h3 { margin-top:0; }
+.water ul { margin-bottom:1mm; }
+/* road rating for the drive to a trailhead (see AGENTS.md): easy / rough / high clearance */
+.tag.road { background:#5f6b62; margin:1mm 0 .5mm; }
+.tag.road.rough { background:#b45309; }
+.tag.road.hc { background:var(--red); }

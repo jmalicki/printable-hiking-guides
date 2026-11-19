@@ -49,7 +49,7 @@ DETAIL=dict(bbox=(40.9378,-122.9139,40.9579,-122.8848),overlays=[],icons=[],k=1.
           dict(at=(40.9470,-122.8990),dx=0,dy=0,text='Siligo Peak',anchor='middle',size=18),
           dict(at=(40.94205,-122.8945),dx=0,dy=-16,text='snow lingers here',anchor='middle',size=17,color='RED',weight=700)])
 def _pf(markers,notes=[]):
-    return dict(emin=1000,emax=2600,grid=200,label_every=400,height=270,km_step=5,markers=markers,notes=notes)
+    return dict(emin=1000,emax=2600,grid=200,label_every=400,height=215,km_step=5,markers=markers,notes=notes)
 PROFILE=_pf([('canyon',1,12),('meadow',2,0),('gate',3,-8),('summit',4,6),('diamond',5,4),('luella',6,0),('bottom',7,0),('deer',8,-4),('gate_end',3,8),('canyon_end',1,0)],
             notes=[(6600,1220,'up Long Canyon: +1,260 m'),(14600,1220,'the loop: 11.3 km, +690 m'),(23000,1220,'back down Long Canyon')])
 PROFILES={'stoney-ridge':_pf([('ridge','A',12),('stone','B',-4),('little','C',0),('gate',3,-4),('summit',4,8),('diamond',5,4),('luella',6,0),('bottom',7,0),('deer',8,-4),('gate_end',3,6),('little_end','C',4),('stone_end','B',4),('ridge_end','A',0)],

@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <title>Trinity Alps: Canyon Creek to Sapphire Lake</title>
 <style>
-@page { size: A4; margin: 11mm 14mm 10mm; }
+@page { size: A4; margin: 9mm 12mm 8mm; }
+html { zoom: .95; }
 :root { --ink:#1b2a22; --green:#2f6b4f; --red:#c8102e; --blue:#1d4ed8; --paper:#fbfaf6; --rule:#d9ddd3; --soft:#eef1ea; }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -107,6 +108,14 @@ figure.nd img { height:auto; }
 figure.hero.short img, .trinity figure.hero img { height:58mm; }
 /* cover photo beside the pitch (four-lakes) */
 figure.cover img { height:80mm; }
+/* water: 'last water' sign in step tables (only for dangerous dry stretches), and the water section */
+.tag.water { background:var(--blue); margin:0 0 1mm; }
+.water h3 { margin-top:0; }
+.water ul { margin-bottom:1mm; }
+/* road rating for the drive to a trailhead (see AGENTS.md): easy / rough / high clearance */
+.tag.road { background:#5f6b62; margin:1mm 0 .5mm; }
+.tag.road.rough { background:#b45309; }
+.tag.road.hc { background:var(--red); }
 
 </style>
 </head>
@@ -131,9 +140,9 @@ figure.cover img { height:80mm; }
       <h2>What this is</h2>
       <p>Two of the great valleys of the Trinity Alps, Canyon Creek and Stuart Fork, run side by side and end in lake basins barely 2 km apart. Good trails lead up each. Nothing connects them except the ridge between, and a route over it that exists only as cairns, deer tracks and a handful of trip reports.</p>
       <ul>
-        <li><b>Day 1</b> is the most popular walk in the range for good reason: waterfalls, meadows and two lakes under the highest peak.</li>
+        <li><b>Day 1</b> is the most popular hike in the range for good reason: waterfalls, meadows and two lakes under the highest peak.</li>
         <li><b>Day 2</b> is the reason to come: from the last lake, over a 2,260 m notch informally called Kalmia Pass, down a ledge between cliffs to Mirror Lake, then to Sapphire and Emerald.</li>
-        <li><b>Day 3</b> is a long, easy walk out through meadows and forest, past the ruins of a gold-rush waterworks.</li>
+        <li><b>Day 3</b> is a long, easy hike out through meadows and forest, past the ruins of a gold-rush waterworks.</li>
       </ul>
       <p>You finish 60 km by road from where you started: see page 6 for the car shuttle.</p>
     </div>
@@ -141,7 +150,7 @@ figure.cover img { height:80mm; }
       <h2>Is this for me? Honestly</h2>
       <p class="verdict" style="margin-top:0">Fitness is the lesser question. The crossing needs someone in the party who is at home off-trail: reading terrain, judging loose ground, and turning back.</p>
       <table class="cmp narrow">
-        <tr><td>Fitness</td><td>Three days of 6–8 hours with a 12–15 kg pack. If you have done a multi-day mountain walk carrying your own gear, you are fit enough.</td></tr>
+        <tr><td>Fitness</td><td>Three days of 6–8 hours with a 12–15 kg pack. If you have done a multi-day backpacking trip, you are fit enough.</td></tr>
         <tr><td>Skill</td><td>5 km with no path: steep scree, sidehilling on hard dirt, a loose gully, some hands-on down-climbing. Think of the hardest unmarked mountain pass you have crossed, then add a heavy pack.</td></tr>
         <tr><td>Commitment</td><td>No phone signal for three days. From Mirror Lake, help is a full day away.</td></tr>
         <tr><td>Not for</td><td>A first backpacking trip, a solo first visit, or anyone uneasy on loose, exposed ground. Do the day-1 trail and the pass viewpoint instead (page 5).</td></tr>
@@ -184,7 +193,7 @@ figure.cover img { height:80mm; }
       <ul style="margin-bottom:1mm; column-count:2; column-gap:8mm">
         <li>Go in August or the first half of September: dry ledge, long days, low streams.</li>
         <li>Camp at L Lake on night 1 and be on the pass by 9:00.</li>
-        <li>Carry 2 litres each from L Lake, a helmet if you have one, and poles.</li>
+        <li>Carry 3 litres each from L Lake: there is nothing reliable before Mirror Lake, a helmet if you have one, and poles.</li>
         <li>The crossing can be reversed, but the gully is easier to find from below.</li>
       </ul>
     </div>
@@ -209,7 +218,7 @@ figure.cover img { height:80mm; }
   </div>
   <table style="margin-top:2mm">
         <tr><td class="n"><span class="num">3</span></td><td><b>Upper Canyon Creek Lake to L Lake</b> · 1.6 km, +250 m, 1–1½ h<br>The trail ends on the east shore of the upper lake (1,745 m). A cairned use path, not on most maps, continues round to the inlet and climbs north-east beside the stream that drains L Lake. It is steep, up to 45% in places, and easy to lose in brush and slabs; keep the stream within earshot.</td></tr>
-        <tr><td class="n"><span class="num">4</span></td><td><b>L Lake to Kalmia Pass</b> · 1.5 km, +270 m, 1–1½ h<br>L Lake (1,990 m; also written “El” or “Little” Lake) sits in a granite bowl with camping and the last reliable water before Mirror Lake. Cross the outlet, walk through the meadow north of the lake, and climb north-west towards a dry stream bed leading to the <b>lowest notch in the ridge</b>. The reports agree on one thing: the col goes at its lowest point, not elsewhere. Scree and grass, steep but not technical.</td></tr>
+        <tr><td class="n"><span class="num">4</span></td><td><b>L Lake to Kalmia Pass</b> · 1.5 km, +270 m, 1–1½ h <span class="tag water" style="margin:0 0 0 2mm">Last water for 5–10 hours · fill 3 litres each</span><br>L Lake (1,990 m; also written “El” or “Little” Lake) sits in a granite bowl with camping and the last reliable water before Mirror Lake. Cross the outlet, walk through the meadow north of the lake, and climb north-west towards a dry stream bed leading to the <b>lowest notch in the ridge</b>. The reports agree on one thing: the col goes at its lowest point, not elsewhere. Scree and grass, steep but not technical.</td></tr>
         <tr><td class="n"><span class="num">5</span></td><td><b>Kalmia Pass</b> · about 2,260 m (7,420 ft), near 40.9880° N, 123.0232° W<br>Behind you, the Canyon Creek Lakes and Mount Hilton. Ahead, Sapphire Lake 470 m below, a sliver of Emerald, and the serrated wall of Sawtooth Ridge. A small spring-fed tarn in the meadow just below the pass was the only water one party found on the crossing.</td></tr>
         <tr><td class="n" style="vertical-align:top"><span class="num">6</span></td><td><b>Pass to Mirror Lake: the crux</b> · about 1.5 km, −245 m, 2 to 5½ h<br><b>Do not drop straight down:</b> there are cliffs and unstable talus below. Instead trend left (north-west), descending on grass, talus and deer tracks to a <b>broad sloping ledge sandwiched between two cliff bands</b>. Follow it: it is longer than it looks, a lot of sidehilling, with a couple of washed-out stretches on steep hard-packed dirt where a slip matters. Keep going until an <b>obvious loose gully</b> opens with Mirror Lake directly below. Descend it one at a time, then move left onto granite slabs and benches down to the lake (2,015 m).<br><span class="small">In September 2001 a party took about two hours. In late June 2018, on soft steep snow, another took five and a half, was unsure the ramp would go until they reached it, and called the loose traverse the hard part.</span></td></tr>
         <tr><td class="n"><span class="num">6</span></td><td><b>Mirror Lake to Sapphire Lake</b> · 2 km, −220 m, 1½–2 h<br>Still no trail: faint tread and cairns down granite beside the outlet stream, with a few moves where you face in and use your hands, and brush lower down. At Sapphire Lake (1,795 m) a faint, brushy use path follows the <b>north shore</b> to the outlet; expect to lose it once or twice.</td></tr>
@@ -261,7 +270,7 @@ figure.cover img { height:80mm; }
       <h2 style="margin-top:4mm">Three smaller trips, same country</h2>
       <ul>
         <li><b>Canyon Creek Lakes and back</b>: 25 km return, all on trail. A long day for the fit, a perfect overnight.</li>
-        <li><b>Add the pass as a day walk.</b> From a camp at the upper lake, climb to L Lake and Kalmia Pass without packs (6 km return, +520 m), look down on Sapphire Lake, and come back. All of the view, none of the crux. This is the version to choose if in doubt.</li>
+        <li><b>Add the pass as a day hike.</b> From a camp at the upper lake, climb to L Lake and Kalmia Pass without packs (6 km return, +520 m), look down on Sapphire Lake, and come back. All of the view, none of the crux. This is the version to choose if in doubt.</li>
         <li><b>Sapphire Lake by trail</b>: up Stuart Fork from Bridge Camp to Emerald and Sapphire, 43 km return, three days, no route-finding.</li>
       </ul>
     </div>
@@ -289,9 +298,29 @@ figure.cover img { height:80mm; }
     <div>
       <ul>
         <li><b>Season:</b> the trails open in June; the crossing is best from late July to mid-September. In June and early July expect steep snow on the pass and high, cold fords. It is under snow from November to May.</li>
-        <li><b>Water:</b> plentiful and good after filtering, except between L Lake and Mirror Lake.</li>
         <li><b>Kit beyond the usual:</b> paper map and compass as well as a phone with offline maps, sturdy boots, poles, sun protection (the granite glares), a head net in July, a satellite messenger if you can borrow one.</li>
         <li><b>Supplies:</b> Weaverville has a supermarket, cafés and motels. Nothing after Junction City.</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <h2>Water</h2>
+  <div class="cols water">
+    <div>
+      <h3>Where it is</h3>
+      <ul>
+        <li><b>Day 1.</b> For the first 4 km the creek is far below the trail; start with a full bottle. Above McKay Camp the trail runs beside it to the lakes. At <b>The Sinks</b> the creek goes underground late in the year (dry in late September 2018).</li>
+        <li><b>Day 2.</b> Fill up at L Lake. The gully to the pass is a dry stream bed, and the only water any report mentions before Mirror Lake is one small spring-fed pool below the pass (2001). Early in the season there is snow to melt.</li>
+        <li><b>Day 3.</b> Lakes, then the river and side streams beside the trail all the way down.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>How clean, and what to do to it</h3>
+      <ul>
+        <li><b>It is clear.</b> Snowmelt off granite: no silt, no colour, no report of algae blooms. A filter, tablets or a UV pen is enough; nothing needs settling first.</li>
+        <li><b>Treat all of it.</b> The Forest Service says Giardia is present in most of the wilderness, and Canyon Creek takes a third of all its visitors. Draw from inlets and moving water, upstream of tents.</li>
+        <li><b>Upstream.</b> Pack horses graze Morris Meadow; I found no record of cattle, or of contamination from the old mine works.</li>
+        <li><b>Burns.</b> The 2023 Deep Fire burned part of the Stuart Fork valley. After a storm, side streams there can run grey: use the river.</li>
       </ul>
     </div>
   </div>
@@ -310,8 +339,8 @@ figure.cover img { height:80mm; }
         <tr><td><span class="num">A</span></td><td><b>Redding.</b> Leave I-5 for <b>Highway 299 west</b> (signed Eureka / Weaverville), a winding mountain road.</td></tr>
         <tr><td><span class="num">B</span></td><td><b>Weaverville</b>, 70 km and about an hour on: last supplies, fuel and the ranger station. Highway 3 north to the finish trailhead leaves from here.</td></tr>
         <tr><td><span class="num">C</span></td><td>Continue 13 km (8 mi) on Highway 299 to <b>Junction City</b> and turn <b>right onto Canyon Creek Road</b>. It is easy to miss: if you pass the shop and fire station you have gone too far.</td></tr>
-        <tr><td><span class="num">P</span></td><td>Follow Canyon Creek Road 21 km (13 mi) to its end at the <b>Canyon Creek trailhead</b>: paved but narrow, about 30 minutes. Large free car park, toilet, no water. Ripstein campground is 1.5 km before the end.</td></tr>
-        <tr><td><span class="num">F</span></td><td><b>Stuart Fork trailhead (finish).</b> From Weaverville take Highway 3 north 21 km (13 mi), turn left on Trinity Alps Road, pass through the old resort and continue 3 km on dirt to Bridge Camp. The Forest Service warns of a low-water crossing and a steep hill that can need high clearance; most cars manage in summer.</td></tr>
+        <tr><td><span class="num">P</span></td><td>Follow Canyon Creek Road 21 km (13 mi) to its end at the <b>Canyon Creek trailhead</b>: paved but narrow, about 30 minutes. Large free car park, toilet, no water. Ripstein campground is 1.5 km before the end. <span class="tag road">Road: paved, narrow · any car</span></td></tr>
+        <tr><td><span class="num">F</span></td><td><span class="tag road hc">Road: 3 km dirt · high clearance advised</span><br><b>Stuart Fork trailhead (finish).</b> From Weaverville take Highway 3 north 21 km (13 mi), turn left on Trinity Alps Road, pass through the old resort and continue 3 km on dirt to Bridge Camp, which has drinking water from late May to 31 October. The Forest Service warns of a low-water crossing and a steep hill that can need high clearance; most cars manage in summer.</td></tr>
       </table>
       <h3>The shuttle</h3>
       <p>The trailheads are about 60 km (38 mi) and 1¼–1½ hours apart by road, through Weaverville. There is no public transport and no regular shuttle service. Bring two cars and leave one at Bridge Camp on the way in, or use the Bear Creek loop finish (page 5).</p>

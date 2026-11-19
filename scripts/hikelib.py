@@ -12,7 +12,7 @@ def load_config(slug):
 # ---- build-time options: UNITS=imperial|metric, PAPER=letter|a4 (environment variables; see Makefile) ----
 UNITS=os.environ.get('UNITS') or 'imperial';PAPER=os.environ.get('PAPER') or 'letter'
 assert UNITS in('imperial','metric') and PAPER in('letter','a4'),'UNITS=imperial|metric PAPER=letter|a4'
-PAGE_CSS={'a4':'@page { size: A4; margin: 11mm 14mm 10mm; }',
+PAGE_CSS={'a4':'@page { size: A4; margin: 9mm 12mm 8mm; }\nhtml { zoom: .95; }',      # same working width as Letter, a little more height
           # Letter is 18 mm shorter and 6 mm wider than A4: tighter margins and a slight zoom keep the same page breaks
           'letter':'@page { size: letter; margin: 9mm 12mm 8mm; }\nhtml { zoom: .97; }\n.page > svg.map { width: 92%; margin: 0 auto; }'}[PAPER]   # full-width maps would grow taller with the wider page
 def _num(x):return float(x.replace(',',''))
