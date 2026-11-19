@@ -62,4 +62,5 @@ PHOTOS=dict(
  marmot=dict(file='File:Marmot in Grand Teton NP-NPS.jpg',short='Marmot',cls='bio',caption='Yellow-bellied marmot.'),
  weasel=dict(file='File:Long-tailed weasel (30228536403).jpg',short='Long-tailed weasel',cls='bio',caption='Long-tailed (Yellowstone).'),
  marten=dict(file='File:American Marten.jpg',short='Marten',cls='bio',caption='Marten (photo from elsewhere).'),
+ otter=dict(file='File:River otter walks along the bank of Lamar River (49706304777).jpg',short='River otter',cls='bio',crop=(0.2,0.15,0.9,0.95),caption='River otter (Yellowstone).'),
 )
