@@ -98,7 +98,8 @@ figure.nd img { height:auto; }
 .days td:nth-child(2) { width:36mm; white-space:nowrap; font-variant-numeric:tabular-nums; }
 .days td small { color:#55635a; display:block; }
 .l-off { border-top:1.1mm dashed var(--red); }
-figure.hero.short img, .trinity figure.hero img { height:58mm; }
+figure.hero.short img { height:58mm; }
+.trinity figure.hero img { height:43mm; object-position:50% 88%; }   /* the warning box sits above the photo on this cover */
 /* cover photo beside the pitch (four-lakes) */
 figure.cover img { height:80mm; }
 /* water: 'last water' sign in step tables (only for dangerous dry stretches), and the water section */

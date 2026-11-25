@@ -1,12 +1,12 @@
-"""Write the hike lists (BAY-AREA-HIKES.md, FURTHER-AFIELD.md) from every built guide: for each hike its cover
+"""Write the hike lists (BAY-AREA-HIKES.md, FURTHER-AFIELD.md, HAZARDOUS-ROUTES.md) from every built guide: for each hike its cover
 photo, its blurb (the guide's subtitle), the headline figures and links to the guide (the Letter PDF) and its GPX tracks, under a table of contents.
-Each guide's config may set REGION='bay-area' (default: further afield) and PARK (named after the title). Text and figures are read from the built
+Each guide's config may set REGION='bay-area' or 'hazardous' (default: further afield) and PARK (named after the title). Text and figures are read from the built
 feet-and-miles guide (out/<slug>/guide.html), so run `make` first.
 usage: make_index.py"""
 import re,glob,os,html,json
 from hikelib import load_config,ROOT
 clean=lambda x:html.unescape(re.sub(r'\s+',' ',re.sub('<[^>]+>',' ',x))).strip()
-hikes={'bay-area':[],'further':[]}
+hikes={'bay-area':[],'further':[],'hazardous':[]}
 for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
     slug=cfg.split(os.sep)[-2];C=load_config(slug);f=os.path.join(C.OUT,'guide.html')
     if not os.path.exists(f):continue
@@ -29,7 +29,7 @@ for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
     park=getattr(C,'PARK','');head=title+(' (%s)'%park if park else '')
     section='## %s\n\n*%s · %s*\n\n%s%s\n\n**%s** %s · **%s** %s · **%s** · **%s**: %s\n\n%s\n'%(head,where or kind,kind.lower() if where else '',photo,blurb,cells[0],notes[0],cells[1],notes[1],cells[2],cells[4],notes[4],' · '.join(links))
     row='| [%s](#%s)%s | %s | %s | %s | %s |'%(title,re.sub(r'[^a-z0-9 -]','',head.lower()).replace(' ','-'),' (%s)'%park if park else '',cells[0],cells[1],cells[2],cells[4])
-    hikes['bay-area' if getattr(C,'REGION','')=='bay-area' else 'further'].append((miles,section,row))
+    hikes[getattr(C,'REGION','') if getattr(C,'REGION','') in hikes else 'further'].append((miles,section,row))
 def write(name,title,intro,key):
     hs=sorted(hikes[key])
     body='# %s\n\n%s\n\n'%(title,intro)
@@ -39,3 +39,4 @@ def write(name,title,intro,key):
     open(os.path.join(ROOT,name),'w').write(body);print(name,len(hs))
 write('BAY-AREA-HIKES.md','Bay Area hikes','Printable guides to hikes within about an hour and a half of San Francisco, shortest first. Each is a PDF to print and carry; the [README](README.md) explains what goes into one and how to print it so it survives rain.','bay-area')
 write('FURTHER-AFIELD.md','Further afield','Printable guides to hikes and backpacking trips elsewhere in California and in the Rockies, shortest first. Each is a PDF to print and carry; the [README](README.md) explains what goes into one and how to print it so it survives rain.','further')
+write('HAZARDOUS-ROUTES.md','Extremely hazardous advanced routes, documented for reference','These routes are advised against. Each began with someone asking online whether a route was feasible, and experienced backpackers answering that it carried a serious risk of injury or death. I compiled each one from published trip reports and terrain data to document what it involves. I have not walked them and I do not recommend them. For hikes to go and do, see [Bay Area hikes](BAY-AREA-HIKES.md) and [Further afield](FURTHER-AFIELD.md).','hazardous')

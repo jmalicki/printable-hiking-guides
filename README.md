@@ -29,6 +29,9 @@ corrected and rebuilt, and new ones added the same way.
   Ohlone Wilderness.
 - **[Further afield](FURTHER-AFIELD.md)**: the Trinity Alps, Yosemite, Yellowstone and Grand Teton, including
   multi-day backpacking trips.
+- **[Extremely hazardous advanced routes, documented for reference](HAZARDOUS-ROUTES.md)**: routes that
+  experienced backpackers advise against, compiled from trip reports and never walked for these guides. They are
+  here to show what such a route involves.
 
 The finished PDFs are in this repository, under `out/<guide>/`, in two editions: US Letter in feet and miles
 (`<name>.pdf`) and A4 in metric (`<name>-metric-a4.pdf`). Each folder also has GPX tracks to load into CalTopo,
@@ -103,7 +106,8 @@ and run when wet. Paper of any kind tears once it is soggy.
 Each guide is a folder under `guides/` holding a `config.py` (route, maps, photos) and a `template.html` (the
 words). `out/<guide>/` gets the PDFs, GPX files, `guide.html` and page previews. Style, audience, required sections
 and working method for writing a new guide are in `AGENTS.md`: read it first. After adding or changing a guide, run
-`scripts/make_index.py` to refresh the two lists above (set `REGION='bay-area'` in the config for a Bay Area hike).
+`scripts/make_index.py` to refresh the three lists above (set `REGION='bay-area'` in the config for a Bay Area hike, `REGION='hazardous'` for a
+route documented as advised against).
 
 ## Build
 - `make` — rebuild every PDF from cached data (no network)
