@@ -1,6 +1,7 @@
 """Trinity Alps: Canyon Creek Lakes over the ridge to Mirror and Sapphire Lakes (off-trail crossing)."""
 PDF='trinity-alps-canyon-creek-to-sapphire.pdf'
 PARK='Trinity Alps Wilderness'            # shown after the title in the hike lists
+LINT_OK=['stat-wrap']                     # the grade cell reads 'Extremely hazardous', the owner's wording, on two lines by design
 REGION='hazardous'                       # listed in HAZARDOUS-ROUTES.md, apart from the hikes to go and do
 OSM_BBOX=(40.850,-123.090,41.020,-122.780)
 TILES=dict(z=14,bbox=(40.855,-123.075,41.020,-122.895))          # overview: trailhead to trailhead

@@ -53,8 +53,8 @@ def lint(slug):
             y=max(y,b)
         if gap>0.25*H:add('empty','page %d: an empty band %d mm tall starts %d mm down the page'%(n,gap/MM,at/MM))
     # stat strip: each headline figure should sit on one line (search_for returns one rectangle per line)
-    stats=re.search(r'<div class="stats">((?:\s*<div><b>.*?</b><span>.*?</span></div>)+)',raw,re.S)
-    vals=[strip(b).strip() for b in re.findall(r'<div><b>(.*?)</b>',stats.group(1) if stats else '',re.S)]
+    stats=re.search(r'<div class="stats">((?:\s*<div><b[^>]*>.*?</b><span>.*?</span></div>)+)',raw,re.S)
+    vals=[strip(b).strip() for b in re.findall(r'<div><b[^>]*>(.*?)</b>',stats.group(1) if stats else '',re.S)]
     hits={v:[r.y0 for r in doc[0].search_for(v)] for v in vals if v}
     tops=sorted(y for ys in hits.values() for y in ys)
     row=max(tops,key=lambda y:sum(abs(y-z)<4 for z in tops)) if tops else 0      # the strip's first line: the height most figures share

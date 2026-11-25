@@ -37,14 +37,14 @@ MAP=dict(pad=110,aspect=1.3,extent=['main'],icons=[],k=0.8,scale=(500,'500 m'),
           dict(at='pelican',dx=-10,dy=40,text='Pelican Point',anchor='end',size=22),
           dict(at='plateau',dx=26,dy=6,text='South Plateau Trail',size=22),
           dict(at=(36.5178,-121.9425),dx=0,dy=0,text='Lace Lichen short cut',anchor='middle',size=20,color='BLUE',weight=700),
-          # coves and points where the sources place otters: blue italics would need a class, so plain bold blue
-          dict(at=(36.5203,-121.9388),dx=0,dy=0,text='Whalers Cove',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5224,-121.9440),dx=0,dy=0,text='Bluefish Cove',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5228,-121.9497),dx=0,dy=0,text='Cypress Cove',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5199,-121.9548),dx=0,dy=0,text='Headland Cove',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5160,-121.9520),dx=0,dy=0,text='Sand Hill Cove',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5113,-121.9462),dx=0,dy=0,text='Weston Beach',anchor='middle',size=23,color='#0b5f8a',weight=700),
-          dict(at=(36.5086,-121.9438),dx=0,dy=0,text='China Cove',anchor='end',size=23,color='#0b5f8a',weight=700)])
+          # coves and points where the sources place otters: bold blue with an otter after the name (blue alone was hard to tell from black in print)
+          dict(at=(36.5203,-121.9388),dx=0,dy=0,text='Whalers Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5224,-121.9440),dx=0,dy=0,text='Bluefish Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5228,-121.9497),dx=0,dy=0,text='Cypress Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5199,-121.9548),dx=0,dy=0,text='Headland Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5160,-121.9520),dx=0,dy=0,text='Sand Hill Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5113,-121.9462),dx=0,dy=0,text='Weston Beach <tspan font-size="40" dy="9">🦦</tspan>',anchor='middle',size=23,color='#0b5f8a',weight=700),
+          dict(at=(36.5086,-121.9438),dx=0,dy=0,text='China Cove <tspan font-size="40" dy="9">🦦</tspan>',anchor='end',size=23,color='#0b5f8a',weight=700)])
 PROFILE=dict(emin=0,emax=50,grid=10,label_every=20,height=170,km_step=1,
   markers=[('start',1,10),('whalers',2,0),('granite',3,0),('cannery',4,0),('info',5,0),('pinnacle',6,0),('sealion',7,0),('weston',8,0),('bird',9,0),('plateau',10,0),('start_end',1,-10)],
   notes=[])

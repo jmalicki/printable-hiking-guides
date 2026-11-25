@@ -18,8 +18,8 @@ for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
     unw=re.search(r'<div class="unwalked">(.*?)</div>',h,re.S)        # banner on guides the author has not hiked (AGENTS.md)
     if unw:blurb='**%s**\n\n%s'%(clean(unw.group(1)),blurb)
     kind,_,where=kick.partition(' · ')
-    cells=[clean(a) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
-    notes=[clean(b) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
+    cells=[clean(a) for a,b in re.findall(r'<div><b[^>]*>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
+    notes=[clean(b) for a,b in re.findall(r'<div><b[^>]*>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
     base='out/%s/'%slug;pdf=C.PDF.replace('-metric','').replace('-a4','')
     links=['[The guide (PDF)](%s%s)'%(base,pdf)]
     links+=['[GPX%s](%s%s-%s.gpx)'%('' if len(C.GPX)==1 else ': '+k,base,slug,k) for k in C.GPX if os.path.exists(os.path.join(C.OUT,'%s-%s.gpx'%(slug,k)))]

@@ -30,8 +30,8 @@ MAP=dict(pad=120,aspect=180/170,extent=['main','short','vc_spur'],
 PROFILE=dict(emin=0,emax=350,grid=50,label_every=100,
   markers=[('start',1,0),('cvtop',2,0),('lostcv',3,0),('cvb',4,0),('fc',5,-16),('bj',6,16),('vw',7,0),('t80',8,0),('start_end',1,0)],
   notes=[(3600,292,'&#8592; Canopy View descent: 240 m down in 2.4 km'),(3600,240,'Bootjack climb: 250 m up in 2.1 km &#8594;')])
-ACCESS=dict(**{'from':(37.8078,-122.4750),'to':(37.91020,-122.57721)},z=14,bbox=(37.795,-122.615,37.928,-122.455),
-  pad=(300,230,150,110),
+ACCESS=dict(**{'from':(37.8078,-122.4750),'to':(37.91020,-122.57721)},z=14,bbox=(37.768,-122.615,37.948,-122.455),
+  pad=(300,230,330,420),      # taller crop: the map fills its page (lint: empty band on page 4)
   markers=[dict(letter='A',at=('m',1700),label='Golden Gate Bridge',dx=-50,dy=13,anchor='end'),
            dict(letter='B',at=('type','off ramp'),label='Exit Hwy 1',dx=50,dy=13),
            dict(letter='C',at=('name','Shoreline Highway'),label='Tam Junction',dx=10,dy=82,anchor='middle'),

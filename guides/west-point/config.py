@@ -47,8 +47,7 @@ PHOTOS=dict(
  fog=dict(short='Fog',cls='fogpic',file='File:Fog over Mill Valley near Mt. Tamalpais.jpg',crop=(0,0.18,1,0.68),caption='Summer fog pouring in below the mountain.'),
  grass=dict(short='Grassland',cls='bio',file='File:Tree on MT Tam - Flickr - Andrew V Kearns.jpg',caption='Wind-shaped tree, summer-gold grass, fog below.'),
  serpentine=dict(short='Serpentine',cls='bio',file='File:Arctostaphylos montana.jpg',caption='Serpentine rock and the manzanita found only here.'),
- chaparral=dict(short='Chaparral',cls='bio',url='https://live.staticflickr.com/5157/29936612395_facd884832_b.jpg',artist='vrkrebs (Flickr)',license='CC BY-NC-ND 2.0',page='https://www.flickr.com/photos/raykrebs/29936612395/',
-   caption='Chaparral near West Point Inn.'),
+ chaparral=dict(short='Manzanita',cls='bio',file='File:Manzanita Peeling Bark.jpg',caption='Manzanita: smooth red bark.'),
  woodland=dict(short='Madrone',cls='bio',file='File:Arbutus menziesii Mount Tam Blithedale Ridge Road 4.jpg',caption='Madrone: orange limbs, peeling bark.'),
  redwood=dict(short='Redwoods',cls='bio',file='File:Biking on Mount Tamalpais.JPG',caption='Slim upland redwoods in a damp gully.'),
 )
