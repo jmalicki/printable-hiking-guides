@@ -9,6 +9,7 @@ Layout (from the PDF)
   edge          a bordered box or text runs past the right edge of the print area (its border vanishes in macOS Preview)
   empty         a page has an empty band more than a quarter of the page tall
   stat-wrap     a headline figure in the stat strip wraps onto two lines
+  footnote      a page ends in small print that is not in a .foot block, so it sits under the text instead of at the foot of the page
 Text (from the built HTML and the template)
   placeholder   an unfilled {{...}} reached the output
   metric        imperial build still shows km / metres / litres spelling, or a doubled figure ("18 mi / 18 miles")
@@ -60,6 +61,8 @@ def lint(slug):
     row=max(tops,key=lambda y:sum(abs(y-z)<4 for z in tops)) if tops else 0      # the strip's first line: the height most figures share
     for v,ys in hits.items():
         if any(6<y-row<45 for y in ys):add('stat-wrap','page 1: stat strip figure "%s" wraps onto two lines'%v)
+    for n,sec in enumerate(re.findall(r'<section class="page">(.*?)</section>',tpl,re.S),1):
+        if re.search(r'\n  <p class="small"[^>]*>(?:(?!</p>).)*</p>\s*$',sec,re.S):add('footnote','page %d ends in a small-print paragraph outside <div class="foot">: it will not sit at the bottom of the page'%n)
     # ---- text ----
     for m in set(re.findall(r'\{\{[^}]{0,40}\}?\}?',text)):add('placeholder','unfilled placeholder in the output: %s'%m)
     if UNITS=='imperial':

@@ -128,10 +128,12 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
+.foot.plain { border-top:0; padding-top:0; }      /* a page with no room for the rule above its footnote */
 /* history: a strip of dated moments, and a date tag in step tables */
 .dates { display:grid; grid-template-columns:repeat(6,1fr); gap:0; border-top:1.2pt solid var(--ink); margin:2mm 0 0; }
 .dates div { padding:1.6mm 2.5mm 0 0; font-size:8.1pt; line-height:1.3; }
@@ -219,7 +221,9 @@ figure.tall img { height:54mm; }
       </div>
     </div>
   </div>
-  <p class="small" style="margin-top:2mm">Distances are measured along the mapped trails, heights from the USGS 10 m terrain model; climb totals are estimates. The Park Service gives 19.0 miles and 4,350 ft of climb for the same loop on one page and 19.9 miles on another. Times are for a loaded pack on dry trail. Basemap: USGS The National Map (contours in feet). Trails © OpenStreetMap contributors.</p>
+  <div class="foot plain">
+  <p class="small">Distances are measured along the mapped trails, heights from the USGS 10 m terrain model; climb totals are estimates. The Park Service gives 19.0 miles and 4,350 ft of climb for the same loop on one page and 19.9 miles on another. Times are for a loaded pack on dry trail. Basemap: USGS The National Map (contours in feet). Trails © OpenStreetMap contributors.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 3 ============================ -->

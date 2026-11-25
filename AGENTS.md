@@ -199,6 +199,10 @@ guide; 4 and 7 only when there is something to say:
    the real business (one domain had become a gambling page; it was dropped). No link beats a wrong one.
 8. **Sources and photo credits** on the last page, wrapped in `<div class="foot">` so they sit at the
    bottom of the page as footnotes, not directly under the last paragraph (the owner asked for this).
+   The same goes for small print that ends any other page (the basemap credit under the route map, for
+   instance): wrap it in `<div class="foot">` as the page's last element and it is pinned to the foot of
+   that page. The owner noticed Purisima's floating under the text. `class="foot plain"` drops the rule
+   above it on a page with no room to spare.
 
 ## History woven into the route
 
@@ -370,7 +374,7 @@ owner spotted it on Murietta Falls and Castle Rock; `.page` now has a small righ
 
 - **Layout findings are build failures in spirit**, like `OVERFLOW`: `edge` (a box or text past the right edge
   of the print area), `empty` (a band more than a quarter of the page tall with nothing in it), `stat-wrap`
-  (a stat-strip headline on two lines), `placeholder`, `metric` (leftover km or British unit spelling in the
+  (a stat-strip headline on two lines), `footnote` (small print ending a page outside a `.foot` block), `placeholder`, `metric` (leftover km or British unit spelling in the
   imperial build, doubled figures), `unwalked`, `markers`, `photo`. Fix them before moving on.
 - **Wording findings are prompts to look**: `absence`, `not-that`, `title`. A build only counts them; run
   `scripts/lint_guide.py <slug>` to list them, and `--all` for every guide. Many hits are fine (an

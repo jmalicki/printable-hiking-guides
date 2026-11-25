@@ -128,8 +128,9 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
 /* history: a strip of dated moments, and a date tag in step tables */
@@ -207,7 +208,9 @@ figure.tall img { height:54mm; }
     <tr><td><span class="num">7</span> to <span class="num">8</span> South Shore</td><td>The trail is a few steps from the water past Sand Hill Cove, Weston Beach and Hidden Beach. This side is out of the north-west wind, so the kelp lies flat and otters are easier to pick out.</td></tr>
     <tr><td><span class="num">9</span> to <span class="num">10</span> China Cove and Pelican Point</td><td>One published guide to otter-watching on this coast rates this stretch the best in the reserve. Look in the kelp off Pelican Point and in the channel between the point and Bird Island.</td></tr>
   </table>
-  <p class="small" style="margin-top:1.5mm">Basemap: USGS The National Map (contour labels in feet). Trails © OpenStreetMap contributors. The climb figure is generous: it counts every dip in a path that is never more than 130 ft above the sea.</p>
+  <div class="foot">
+  <p class="small">Basemap: USGS The National Map (contour labels in feet). Trails © OpenStreetMap contributors. The climb figure is generous: it counts every dip in a path that is never more than 130 ft above the sea.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 3 ============================ -->

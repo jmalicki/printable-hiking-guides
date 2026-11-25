@@ -127,8 +127,9 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
 /* history: a strip of dated moments, and a date tag in step tables */
@@ -318,7 +319,9 @@ figure.tall img { height:54mm; }
       </ul>
     </div>
   </div>
-  <p class="small" style="margin-top:2.5mm">Basemap: USGS The National Map (public domain; its contour labels are in feet). Trail lines © OpenStreetMap contributors. The line along the beach is drawn by hand. Climb figures ±10%. Load the GPX file into CalTopo, Komoot or AllTrails before you leave home.</p>
+  <div class="foot">
+  <p class="small">Basemap: USGS The National Map (public domain; its contour labels are in feet). Trail lines © OpenStreetMap contributors. The line along the beach is drawn by hand. Climb figures ±10%. Load the GPX file into CalTopo, Komoot or AllTrails before you leave home.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 5 ============================ -->

@@ -127,8 +127,9 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
 /* history: a strip of dated moments, and a date tag in step tables */
@@ -182,7 +183,9 @@ figure.tall img { height:54mm; }
       </table>
     </div>
   </div>
-  <p class="small" style="margin-top:2mm"><b>No dogs</b> are allowed in this preserve. There is <b>no drinking water</b>, and phone signal is patchy at best. The preserve is open from half an hour before sunrise to half an hour after sunset, free.</p>
+  <div class="foot">
+  <p class="small"><b>No dogs</b> are allowed in this preserve. There is <b>no drinking water</b>, and phone signal is patchy at best. The preserve is open from half an hour before sunrise to half an hour after sunset, free.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 2 ============================ -->
@@ -205,7 +208,9 @@ figure.tall img { height:54mm; }
       <p>All year. The canyon is cool and often foggy in summer while the ridge can be hot; winter brings mud, a loud creek and newts on the trail, and Whittemore Gulch is then closed to bikes and horses, which suits walkers. After big storms check Midpen’s trail alerts.</p>
     </div>
   </div>
-  <p class="small" style="margin-top:2mm">Basemap: USGS The National Map (contours in feet). Trail lines © OpenStreetMap contributors. Heights from the USGS 10 m terrain model, so treat climb figures as ±10%. Load the GPX file before you leave.</p>
+  <div class="foot">
+  <p class="small">Basemap: USGS The National Map (contours in feet). Trail lines © OpenStreetMap contributors. Heights from the USGS 10 m terrain model, so treat climb figures as ±10%. Load the GPX file before you leave.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 3 ============================ -->

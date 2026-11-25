@@ -128,8 +128,9 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
 /* history: a strip of dated moments, and a date tag in step tables */
@@ -206,7 +207,9 @@ figure.tall img { height:54mm; }
     <tr><td>West Point Inn porch</td><td>The same panorama, sitting down. Look back up and left for the fire lookout on East Peak (2,570 ft), the summit.</td></tr>
     <tr><td>Matt Davis Trail</td><td>Mostly in forest, with windows: each time the path rounds an open spur you get the city and bay again, framed by trees.</td></tr>
   </table>
+  <div class="foot">
   <p class="small">In summer, fog often fills the bay to 1,000–1,600 ft, and from this trail you look down on it: only bridge towers, the tallest buildings and hilltops stand clear.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 3 ============================ -->

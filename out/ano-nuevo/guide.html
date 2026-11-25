@@ -27,6 +27,7 @@ li { margin-bottom: .6mm; }
 .stats div { padding: 1.8mm 2mm 1.6mm 0; }
 .stats div + div { border-left: .6pt solid var(--rule); padding-left: 3mm; }
 .stats b { display:block; font: 700 13.5pt/1.1 "Iowan Old Style", Palatino, Georgia, serif; }
+.stats b.tight { font-size:11.2pt; line-height:14.85pt; white-space:nowrap; letter-spacing:-.01em; }   /* a long figure ("3,160 → 2,330 ft") kept on one line at the same row height */
 .stats span { font-size: 7pt; text-transform:uppercase; letter-spacing:.08em; color:#55635a; }
 .cols { display:grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
 .box { background: var(--soft); border-radius: 2mm; padding: 3mm 4mm 1.5mm; }
@@ -127,8 +128,9 @@ figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-r
 .roadwarn.mixed { border-color:#b45309; background:#fff7ed; }
 .roadwarn.mixed .h { color:#b45309; }
 /* sources and photo credits sit at the bottom of the last page (page height comes from hikelib.PAGE_CSS) */
-.page:last-child { display:flex; flex-direction:column; min-height:var(--pageh); }
-.page:last-child > * { flex:none; }
+/* a page with a .foot block is a full-height column, so the footnotes sit at the bottom of the paper, not under the last paragraph */
+.page:last-child, .page:has(> .foot) { display:flex; flex-direction:column; min-height:var(--pageh); }
+.page:last-child > *, .page:has(> .foot) > * { flex:none; }
 .foot { margin-top:auto; border-top:.6pt solid var(--rule); padding-top:2.5mm; }
 .foot p { margin-bottom:1.2mm; }
 /* history: a strip of dated moments, and a date tag in step tables */
@@ -209,7 +211,9 @@ figure.tall img { height:54mm; }
     <tr><td>July and August</td><td>Free permit</td><td>The <b>big bulls</b> return to molt. On the island the sea lions are breeding, up to 13,000 at a time, and at their loudest.</td></tr>
     <tr><td>September to November</td><td>Free permit</td><td>The quietest beaches: small numbers of <b>one- to three-year-olds</b> resting. The point lies on a migration route, so these are good months for birds.</td></tr>
   </table>
-  <p class="small" style="margin-top:1.5mm">Dates from California State Parks. Basemap: USGS The National Map (contour labels in feet). Trails © OpenStreetMap contributors. Dunes move, so the sand section is never quite where a map puts it: follow the posts and the docents.</p>
+  <div class="foot">
+  <p class="small">Dates from California State Parks. Basemap: USGS The National Map (contour labels in feet). Trails © OpenStreetMap contributors. Dunes move, so the sand section is never quite where a map puts it: follow the posts and the docents.</p>
+  </div>
 </section>
 
 <!-- ============================ PAGE 3 ============================ -->
