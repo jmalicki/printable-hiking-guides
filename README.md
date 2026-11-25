@@ -25,8 +25,8 @@ corrected and rebuilt, and new ones added the same way.
 
 ## The guides
 
-- **[Bay Area hikes](BAY-AREA-HIKES.md)**: nine day hikes around San Francisco Bay, from Mount Tamalpais and the
-  San Mateo coast to the Ohlone Wilderness.
+- **[Bay Area hikes](BAY-AREA-HIKES.md)**: ten day hikes around San Francisco Bay, from Point Reyes, Mount Tamalpais
+  and the San Mateo coast to the Ohlone Wilderness.
 - **[Further afield](FURTHER-AFIELD.md)**: the redwood coast, the northern Sierra, the central coast, the Trinity Alps,
   Yosemite, Yellowstone and Grand Teton, including multi-day backpacking trips.
 - **[Extremely hazardous advanced routes, documented for reference](HAZARDOUS-ROUTES.md)**: routes that
