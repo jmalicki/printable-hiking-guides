@@ -1,0 +1,44 @@
+{
+ "ladder": {
+  "file": "File:The famous stairs on the Steep Ravine trail - panoramio.jpg",
+  "artist": "Richard Wood",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_famous_stairs_on_the_Steep_Ravine_trail_-_panoramio.jpg"
+ },
+ "ravine": {
+  "file": "File:Steep ravine trail.jpg",
+  "artist": "Erik Wheaton",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Steep_ravine_trail.jpg"
+ },
+ "steps": {
+  "file": "File:Dipsea Race - Course - Steep Ravine.jpg",
+  "artist": "Frank Schulenburg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dipsea_Race_-_Course_-_Steep_Ravine.jpg"
+ },
+ "ridge": {
+  "file": "File:Matt Davis Trail Mt Tamalpais (159382381).jpeg",
+  "artist": "Ilya Grigorik",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matt_Davis_Trail_Mt_Tamalpais_(159382381).jpeg"
+ },
+ "beach": {
+  "file": "File:Stinson Beach from Dipsea Trail in Mount Tamalpais State Park.jpg",
+  "artist": "Miguel Vieira from Redwood City, CA, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Stinson_Beach_from_Dipsea_Trail_in_Mount_Tamalpais_State_Park.jpg"
+ },
+ "sunset": {
+  "file": "File:Foggy sunset over Stinson Beach.jpg",
+  "artist": "Beatrice Murch from Buenos  Aires, Argentina",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Foggy_sunset_over_Stinson_Beach.jpg"
+ },
+ "peak": {
+  "file": "File:View of Mt. Tamalpais' East Peak. The Old Railroad Grade fire road is visible below Ridgecrest Blvd - Bolinas Ridge Road. - panoramio.jpg",
+  "artist": "Richard Wood",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg"
+ }
+}

@@ -1,10 +1,15 @@
 """Write CREDITS.md from every data/<slug>/photos.json: one row per photo with author, licence and source page.
+Guides with LISTED=False in their config, and slugs named in the SKIP environment variable, are left out (as in make_index.py).
 usage: make_credits.py"""
-import json,glob,os,re
+import json,glob,os,re,sys
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from hikelib import load_config
+SKIP=set(filter(None,os.environ.get('SKIP','').split(',')))
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rows=[]
 for f in sorted(glob.glob(os.path.join(ROOT,'data','*','photos.json'))):
     slug=f.split(os.sep)[-2]
+    if slug in SKIP or not os.path.exists(os.path.join(ROOT,'guides',slug,'config.py')) or not getattr(load_config(slug),'LISTED',True):continue
     for key,m in json.load(open(f)).items():
         artist=re.sub(r'\s+',' ',re.sub('<[^>]+>','',m.get('artist','')).split(' from ')[0]).strip() or 'unknown'
         rows.append((slug,key,artist,m.get('license','?'),m.get('page','')))

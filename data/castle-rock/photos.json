@@ -1,0 +1,50 @@
+{
+ "hero": {
+  "file": "File:Castle Rock State Park 9.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Castle_Rock_State_Park_9.JPG"
+ },
+ "trail": {
+  "file": "File:Castle Rock State Park 6.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Castle_Rock_State_Park_6.JPG"
+ },
+ "rock": {
+  "file": "File:CastleRock.JPG",
+  "artist": "Grey3k",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CastleRock.JPG"
+ },
+ "rock2": {
+  "file": "File:Castle Rock State Park rock formation.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Castle_Rock_State_Park_rock_formation.JPG"
+ },
+ "tafoni": {
+  "file": "File:Nasal Spelunking (118609135).jpg",
+  "artist": "Steve Jurvetson from Los Altos, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nasal_Spelunking_(118609135).jpg"
+ },
+ "boulders": {
+  "file": "File:Castle Rock State Park in California with rock formations.JPG",
+  "artist": "Tomwsulcer",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Castle_Rock_State_Park_in_California_with_rock_formations.JPG"
+ },
+ "view": {
+  "file": "File:Castle Rock State Park 8.JPG",
+  "artist": "Oleg Alexandrov",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Castle_Rock_State_Park_8.JPG"
+ },
+ "madrone": {
+  "file": "File:Arbutus menziesii-10.jpg",
+  "artist": "Eugene Zelenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arbutus_menziesii-10.jpg"
+ }
+}

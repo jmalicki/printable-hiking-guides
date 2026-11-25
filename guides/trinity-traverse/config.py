@@ -61,7 +61,7 @@ ACCESS=dict(**{'from':(40.5865,-122.3917),'to':(40.88756,-123.0244)},z=11,bbox=(
 # Photos: direct Flickr URLs with explicit credit (Commons has none of Sapphire or Mirror Lake). crop=(l,t,r,b) fractions.
 BT='Beyond the Trail (Flickr)'
 PHOTOS=dict(
- hero=dict(short='Sapphire from above',cls='hero',url='https://live.staticflickr.com/3768/10963817393_03b0ac072c_b.jpg',artist=BT,license='CC BY-NC 2.0',page='https://www.flickr.com/photos/garytrinity/10963817393/',crop=(0,0.06,1,0.86),
+ hero=dict(short='Sapphire from above',cls='hero low',url='https://live.staticflickr.com/3768/10963817393_03b0ac072c_b.jpg',artist=BT,license='CC BY-NC 2.0',page='https://www.flickr.com/photos/garytrinity/10963817393/',crop=(0,0.52,1,0.80),
    caption='Sapphire Lake in its granite trench below Suicide Ridge: the far side of the crossing.'),
  falls=dict(short='Falls',cls='tri',url='https://live.staticflickr.com/5552/14942285052_d81ec0349a_b.jpg',artist='PeterDSims (Flickr)',license='CC BY-NC 2.0',page='https://www.flickr.com/photos/petersims/14942285052/',
    caption='Lower Canyon Creek Falls, day 1.'),

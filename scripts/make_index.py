@@ -2,17 +2,21 @@
 photo, its blurb (the guide's subtitle), the headline figures and links to the guide (the Letter PDF) and its GPX tracks, under a table of contents.
 Each guide's config may set REGION='bay-area' or 'hazardous' (default: further afield) and PARK (named after the title). Text and figures are read from the built
 feet-and-miles guide (out/<slug>/guide.html), so run `make` first.
+A config with LISTED=False is left out; so is any slug named in the SKIP environment variable (SKIP=a,b).
 usage: make_index.py"""
 import re,glob,os,html,json
 from hikelib import load_config,ROOT
 clean=lambda x:html.unescape(re.sub(r'\s+',' ',re.sub('<[^>]+>',' ',x))).strip()
 hikes={'bay-area':[],'further':[],'hazardous':[]}
+SKIP=set(filter(None,os.environ.get('SKIP','').split(',')))      # SKIP=slug,slug leaves guides out for one run (work in progress)
 for cfg in sorted(glob.glob(os.path.join(ROOT,'guides','*','config.py'))):
     slug=cfg.split(os.sep)[-2];C=load_config(slug);f=os.path.join(C.OUT,'guide.html')
-    if not os.path.exists(f):continue
+    if not os.path.exists(f) or not getattr(C,'LISTED',True) or slug in SKIP:continue      # LISTED=False in a config keeps a guide out of the lists
     h=re.sub(r'<svg.*?</svg>|base64,[^"]+','',open(f).read(),flags=re.S)
     title=clean(re.search(r'<h1>(.*?)</h1>',h,re.S).group(1));kick=clean(re.search(r'class="kicker">(.*?)</div>',h,re.S).group(1))
     sub=re.search(r'<p class="sub">(.*?)</p>',h,re.S);blurb=clean(sub.group(1)) if sub else ''
+    unw=re.search(r'<div class="unwalked">(.*?)</div>',h,re.S)        # banner on guides the author has not hiked (AGENTS.md)
+    if unw:blurb='**%s**\n\n%s'%(clean(unw.group(1)),blurb)
     kind,_,where=kick.partition(' · ')
     cells=[clean(a) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]
     notes=[clean(b) for a,b in re.findall(r'<div><b>(.*?)</b><span>(.*?)</span></div>',h,re.S)[:5]]

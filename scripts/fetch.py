@@ -11,7 +11,8 @@ UA={'User-Agent':'hike-guide-builder/1.0 (personal, low volume)'}
 def get(url,data=None,timeout=120):
     return urllib.request.urlopen(urllib.request.Request(url,data=data,headers=UA),timeout=timeout).read()
 def osm():
-    q='[out:json][timeout:60];(way["highway"~"path|footway|track|service|steps|pedestrian|unclassified|secondary|tertiary"](%s);node["name"](%s););out body geom;'%((','.join(map(str,C.OSM_BBOX)),)*2)
+    hw='path|footway|track|service|steps|pedestrian|unclassified|secondary|tertiary'+getattr(C,'OSM_HIGHWAYS','')   # config OSM_HIGHWAYS='|primary|residential' adds road classes (a route that starts in a town)
+    q='[out:json][timeout:60];(way["highway"~"%s"](%s);node["name"](%s););out body geom;'%(hw,*(','.join(map(str,C.OSM_BBOX)),)*2)
     for attempt in range(6):
         try:
             b=get('https://overpass-api.de/api/interpreter',urllib.parse.urlencode({'data':q}).encode())

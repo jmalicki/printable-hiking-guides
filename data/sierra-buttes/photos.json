@@ -1,0 +1,38 @@
+{
+ "hero": {
+  "file": "File:A hiker descends the stairs used to access the Sierra Buttes fire lookout, Sept 28, 2024, on the Tahoe National Forest (20240928-FS-PRW-001).jpg",
+  "artist": "Region 5 Photography",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:A_hiker_descends_the_stairs_used_to_access_the_Sierra_Buttes_fire_lookout,_Sept_28,_2024,_on_the_Tahoe_National_Forest_(20240928-FS-PRW-001).jpg"
+ },
+ "lookout": {
+  "file": "File:Sierra Buttes Fire Lookout.jpg",
+  "artist": "Jonathan Cook-Fisher",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sierra_Buttes_Fire_Lookout.jpg"
+ },
+ "stairs": {
+  "file": "File:Stairs to the top of Sierra Buttes.jpg",
+  "artist": "Mark Hogan",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Stairs_to_the_top_of_Sierra_Buttes.jpg"
+ },
+ "top": {
+  "file": "File:Hike to the top of the Sierra Buttes.jpg",
+  "artist": "Mark Hogan",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hike_to_the_top_of_the_Sierra_Buttes.jpg"
+ },
+ "sardine": {
+  "file": "File:Upper Sardine Lake and the Sierra Buttes, California.jpg",
+  "artist": "Dan Nevill",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Upper_Sardine_Lake_and_the_Sierra_Buttes,_California.jpg"
+ },
+ "town": {
+  "file": "File:Buckhorn, Sierra City, California LCCN2013633862.tif",
+  "artist": "Carol M. Highsmith",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Buckhorn,_Sierra_City,_California_LCCN2013633862.tif"
+ }
+}

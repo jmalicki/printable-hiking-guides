@@ -18,7 +18,7 @@ h3 { font-size: 10.4pt; margin: 2.6mm 0 .8mm; }
 p { margin: 0 0 1.7mm; }
 ul { margin: 0 0 2mm; padding-left: 4.2mm; }
 li { margin-bottom: .6mm; }
-.page { break-after: page; }
+.page { break-after: page; padding-right:.4mm; }   /* keeps right-hand borders inside the print clip: flush boxes lost their right edge in macOS Preview */
 .page:last-child { break-after: auto; }
 .kicker { font-size: 7.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--green); font-weight:600; margin-bottom:3mm; }
 .sub { font: italic 11.5pt/1.3 "Iowan Old Style", Palatino, Georgia, serif; color:#3d4b43; margin: 2mm 0 3.5mm; max-width: 150mm; }
@@ -100,15 +100,21 @@ figure.inn img { height:42mm; object-position:50% 88%; }
 figure.tri img { height:36mm; }
 figure.duo img { height:40mm; }
 figure.nd img { height:auto; }
+/* top-of-page-1 banner: the author has not done this hike (see AGENTS.md) */
+.unwalked { background:var(--red); color:#fff; font-weight:700; font-size:9pt; line-height:1.3; padding:1.6mm 4mm; border-radius:1.5mm; margin:0 0 3mm; }
 .warn { border:1.2pt solid var(--red); border-radius:2mm; padding:2.5mm 4mm 1.5mm; margin:2mm 0 3mm; background:#fdf5f4; }
 .warn h3 { color:var(--red); margin-top:0; }
 .days td:first-child { width:24mm; font-weight:700; font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:10pt; }
 .days td:nth-child(2) { width:36mm; white-space:nowrap; font-variant-numeric:tabular-nums; }
 .days td small { color:#55635a; display:block; }
 .l-off { border-top:1.1mm dashed var(--red); }
-figure.hero.short img, .trinity figure.hero img { height:58mm; }
+figure.hero.short img { height:58mm; }
+figure.hero.low img { height:42mm; }      /* a cover that carries a banner and a warning box above the photo (tableland) */
+.trinity figure.hero img { height:58mm; }
+.trinity figure.hero.low img { height:31mm; }
 /* cover photo beside the pitch (four-lakes) */
 figure.cover img { height:80mm; }
+figure.cover.portrait img { height:106mm; }   /* an upright cover photo (steep-ravine: the ladder) */
 /* water: 'last water' sign in step tables (only for dangerous dry stretches), and the water section */
 .tag.water { background:var(--blue); margin:0 0 1mm; }
 .water h3 { margin-top:0; }

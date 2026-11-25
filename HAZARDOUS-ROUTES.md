@@ -14,6 +14,8 @@ These routes are advised against. Each began with someone asking online whether 
 
 <sub>Photo: Beyond the Trail (Flickr), CC BY-NC 2.0 ([source](https://www.flickr.com/photos/garytrinity/10963817393/))</sub>
 
+**The author has not done this hike. This guide is compiled from published trip reports and a terrain model.**
+
 A hiker asked online whether the granite crest between the Canyon Creek Lakes and Sapphire Lake can be crossed. Backpackers who know the range advised strongly against it, citing a serious risk of injury or death. This guide documents that crossing for reference. Do not attempt it on the strength of these pages.
 
 **25 mi** trailhead to trailhead · **≈ 5,090 ft** climb; 5,410 ft descent · **3 days** · **Extremely hazardous**: 3.1 mi off-trail, loose and steep

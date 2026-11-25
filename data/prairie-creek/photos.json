@@ -1,0 +1,56 @@
+{
+ "hero": {
+  "file": "File:Fern Canyon pano 1.jpg",
+  "artist": "WolfmanSF",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fern_Canyon_pano_1.jpg"
+ },
+ "redwoods": {
+  "file": "File:Prairie Creek State Park - James Irvine Trail, Cathedral Tree ^ an architect - Flickr - rachel thecat.jpg",
+  "artist": "rachel_thecat",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prairie_Creek_State_Park_-_James_Irvine_Trail,_Cathedral_Tree_%5E_an_architect_-_Flickr_-_rachel_thecat.jpg"
+ },
+ "elk_beach": {
+  "file": "File:Roosevelt elk at Gold Bluffs Beach - DPLA - eeff2f54972aefd741f1d0d2e35c1058.jpg",
+  "artist": "U.S. Fish and Wildlife Service",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Roosevelt_elk_at_Gold_Bluffs_Beach_-_DPLA_-_eeff2f54972aefd741f1d0d2e35c1058.jpg"
+ },
+ "elk_bull": {
+  "file": "File:Elk near Gold Bluffs in the Redwoods National Park (2820215343).jpg",
+  "artist": "sergejf",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Elk_near_Gold_Bluffs_in_the_Redwoods_National_Park_(2820215343).jpg"
+ },
+ "slug": {
+  "file": "File:Ariolimax (23211297933).jpg",
+  "artist": "USFWS - Pacific Region",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Ariolimax_(23211297933).jpg"
+ },
+ "frog": {
+  "file": "File:Rana aurora Fern Canyon.jpg",
+  "artist": "WolfmanSF",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rana_aurora_Fern_Canyon.jpg"
+ },
+ "canyon2": {
+  "file": "File:Fern canyon.jpg",
+  "artist": "NPS Photo",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Fern_canyon.jpg"
+ },
+ "ridge": {
+  "file": "File:Redwood NSP Miners Ridge Trail 1.jpg",
+  "artist": "Dirtsc",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Redwood_NSP_Miners_Ridge_Trail_1.jpg"
+ },
+ "trinidad": {
+  "file": "File:Panorama from Trinidad Head, October 2023.jpg",
+  "artist": "Pi.1415926535",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Panorama_from_Trinidad_Head,_October_2023.jpg"
+ }
+}

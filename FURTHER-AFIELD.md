@@ -4,11 +4,30 @@ Printable guides to hikes and backpacking trips elsewhere in California and in t
 
 | Hike | Distance | Climb | Time | Grade |
 |---|---|---|---|---|
+| [The stairs to the Sierra Buttes lookout](#the-stairs-to-the-sierra-buttes-lookout-tahoe-national-forest) (Tahoe National Forest) | 4.6 mi | ≈ 1,570 ft | 3–4½ h | Moderate |
 | [The otter coves of Point Lobos](#the-otter-coves-of-point-lobos-point-lobos-state-natural-reserve) (Point Lobos State Natural Reserve) | 5.5 mi | ≈ 750 ft | 3–4 h | Easy |
+| [A summit above the otter harbor](#a-summit-above-the-otter-harbor-montaa-de-oro-state-park) (Montaña de Oro State Park) | 7.0 mi | ≈ 1,710 ft | 4–5 h | Moderate |
+| [Fern Canyon the long way](#fern-canyon-the-long-way-prairie-creek-redwoods-state-park) (Prairie Creek Redwoods State Park) | 11.1 mi | ≈ 2,100 ft | 6–8 h | Strenuous |
 | [Looking down on Half Dome: Clouds Rest from Tenaya Lake](#looking-down-on-half-dome-clouds-rest-from-tenaya-lake-yosemite-national-park) (Yosemite National Park) | 12.1 mi | ≈ 3,120 ft | 7–10 h | Strenuous |
 | [To the edge of Yellowstone: Bighorn Peak by Black Butte Creek](#to-the-edge-of-yellowstone-bighorn-peak-by-black-butte-creek-yellowstone-national-park) (Yellowstone National Park) | 12.4 mi | ≈ 3,300 ft | 7–9 h | Strenuous |
 | [A lake behind every ridge: the Four Lakes Loop](#a-lake-behind-every-ridge-the-four-lakes-loop-trinity-alps-wilderness) (Trinity Alps Wilderness) | 18 mi | ≈ 6,730 ft | 3 days | Strenuous |
 | [Behind the Grand Teton: Paintbrush Divide and Lake Solitude](#behind-the-grand-teton-paintbrush-divide-and-lake-solitude-grand-teton-national-park) (Grand Teton National Park) | 19.0 mi | ≈ 4,130 ft | 2 days | Strenuous |
+
+## The stairs to the Sierra Buttes lookout (Tahoe National Forest)
+
+*Tahoe National Forest, northern Sierra Nevada, California · a half-day hike*
+
+![The stairs to the Sierra Buttes lookout](data/sierra-buttes/photos/hero.jpg)
+
+<sub>Photo: Region 5 Photography, Public domain ([source](https://commons.wikimedia.org/wiki/File:A_hiker_descends_the_stairs_used_to_access_the_Sierra_Buttes_fire_lookout,_Sept_28,_2024,_on_the_Tahoe_National_Forest_(20240928-FS-PRW-001).jpg))</sub>
+
+**The author has not done this hike. This guide is compiled from maps, agency pages and other hikers' reports.**
+
+Climb a forested ridge for an hour and a half, then three flights of open steel stairs bolted to the summit rock, to a fire lookout with a drop on every side. Dinner is beside a lake at the foot of the same cliffs, if you booked a table.
+
+**4.6 mi** out and back · **≈ 1,570 ft** total climb · **3–4½ h** · **Moderate**: steady climb; exposed stairs
+
+[The guide (PDF)](out/sierra-buttes/sierra-buttes-fire-lookout.pdf) · [GPX: main](out/sierra-buttes/sierra-buttes-main.gpx) · [GPX: sardine](out/sierra-buttes/sierra-buttes-sardine.gpx)
 
 ## The otter coves of Point Lobos (Point Lobos State Natural Reserve)
 
@@ -23,6 +42,38 @@ Walk in from the gate and follow the edge of the land all the way round: a dozen
 **5.5 mi** loop · **≈ 750 ft** climb, in short ups and downs · **3–4 h** · **Easy**: some steps, roots and rock
 
 [The guide (PDF)](out/point-lobos/point-lobos-shore-loop.pdf) · [GPX: main](out/point-lobos/point-lobos-main.gpx) · [GPX: short](out/point-lobos/point-lobos-short.gpx)
+
+## A summit above the otter harbor (Montaña de Oro State Park)
+
+*Montaña de Oro State Park and Morro Bay, central California coast · a day hike and a harbor evening*
+
+![A summit above the otter harbor](data/morro-bay/photos/hero.jpg)
+
+<sub>Photo: Joyce Cory on Flickr as docentjoyce, CC BY 2.0 ([source](https://commons.wikimedia.org/wiki/File:Monta%C3%B1a_de_Oro_-_Shale_Formations_-_Flickr_-_docentjoyce.jpg))</sub>
+
+**The author has not done this hike. This guide is compiled from maps, agency pages and other hikers’ reports.**
+
+Walk the edge of a wave-cut shelf above sea stacks and tide pools, climb the pyramid behind it to see the whole coast at once, then drive twenty-five minutes to a fishing harbor where sea otters float beside the pier. Dinner is a few steps from the otters. The climb comes in the second half of the hike, in full sun.
+
+**7.0 mi** loop · **≈ 1,710 ft** climb, nearly all after halfway · **4–5 h** · **Moderate**: level bluffs, then a steady climb
+
+[The guide (PDF)](out/morro-bay/montana-de-oro-bluffs-valencia-peak-morro-bay.pdf) · [GPX: main](out/morro-bay/morro-bay-main.gpx) · [GPX: short](out/morro-bay/morro-bay-short.gpx)
+
+## Fern Canyon the long way (Prairie Creek Redwoods State Park)
+
+*Prairie Creek Redwoods State Park, northern California · a full-day hike*
+
+![Fern Canyon the long way](data/prairie-creek/photos/hero.jpg)
+
+<sub>Photo: WolfmanSF, CC BY-SA 3.0 ([source](https://commons.wikimedia.org/wiki/File:Fern_Canyon_pano_1.jpg))</sub>
+
+**The author has not done this hike. This guide is compiled from maps, agency pages and other hikers' reports.**
+
+Leave the car beside a meadow of grazing elk and walk four and a half miles through old-growth redwoods to a canyon whose walls are fern from the creek to the rim. Wade down it to a beach where elk walk the sand, then climb home over a second ridge of redwoods. It is a long day, and your feet get wet.
+
+**11.1 mi** loop · **≈ 2,100 ft** climb, in many small rises · **6–8 h** · **Strenuous**: for its length; a creek to wade
+
+[The guide (PDF)](out/prairie-creek/prairie-creek-fern-canyon-loop.pdf) · [GPX: main](out/prairie-creek/prairie-creek-main.gpx) · [GPX: alt](out/prairie-creek/prairie-creek-alt.gpx)
 
 ## Looking down on Half Dome: Clouds Rest from Tenaya Lake (Yosemite National Park)
 

@@ -25,10 +25,10 @@ corrected and rebuilt, and new ones added the same way.
 
 ## The guides
 
-- **[Bay Area hikes](BAY-AREA-HIKES.md)**: six day hikes around San Francisco Bay, from Mount Tamalpais to the
-  Ohlone Wilderness.
-- **[Further afield](FURTHER-AFIELD.md)**: the Trinity Alps, Yosemite, Yellowstone and Grand Teton, including
-  multi-day backpacking trips.
+- **[Bay Area hikes](BAY-AREA-HIKES.md)**: nine day hikes around San Francisco Bay, from Mount Tamalpais and the
+  San Mateo coast to the Ohlone Wilderness.
+- **[Further afield](FURTHER-AFIELD.md)**: the redwood coast, the northern Sierra, the central coast, the Trinity Alps,
+  Yosemite, Yellowstone and Grand Teton, including multi-day backpacking trips.
 - **[Extremely hazardous advanced routes, documented for reference](HAZARDOUS-ROUTES.md)**: routes that
   experienced backpackers advise against, compiled from trip reports and never walked for these guides. They are
   here to show what such a route involves.
@@ -107,7 +107,8 @@ Each guide is a folder under `guides/` holding a `config.py` (route, maps, photo
 words). `out/<guide>/` gets the PDFs, GPX files, `guide.html` and page previews. Style, audience, required sections
 and working method for writing a new guide are in `AGENTS.md`: read it first. After adding or changing a guide, run
 `scripts/make_index.py` to refresh the three lists above (set `REGION='bay-area'` in the config for a Bay Area hike, `REGION='hazardous'` for a
-route documented as advised against).
+route documented as advised against, `LISTED=False` to keep a guide out of the lists). A guide to a hike the author has not done carries a red
+banner on page 1; see `AGENTS.md`.
 
 ## Build
 - `make` — rebuild every PDF from cached data (no network)

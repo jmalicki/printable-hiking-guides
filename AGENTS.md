@@ -28,7 +28,7 @@ label on every road, including paved ones.
 |---|---|---|
 | Cover pitch, stat strip, "Is this for me?", map, profile, step table, getting there, practical, sources | always | |
 | Red `.warn` box on page 1 | a real hazard (snow slope, off-trail ground, old mine workings), or directions that rest on thin evidence where being wrong is dangerous | an ordinary signed trail; general unfamiliarity; facts you could verify |
-| "Compiled, not walked" | a few words in the sources footer | never in the red box, unless route-finding itself is unverified (the Trinity off-trail crossing) |
+| Red "author has not done this hike" banner (`.unwalked`) | every guide the owner has not hiked: the very top of page 1, above the kicker | a hike the owner has done. Ask if you do not know |
 | "I could not confirm…" in the text | one fact that matters to the plan and cannot be checked (a bear-canister rule) | routine details: verify them or leave them out |
 | Inset explaining the place | the place has something that needs explaining (habitats, geology, a mine) | nothing does: do not manufacture one |
 | History in the step table, date tags, date strip | the hike is about its history (Almaden) | a hike with a ruin or two: a sentence at that stop is enough |
@@ -142,8 +142,10 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
 - **Do not be cagey, and do not disclaim by reflex.** The red box is for hazards and for guidance that
   rests on thin evidence where being wrong is dangerous (the off-trail crossing in the Trinity traverse).
   An ordinary signed trail in a park needs no "nobody walked this" warning: the owner asked why the Almaden
-  guide had one when the others did not, and it was removed. That a guide was compiled and not walked goes
-  in the sources footer, in a few words ("Compiled November 2026; not walked for this guide"). Never put
+  guide had one when the others did not, and it was removed. That a guide was compiled and not walked is said
+  once, in the red banner at the top of page 1 (see "Hikes the author has not done"), and again in a few
+  words in the sources footer ("Compiled November 2026; not walked for this guide"). It still does not go in
+  the `.warn` box, which is for hazards. Never put
   tooling problems in a guide (a blocked web page is not the reader's concern), and do not hedge facts you
   could verify with a little more work: verify them.
 - **A page that refuses automated fetching (HTTP 403) is not unreadable.** Open it in the browser pane and
@@ -158,6 +160,23 @@ variant, written beside it with a `-metric-a4` suffix. Both must fit the same nu
   real map, phone the ranger station), with explicit "Turn back if" rules. What they liked is a serious
   warning stated plainly and early. It is not a licence to open every guide with caveats: the Muir Woods
   and West Point guides have no red box at all, and that is correct.
+
+## Hikes the author has not done
+
+The owner's rule (November 2026): **a guide to a hike the owner has not done says so in a red banner at the
+very top of page 1**, above the kicker, so nobody reads the pitch as a first-hand recommendation.
+
+- Markup: `<div class="unwalked">The author has not done this hike. This guide is compiled from maps,
+  agency pages and other hikers' reports.</div>` as the first element inside the first
+  `<section class="page">`. Keep that wording unless the guide needs something more specific (a
+  reconstructed route says "reconstructed" there).
+- `scripts/make_index.py` sees the banner and prints the same sentence under the guide's entry in the hike
+  lists, so the index carries it too.
+- The sources footer still ends "Compiled <month year>; not walked for this guide".
+- The banner states a fact about the guide. It is separate from the `.warn` box: an unwalked guide to an
+  ordinary signed trail gets the banner and no red box.
+- Most guides before November 2026 are hikes the owner knows well and have no banner. When starting a guide,
+  ask the owner whether they have done the hike if they have not said.
 
 ## What a guide contains
 
