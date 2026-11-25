@@ -357,6 +357,29 @@ rebuilt. Each point below is something that was wrong in it.
   `scripts/make_index.py` so the guide appears in `BAY-AREA-HIKES.md` or `FURTHER-AFIELD.md` (set
   `REGION='bay-area'` in its config for a Bay Area hike).
 - Another session's uncommitted work in this repo is not yours to delete. Work round it and tell the owner.
+- **A guide the owner does not want published goes in `wip/<slug>/`**, which git ignores (see README, "Work in
+  progress"). It builds like any other guide and stays out of the lists. The first was the reconstruction of a
+  2005 accident in Sequoia, which the owner decided not to publish (November 2026).
+
+## The linter
+
+`scripts/lint_guide.py` runs at the end of every build and prints `LINT <slug> [code] …` lines after the page
+count. It exists because faults kept getting through that a glance at the previews does not show: the first
+was a red box whose right border vanished in macOS Preview because it sat flush with the print area (the
+owner spotted it on Murietta Falls and Castle Rock; `.page` now has a small right inset).
+
+- **Layout findings are build failures in spirit**, like `OVERFLOW`: `edge` (a box or text past the right edge
+  of the print area), `empty` (a band more than a quarter of the page tall with nothing in it), `stat-wrap`
+  (a stat-strip headline on two lines), `placeholder`, `metric` (leftover km or British unit spelling in the
+  imperial build, doubled figures), `unwalked`, `markers`, `photo`. Fix them before moving on.
+- **Wording findings are prompts to look**: `absence`, `not-that`, `title`. A build only counts them; run
+  `scripts/lint_guide.py <slug>` to list them, and `--all` for every guide. Many hits are fine (an
+  instruction such as "on your belt, not in the pack"; the one permitted "I could not confirm").
+- A finding that is intended goes in the guide's config as `LINT_OK=['code']` with a comment saying why. Do not
+  add a code to silence something you have not looked at.
+- The linter reads the edition last selected by `UNITS` and `PAPER`; check both.
+- When a new kind of fault gets past it, add a check, and test the check against the faulty PDF (from git
+  history) before trusting it. The first version of `edge` passed the very file it was written for.
 
 ## Known snags
 

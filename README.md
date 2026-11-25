@@ -115,6 +115,7 @@ banner on page 1; see `AGENTS.md`.
 - `make UNITS=metric PAPER=a4` — the metric A4 variant, written as `<name>-metric-a4.pdf` (defaults: `UNITS=imperial PAPER=letter`). Templates are written in metric and converted at build time; `{{u:metric text|imperial text}}` overrides the conversion
 - `make GUIDE=west-point` — one guide
 - `make routes-west-point` — recompute a guide's route + GPX from cached trail data
+- `scripts/lint_guide.py west-point` — list layout and wording findings for a built guide (`--all` for every guide); a short form runs after every build
 - `make refresh GUIDE=west-point` — re-download trails, basemaps, driving route and photos, then rebuild
 
 ## Where to edit
@@ -125,6 +126,12 @@ banner on page 1; see `AGENTS.md`.
 
 ## Off-trail legs
 `scripts/dem_route.py <slug>` samples a terrain grid (config `DEM`) and traces a least-steep line between the waypoints in `OFFTRAIL`; `build_routes.py` splices those legs in and marks them so maps draw them dashed. The traced line is an approximation for the map, not a surveyed track. A guide can also have a close-up map (`DETAIL`, `DETAIL_TILES`, `{{DETAIL}}`) and extra driving routes (`ACCESS['extra']`).
+
+## Work in progress
+A guide that is not ready, or not meant to be published, lives in `wip/<slug>/` (`config.py`, `template.html`, and its own
+`data/` and `out/` inside that folder). `wip/` is in `.gitignore`. Every script takes the slug as usual
+(`make GUIDE=<slug>`, `scripts/build_routes.py <slug>`); the hike lists, credits and `lint_guide.py --all` leave `wip/` out.
+To publish one, move `config.py` and `template.html` to `guides/<slug>/`, `data` to `data/<slug>/` and `out` to `out/<slug>/`.
 
 ## New guide
 Copy a guide folder, edit `config.py` (bounding boxes, junctions, route order), then

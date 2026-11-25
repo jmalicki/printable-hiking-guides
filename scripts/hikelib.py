@@ -2,9 +2,11 @@
 import json,math,heapq,collections,importlib.util,os,sys,re
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def load_config(slug):
-    spec=importlib.util.spec_from_file_location('cfg',os.path.join(ROOT,'guides',slug,'config.py'))
+    d=os.path.join(ROOT,'guides',slug);w=os.path.join(ROOT,'wip',slug)
+    wip=not os.path.exists(d+'/config.py') and os.path.exists(w+'/config.py')     # work in progress: everything lives under wip/<slug>/, which git ignores
+    spec=importlib.util.spec_from_file_location('cfg',os.path.join(w if wip else d,'config.py'))
     m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.SLUG=slug
-    m.DATA=os.path.join(ROOT,'data',slug);m.OUT=os.path.join(ROOT,'out',slug);m.DIR=os.path.join(ROOT,'guides',slug)
+    m.DIR,m.DATA,m.OUT=(w,w+'/data',w+'/out') if wip else (d,os.path.join(ROOT,'data',slug),os.path.join(ROOT,'out',slug))
     os.makedirs(m.DATA,exist_ok=True);os.makedirs(m.OUT,exist_ok=True)
     suffix=('' if UNITS=='imperial' else '-'+UNITS)+('' if PAPER=='letter' else '-'+PAPER)      # default build keeps the plain name
     m.PDF=m.PDF.replace('.pdf',suffix+'.pdf');m.HTML='guide%s.html'%suffix
