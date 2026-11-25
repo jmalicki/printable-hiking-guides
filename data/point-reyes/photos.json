@@ -1,21 +1,15 @@
 {
  "hero": {
-  "file": "File:Wildcat Waterfall - panoramio (1).jpg",
-  "artist": "Doug Olson",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wildcat_Waterfall_-_panoramio_(1).jpg"
- },
- "beach": {
-  "file": "File:Wildcat beach at Point Reyes National Seashore 2.JPG",
-  "artist": "Oleg Alexandrov",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wildcat_beach_at_Point_Reyes_National_Seashore_2.JPG"
+  "file": "File:Point Reyes National Seashore - Sky Trail, CA, USA - panoramio (1).jpg",
+  "artist": "MARELBU",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Point_Reyes_National_Seashore_-_Sky_Trail,_CA,_USA_-_panoramio_(1).jpg"
  },
  "coast": {
-  "file": "File:Wildcat beach at Point Reyes National Seashore 3.JPG",
-  "artist": "Oleg Alexandrov",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wildcat_beach_at_Point_Reyes_National_Seashore_3.JPG"
+  "file": "File:Woodward Fire - Burnt Coyote Bush and Point Resistance - August 23, 2020 - 10-24 am (45cc9514-0274-4ef1-9318-979aa0e90b09).jpg",
+  "artist": "NPS Photo",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Burnt_Coyote_Bush_and_Point_Resistance_-_August_23,_2020_-_10-24_am_(45cc9514-0274-4ef1-9318-979aa0e90b09).jpg"
  },
  "sky": {
   "file": "File:Point Reyes National Seashore - Sky Trail, CA, USA - panoramio.jpg",
@@ -35,22 +29,22 @@
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Burn_Mosaic_-_September_15,_2020_-_9-39_am_(f3080bec-5f4a-4e23-a2cb-0a1d1a7f6f61).jpg"
  },
- "falls": {
-  "file": "File:In Awe (Unsplash).jpg",
-  "artist": "Matthew Bennett mbennettphoto",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:In_Awe_(Unsplash).jpg"
- },
- "elk": {
-  "file": "File:Tule elk bull.jpg",
-  "artist": "Mark  Gunn from Novato, California, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tule_elk_bull.jpg"
- },
  "quail": {
-  "file": "File:California quail (Callipepla californica) at Wildcat Campground. June 12, 2022. (e8b49334-06c1-4e0c-a240-7c9e6f75a426).jpg",
-  "artist": "NPS Photo",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:California_quail_(Callipepla_californica)_at_Wildcat_Campground._June_12,_2022._(e8b49334-06c1-4e0c-a240-7c9e6f75a426).jpg"
+  "file": "File:California quail - Point Reyes National Seashore 2021-10-16 02.jpg",
+  "artist": "Krunal Desai",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:California_quail_-_Point_Reyes_National_Seashore_2021-10-16_02.jpg"
+ },
+ "fog": {
+  "file": "File:Point Reyes National Seashore, Sky Trail, Ca, USA - panoramio.jpg",
+  "artist": "MARELBU",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Point_Reyes_National_Seashore,_Sky_Trail,_Ca,_USA_-_panoramio.jpg"
+ },
+ "bay": {
+  "file": "File:Point Reyes National Seashore - Sky Trail, Ca, USA - panoramio.jpg",
+  "artist": "MARELBU",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Point_Reyes_National_Seashore_-_Sky_Trail,_Ca,_USA_-_panoramio.jpg"
  }
 }
